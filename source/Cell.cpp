@@ -1,16 +1,17 @@
 #include <iostream>
 #include <string>
-#include "Game_Object.cpp"
+#include "GameObject.cpp"
+
 
 class Cell {
-private:
-    Game_Object* cell_content;
+protected:
+    GameObject* cell_content;
     int coord_x;
     int coord_y;
     std::string state;
 public:
     // Constructors
-    Cell(int cootd_x = 0, int coord_y = 0, std::string state = "safe", Game_Object* cell_content = nullptr) 
+    Cell(int cootd_x = 0, int coord_y = 0, std::string state = "safe", GameObject* cell_content = nullptr) 
         :coord_x(coord_x), coord_y(coord_y), state(state), cell_content(cell_content) {}
 
     // Destructor
@@ -56,4 +57,41 @@ public:
 
         return *this;
     }
+
+    // Getters
+    int getXCoord() {
+        return coord_x;
+    }
+
+    int getYCoord() {
+        return coord_y;
+    }
+
+    GameObject* getGameObject() {
+        return cell_content;
+    }
+
+    std::string getState() {
+        return state;
+    } 
+
+    // Setters
+    void setXCoord(int new_coord_x = 0) {
+        coord_x = new_coord_x;
+    }
+
+    void setYCoord(int new_coord_y = 0) {
+        coord_y = new_coord_y;
+    }
+
+    void setState(std::string new_state = "safe") {
+        state = new_state;
+    }
+
+    void setCellContent(GameObject* new_cell_content = nullptr) {
+        cell_content = new_cell_content;
+    }
+
+    // Activates when we step on this cell
+    virtual void step() = 0;
 };

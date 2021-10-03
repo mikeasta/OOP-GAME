@@ -1,3 +1,3 @@
 #include <iostream>
 
-class Game_Object {};
+class GameObject {};
