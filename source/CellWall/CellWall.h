@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Cell.cpp"
+#include "../Cell/Cell.h"
 
 class CellWall: public Cell {
     using Cell::Cell;

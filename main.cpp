@@ -1,7 +1,10 @@
 #include <iostream>
-using namespace std;
+#include "./client/FieldView/FieldView.h"
+#include "./source/Field/Field.h"
 
 int main()
 {
-    cout << "Hello world!";
+    Field field    = Field(10, 10);
+    FieldView view = FieldView(field);
+    view.drawField();
 }

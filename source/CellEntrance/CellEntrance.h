@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Cell.cpp"
+#include "../Cell/Cell.h"
 
 class CellEntrance: public Cell {
     using Cell::Cell;

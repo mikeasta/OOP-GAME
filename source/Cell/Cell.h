@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "GameObject.cpp"
+#include "../GameObject/GameObject.h"
 
 
 class Cell {

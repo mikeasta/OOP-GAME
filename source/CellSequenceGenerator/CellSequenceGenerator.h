@@ -1,12 +1,12 @@
 #include <iostream>
 #include <stdlib.h>
 #include <math.h>
-#include "Cell.cpp"
-#include "CellWall.cpp"
-#include "CellEntrance.cpp"
-#include "CellExit.cpp"
-#include "CellFloor.cpp"
-#include "CellLava.cpp"
+#include "../Cell/Cell.h"
+#include "../CellWall/CellWall.h"
+#include "../CellEntrance/CellEntrance.h"
+#include "../CellExit/CellExit.h"
+#include "../CellFloor/CellFloor.h"
+#include "../CellLava/CellLava.h"
 
 // Класс, генерирующий последовательность клеток
 // в двумерном массиве

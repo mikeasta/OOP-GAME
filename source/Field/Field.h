@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Cell.cpp"
-#include "CellSequenceGenerator.cpp"
+#include "../Cell/Cell.h"
+#include "../CellSequenceGenerator/CellSequenceGenerator.h"
 
 class Field {
 protected:
