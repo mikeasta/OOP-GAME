@@ -1,4 +1,6 @@
 #include <iostream>
 #include "Cell.cpp"
 
-class CellFloor: protected Cell {};
+class CellFloor: public Cell {
+    using Cell::Cell;
+};

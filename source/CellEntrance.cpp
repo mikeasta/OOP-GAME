@@ -1,4 +1,6 @@
 #include <iostream>
 #include "Cell.cpp"
 
-class CellEntrance: protected Cell {};
+class CellEntrance: public Cell {
+    using Cell::Cell;
+};

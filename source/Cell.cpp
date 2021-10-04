@@ -21,8 +21,11 @@ public:
     }
 
     // Copy constructor
-    Cell (const Cell& other)
-        :coord_x(other.coord_x), coord_y(other.coord_y), state(other.state), cell_content(other.cell_content) {}
+    Cell (const Cell& other):
+        coord_x(other.coord_x), 
+        coord_y(other.coord_y), 
+        state(other.state), 
+        cell_content(other.cell_content) {}
 
     // Copy operator
     Cell& operator=(const Cell& other)
@@ -93,5 +96,5 @@ public:
     }
 
     // Activates when we step on this cell
-    virtual void step() = 0;
+    virtual void step() {};
 };

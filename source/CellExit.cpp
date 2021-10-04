@@ -1,4 +1,6 @@
 #include <iostream>
 #include "Cell.cpp"
 
-class CellExit: protected Cell {};
+class CellExit: public Cell {
+    using Cell::Cell;
+};

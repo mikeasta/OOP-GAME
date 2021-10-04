@@ -1,28 +1,36 @@
 #include <iostream>
 #include "Cell.cpp"
+#include "CellSequenceGenerator.cpp"
 
 class Field {
 protected:
-    int rows     = 0;
-    int cols     = 0;
-    Cell** cells = nullptr;
+    int rows_with_borders;
+    int cols_with_borders;
+    Cell** cells;
 public:
-    // Доделать
-    Field(Cell** cells): cells(cells) {
+    Field () {}
 
-        rows = sizeof(cells);
-        cols = sizeof(cells[0]);
+    explicit Field (Cell **cells):cells(cells) {
+        rows_with_borders = sizeof(cells);
+        cols_with_borders = sizeof(cells[0]);
+    }
+
+    explicit Field (int input_rows = 0, int input_cols = 0, int input_lava_cells_percentage = 0) {
+        CellSequenceGenerator generator;
+        cells = generator.generate_field(input_rows, input_cols, input_lava_cells_percentage);
+        rows_with_borders  = sizeof(cells);
+        cols_with_borders  = sizeof(cells[0]);
     }
     
     ~Field() {
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < rows_with_borders; i++)
             delete[] cells[i];
 
         delete[] cells; 
     }
 
     Field (const Field& other) {
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < rows_with_borders; i++)
             delete[] cells[i];
         delete[] cells; 
         cells = other.cells;
@@ -30,7 +38,7 @@ public:
 
     Field& operator=(const Field& other) {
         if (this != &other) {
-            for (int i = 0; i < rows; i++)
+            for (int i = 0; i < rows_with_borders; i++)
                 delete[] cells[i];
 
             delete[] cells; 
@@ -42,7 +50,7 @@ public:
 
     Field (Field&& other) {
         Cell* buff;
-        for (int i = 0; i < rows; i++) {
+        for (int i = 0; i < rows_with_borders; i++) {
             buff = cells[i];
             cells[i] = other.cells[i];
             delete[] buff;
@@ -55,7 +63,7 @@ public:
     Field& operator=(Field&& other) {
         if (this != &other) {
             Cell* buff;
-            for (int i = 0; i < rows; i++) {
+            for (int i = 0; i < rows_with_borders; i++) {
                 buff = cells[i];
                 cells[i] = other.cells[i];
                 delete[] buff;
@@ -65,5 +73,17 @@ public:
         }
 
         return *this;
+    }
+
+    Cell** getField() {
+        return cells;
+    }
+
+    int getRows() {
+        return rows_with_borders;
+    }
+
+    int getCols() {
+        return cols_with_borders;
     }
 };
