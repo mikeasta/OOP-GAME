@@ -1,6 +1,6 @@
 #include <iostream>
 #include "../Field/Field.h"
-#include "../Cell/Cell.h"
+// #include "../Cell/Cell.h"
 
 class FieldIterator {
 private:

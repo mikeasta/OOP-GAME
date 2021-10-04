@@ -14,30 +14,43 @@ class CellSequenceGenerator {
 public:
     CellSequenceGenerator() {};
     Cell** generate_field(int rows = 0, int cols = 0, int lava_cells_percent = 0) {
-
+        std::cout << "Hello\n";
         Cell** cell_sequence;
 
+        std::cout << "Hello1\n";
+
         // If there is field 0x0
-        if (!rows & !cols) {
-            return;
+        if (rows == 0 || cols == 0) {
+            std::cout << "Rows or cols equal zero\n";
+            return nullptr;
         }
+
+        std::cout << "Hello2\n";
 
         // Create field structure
         cell_sequence = new Cell*[rows+2];
         for (int i = 0; i < rows+2; i++) 
             cell_sequence[i] = new Cell[cols+2];
 
+        std::cout << "Hello3\n";
 
         // Fill field
         for (int i = 0; i < rows+2; i++) 
-            for (int j = 0; i < cols+2; j++)
+        {
+            for (int j = 0; j < cols+2; j++)
             {
-                if ((i == 0 || i == rows+1) || (j == 0 || j == cols+1))
-                    cell_sequence[i][j] = static_cast<Cell>(*(new CellWall()));
-                else 
-                    cell_sequence[i][j] = static_cast<Cell>(*(new CellFloor()));
+                std::cout << i << " " << j;
+                if ((i == 0 || i == rows+1) || (j == 0 || j == cols+1)) {
+                    CellWall wall;
+                    cell_sequence[i][j] = static_cast<Cell>(wall);
+                } else {
+                    CellFloor floor;
+                    cell_sequence[i][j] = static_cast<Cell>(floor);
+                }
             }
+        }
 
+        std::cout << "Hello4\n";
         
         double exit_border_option = rand() % 2;
 
@@ -66,6 +79,7 @@ public:
             }
         }
 
+        std::cout << "Hello5\n";
 
         // Fill with Lava
         int cell_amount = rows * cols;
@@ -82,6 +96,10 @@ public:
             }
         }
 
+        std::cout << "Test 11";
+        for (int i = 0; i < rows+2; i++)
+            for (int j = 0; j < cols+2; j++)
+                std::cout << &cell_sequence[i][j];
         return cell_sequence;
     }
 };

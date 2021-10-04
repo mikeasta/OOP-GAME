@@ -1,14 +1,14 @@
 #include <iostream>
 #include <map>
 #include <string>
-#include "../../source/Field/Field.h"
-#include "../../source/Cell/Cell.h"
-#include "../../source/CellWall/CellWall.h"
-#include "../../source/CellFloor/CellFloor.h"
-#include "../../source/CellLava/CellLava.h"
-#include "../../source/CellEntrance/CellEntrance.h"
-#include "../../source/CellExit/CellExit.h"
 #include "../../source/FieldIterator/FieldIterator.h"
+// #include "../../source/Field/Field.h"
+// #include "../../source/Cell/Cell.h"
+// #include "../../source/CellWall/CellWall.h"
+// #include "../../source/CellFloor/CellFloor.h"
+// #include "../../source/CellLava/CellLava.h"
+// #include "../../source/CellEntrance/CellEntrance.h"
+// #include "../../source/CellExit/CellExit.h"
 
 class FieldView {
 private:
@@ -18,6 +18,7 @@ public:
     FieldView(Field field):field(field) {};
 
     void drawField() {
+        std::cout << "Field View\n";
         Cell** cells = field.getField();
         int rows     = field.getRows();
         int cols     = field.getCols();

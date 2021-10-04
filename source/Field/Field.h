@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../Cell/Cell.h"
+//#include "../Cell/Cell.h"
 #include "../CellSequenceGenerator/CellSequenceGenerator.h"
 
 class Field {
@@ -10,12 +10,13 @@ protected:
 public:
     Field () {}
 
-    explicit Field (Cell **cells):cells(cells) {
+    Field (Cell **cells):cells(cells) {
         rows_with_borders = sizeof(cells);
         cols_with_borders = sizeof(cells[0]);
     }
 
-    explicit Field (int input_rows = 0, int input_cols = 0, int input_lava_cells_percentage = 0) {
+    Field (int input_rows = 0, int input_cols = 0, int input_lava_cells_percentage = 0) {
+        std::cout << "Field generates with CellSequenceGenerator";
         CellSequenceGenerator generator;
         cells = generator.generate_field(input_rows, input_cols, input_lava_cells_percentage);
         rows_with_borders  = sizeof(cells);
@@ -75,7 +76,7 @@ public:
         return *this;
     }
 
-    Cell** getField() {
+    Cell** getField() const {
         return cells;
     }
 
