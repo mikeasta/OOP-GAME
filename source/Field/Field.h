@@ -1,6 +1,12 @@
 #include <iostream>
-//#include "../Cell/Cell.h"
-#include "../CellSequenceGenerator/CellSequenceGenerator.h"
+// #include "../Cell/Cell.h"
+// #include "../CellSequenceGenerator/CellSequenceGenerator.h"
+#include "../Cell/Cell.h"
+#include "../CellWall/CellWall.h"
+#include "../CellEntrance/CellEntrance.h"
+#include "../CellExit/CellExit.h"
+#include "../CellFloor/CellFloor.h"
+#include "../CellLava/CellLava.h"
 
 class Field {
 protected:
@@ -16,9 +22,13 @@ public:
     }
 
     Field (int input_rows = 0, int input_cols = 0, int input_lava_cells_percentage = 0) {
-        std::cout << "Field generates with CellSequenceGenerator";
-        CellSequenceGenerator generator;
-        cells = generator.generate_field(input_rows, input_cols, input_lava_cells_percentage);
+        // std::cout << "Field generates with CellSequenceGenerator";
+        // CellSequenceGenerator generator;
+        // cells = generator.generate_field(input_rows, input_cols, input_lava_cells_percentage);
+
+        for (int i = 0; i < input_rows + 2; i++)
+            for (int j = 0; j < input_cols + 2; j++)
+                cells[i][j] = Cell();
         rows_with_borders  = sizeof(cells);
         cols_with_borders  = sizeof(cells[0]);
     }
