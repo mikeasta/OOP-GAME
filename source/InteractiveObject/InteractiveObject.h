@@ -1,0 +1,6 @@
+#ifndef OOP_GAME_INTERACTIVE_OBJECT_HEADLINE
+#define OOP_GAME_INTERACTIVE_OBJECT_HEADLINE
+
+class InteractiveObject {};
+
+#endif
