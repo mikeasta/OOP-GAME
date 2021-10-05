@@ -13,7 +13,7 @@ class FieldGenerator {
 public:
     FieldGenerator() {};
     ~FieldGenerator() = default;
-    Cell*** generateStandartField(unsigned int rows = 0, unsigned int cols = 0) {}
+    Cell*** generateStandartField(unsigned int rows = 0, unsigned int cols = 0);
 };
 
 #endif

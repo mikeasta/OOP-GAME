@@ -6,7 +6,7 @@ class RandomNumberGenerator {
 public:
     RandomNumberGenerator() {}
     ~RandomNumberGenerator() = default;
-    unsigned int generate(unsigned int lower_num, unsigned int upper_num) {}
+    unsigned int generate(unsigned int lower_num, unsigned int upper_num);
 };
 
 #endif

@@ -13,6 +13,11 @@ bool FieldIterator::hasMore() {
 
 }
 
+bool FieldIterator::isLastInARow() {
+    unsigned int field_cols = field->getCols();
+    return (current_coord_x == field_cols - 1) ? true : false;
+}
+
 const Cell* const FieldIterator::getCurrent() {
     return field->getCells()[current_coord_y][current_coord_x];
 }

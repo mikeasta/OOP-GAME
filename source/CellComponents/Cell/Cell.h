@@ -11,8 +11,8 @@ protected:
 public:
     Cell(unsigned int coord_x, unsigned int coord_y) {};
     virtual ~Cell() = default;
-    virtual Cell* cloneCell() {};
-    virtual void stepOnCell() {};
+    virtual Cell* cloneCell();
+    virtual void stepOnCell();
 };
 
 #endif
