@@ -20,11 +20,11 @@ Cell*** FieldGenerator::generateStandartField(unsigned int rows, unsigned int co
     RandomNumberGenerator random_generator = RandomNumberGenerator();
 
 
-    std::cout << "FieldGenerator: Field generation has been started\n";
-    std::cout << "FieldGenerator: Rows - " << rows << " (with walls - " << rows_with_walls <<")\n";
-    std::cout << "FieldGenerator: Cols - " << cols << " (with walls - " << cols_with_walls <<")\n";
-    std::cout << "FieldGenerator: Field area - " << rows * cols << "(with walls - " << rows_with_walls *
-        cols_with_walls << ")\n";
+    // std::cout << "FieldGenerator: Field generation has been started\n";
+    // std::cout << "FieldGenerator: Rows - " << rows << " (with walls - " << rows_with_walls <<")\n";
+    // std::cout << "FieldGenerator: Cols - " << cols << " (with walls - " << cols_with_walls <<")\n";
+    // std::cout << "FieldGenerator: Field area - " << rows * cols << "(with walls - " << rows_with_walls *
+    //     cols_with_walls << ")\n";
 
     
     // Create two-dimensional array of cells
@@ -39,12 +39,12 @@ Cell*** FieldGenerator::generateStandartField(unsigned int rows, unsigned int co
             // Check for being wall
             if (i == 0 || i == rows_with_walls - 1 || j == 0 || j == cols_with_walls - 1) {
                 cells[i][j] = new CellWall(i, j);
-                std::cout << "FieldGenerator: CellWall created at the position [" 
-                    << i << "; " << j << "]\n";
+                // std::cout << "FieldGenerator: CellWall created at the position [" 
+                //     << i << "; " << j << "]\n";
             } else {
                 cells[i][j] = new CellFloor(i, j);
-                std::cout << "FieldGenerator: CellFloor created at the position [" 
-                    << i << "; " << j << "]\n";
+                // std::cout << "FieldGenerator: CellFloor created at the position [" 
+                //     << i << "; " << j << "]\n";
             }
         }
     }
