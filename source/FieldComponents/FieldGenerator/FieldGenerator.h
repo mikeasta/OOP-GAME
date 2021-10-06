@@ -1,6 +1,5 @@
 // Данный класс генерирует двумерный массив клеток
-#ifndef OOP_GAME_FIELD_GENERATOR_HEADLINE
-#define OOP_GAME_FIELD_GENERATOR_HEADLINE
+#pragma once
 
 #include "../../CellComponents/Cell/Cell.h"
 #include "../../CellComponents/CellEntrance/CellEntrance.h"
@@ -16,4 +15,3 @@ public:
     Cell*** generateStandartField(unsigned int rows = 0, unsigned int cols = 0);
 };
 
-#endif

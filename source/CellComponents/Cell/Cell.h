@@ -1,5 +1,5 @@
-#ifndef OOP_GAME_CELL_HEADLINE
-#define OOP_GAME_CELL_HEADLINE
+#pragma once
+
 #include "../../InteractiveObject/InteractiveObject.h"
 
 class Cell {
@@ -14,5 +14,3 @@ public:
     virtual Cell* cloneCell();
     virtual void stepOnCell();
 };
-
-#endif

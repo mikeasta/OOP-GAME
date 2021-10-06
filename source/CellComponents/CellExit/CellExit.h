@@ -1,5 +1,5 @@
-#ifndef OOP_GAME_CELL_EXIT_HEADLINE
-#define OOP_GAME_CELL_EXIT_HEADLINE
+#pragma once
+
 #include "../Cell/Cell.h"
 
 class CellExit: public Cell {
@@ -9,4 +9,3 @@ public:
     virtual Cell* cloneCell();
 };
 
-#endif

@@ -1,5 +1,4 @@
-#ifndef OOP_GAME_FIELD_ITERATOR_HEADLINE
-#define OOP_GAME_FIELD_ITERATOR_HEADLINE
+#pragma once
 
 #include "../Field/Field.h"
 #include "../../CellComponents/Cell/Cell.h"
@@ -19,4 +18,3 @@ public:
     bool isLastInARow();
 };
 
-#endif

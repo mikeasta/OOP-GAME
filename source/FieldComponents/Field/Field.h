@@ -1,5 +1,4 @@
-#ifndef OOP_GAME_FIELD_HEADLINE
-#define OOP_GAME_FIELD_HEADLINE
+#pragma once 
 
 #include "../../CellComponents/Cell/Cell.h"
 #include "../FieldGenerator/FieldGenerator.h"
@@ -19,5 +18,3 @@ public:
     Cell*** getCells() { return cells; }
     Cell* getSpecificCell(unsigned int coord_x, unsigned int coord_y);
 };
-
-#endif

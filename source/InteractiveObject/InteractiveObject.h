@@ -1,6 +1,3 @@
-#ifndef OOP_GAME_INTERACTIVE_OBJECT_HEADLINE
-#define OOP_GAME_INTERACTIVE_OBJECT_HEADLINE
+#pragma once
 
 class InteractiveObject {};
-
-#endif

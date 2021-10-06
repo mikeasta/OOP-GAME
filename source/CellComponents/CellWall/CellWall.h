@@ -1,5 +1,5 @@
-#ifndef OOP_GAME_CELL_WALL_HEADLINE
-#define OOP_GAME_CELL_WALL_HEADLINE
+#pragma once
+
 #include "../Cell/Cell.h"
 
 class CellWall: public Cell {
@@ -9,4 +9,3 @@ public:
     virtual Cell* cloneCell();
 };
 
-#endif

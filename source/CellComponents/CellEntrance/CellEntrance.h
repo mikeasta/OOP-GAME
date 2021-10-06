@@ -1,5 +1,5 @@
-#ifndef OOP_GAME_CELL_ENTRANCE_HEADLINE
-#define OOP_GAME_CELL_ENTRANCE_HEADLINE
+#pragma once
+
 #include "../Cell/Cell.h"
 
 class CellEntrance: public Cell {
@@ -8,5 +8,3 @@ public:
     ~CellEntrance() override = default;
     virtual Cell* cloneCell();
 };
-
-#endif

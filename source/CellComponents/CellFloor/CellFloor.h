@@ -1,5 +1,5 @@
-#ifndef OOP_GAME_CELL_FLOOR_HEADLINE
-#define OOP_GAME_CELL_FLOOR_HEADLINE
+#pragma once
+
 #include "../Cell/Cell.h"
 
 class CellFloor: public Cell {
@@ -9,4 +9,3 @@ public:
     virtual Cell* cloneCell();
 };
 
-#endif
