@@ -8,12 +8,6 @@
 
 /home/mikeasta/Программирование/OOP-GAME/client/CLI/CLI.h
 
-/home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.cpp
-FieldCLI.h
-/home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.h
-iostream
--
-
 /home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.h
 ../CLI/CLI.h
 /home/mikeasta/Программирование/OOP-GAME/client/CLI/CLI.h
@@ -32,65 +26,31 @@ source/FieldComponents/FieldGenerator/FieldGenerator.h
 source/FieldComponents/Field/Field.h
 /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.h
 
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.cpp
-Cell.h
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
-
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
 ../../InteractiveObject/InteractiveObject.h
 /home/mikeasta/Программирование/OOP-GAME/source/InteractiveObject/InteractiveObject.h
 
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp
-CellEntrance.h
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.h
-
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.h
 ../Cell/Cell.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
-
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp
-CellExit.h
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellExit/CellExit.h
 
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellExit/CellExit.h
 ../Cell/Cell.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
 
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp
-CellFloor.h
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellFloor/CellFloor.h
-
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellFloor/CellFloor.h
 ../Cell/Cell.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
 
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp
-CellWall.h
-/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.h
-
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.h
 ../Cell/Cell.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
-
-/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.cpp
-Field.h
-/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.h
-iostream
--
 
 /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.h
 ../../CellComponents/Cell/Cell.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
 ../FieldGenerator/FieldGenerator.h
 /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
-
-/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp
-iostream
--
-FieldGenerator.h
-/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
-../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
-/home/mikeasta/Программирование/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 
 /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
 ../../CellComponents/Cell/Cell.h
@@ -105,10 +65,6 @@ FieldGenerator.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.h
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Программирование/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
-
-/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp
-FieldIterator.h
-/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
 
 /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
 ../Field/Field.h

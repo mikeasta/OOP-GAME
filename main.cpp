@@ -5,7 +5,7 @@
 
 int main() {
     FieldGenerator generator = FieldGenerator();
-    Field field = Field(generator.generateStandartField(5, 5));
+    Field field = Field(generator, 10, 50);
     FieldCLI interface = FieldCLI(&field);
     interface.print(); 
 }

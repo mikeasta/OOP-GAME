@@ -15,6 +15,8 @@ Cell*** FieldGenerator::generateStandartField(unsigned int rows, unsigned int co
     // Define full size of field
     unsigned int rows_with_walls = rows + 2;
     unsigned int cols_with_walls = cols + 2;
+    setTmpRows(rows_with_walls);
+    setTmpCols(cols_with_walls);
     RandomNumberGenerator random_generator = RandomNumberGenerator();
 
 

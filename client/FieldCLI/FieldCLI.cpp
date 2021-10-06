@@ -20,6 +20,9 @@ void FieldCLI::print() {
         else if (typeid(*curr_item) == typeid(CellEntrance))
         {
             std::cout << "E";
+        } else if (typeid(*curr_item) == typeid(CellFloor))
+        {
+            std::cout << "0";
         }
         if (iterator.isLastInARow())
         {

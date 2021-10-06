@@ -9,9 +9,21 @@
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 
 class FieldGenerator {
+private:
+    unsigned int tmp_rows;
+    unsigned int tmp_cols;
 public:
-    FieldGenerator() {};
+    FieldGenerator(unsigned int rows = 0, unsigned int cols = 0):
+        tmp_rows(rows + 2),
+        tmp_cols(cols + 2) {};
+
     ~FieldGenerator() = default;
     Cell*** generateStandartField(unsigned int rows = 0, unsigned int cols = 0);
+
+    void setTmpRows(unsigned int rows) { tmp_rows = rows; }
+    void setTmpCols(unsigned int cols) { tmp_cols = cols; }
+
+    unsigned int getTmpRows() { return tmp_rows; }
+    unsigned int getTmpCols() { return tmp_cols; }
 };
 

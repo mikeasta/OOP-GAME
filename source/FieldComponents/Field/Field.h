@@ -8,13 +8,18 @@ class FieldIterator;
 class Field {
 protected:
     Cell*** cells;
+    unsigned int rows;
+    unsigned int cols;
 public:
-    Field(Cell*** cells = nullptr):cells(cells) {}
+    Field(FieldGenerator generator, unsigned int new_rows = 0, unsigned int new_cols = 0):
+        cells(generator.generateStandartField(new_rows, new_cols)),
+        rows(generator.getTmpRows()),
+        cols(generator.getTmpCols()) {}
     ~Field();
 
     // Getters
-    unsigned int getRows() { return sizeof(cells); }
-    unsigned int getCols() { return sizeof(cells[0]); }
+    unsigned int getRows() { return rows; }
+    unsigned int getCols() { return cols; }
     Cell*** getCells() { return cells; }
     Cell* getSpecificCell(unsigned int coord_x, unsigned int coord_y);
 };
