@@ -1,4 +1,3 @@
-#include "Game.h"
 #include <iostream>
 #include "client/FieldCLI/FieldCLI.h"
 #include "source/FieldComponents/FieldGenerator/FieldGenerator.h"
