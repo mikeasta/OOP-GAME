@@ -8,6 +8,12 @@
 
 /home/mikeasta/Программирование/OOP-GAME/client/CLI/CLI.h
 
+/home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.cpp
+FieldCLI.h
+/home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.h
+iostream
+-
+
 /home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.h
 ../CLI/CLI.h
 /home/mikeasta/Программирование/OOP-GAME/client/CLI/CLI.h
@@ -46,6 +52,12 @@ source/FieldComponents/Field/Field.h
 ../Cell/Cell.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
 
+/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.cpp
+Field.h
+/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.h
+iostream
+-
+
 /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.h
 ../../CellComponents/Cell/Cell.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.h
@@ -65,6 +77,10 @@ source/FieldComponents/Field/Field.h
 /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.h
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Программирование/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
+
+/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp
+FieldIterator.h
+/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
 
 /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
 ../Field/Field.h

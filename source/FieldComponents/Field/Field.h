@@ -17,6 +17,12 @@ public:
         cols(generator.getTmpCols()) {}
     ~Field();
 
+    // Copy & Move
+    Field (Field& other_field);
+    Field& operator=(Field& other_field);
+    Field (Field&& other_field);
+    Field& operator=(Field&& other_field);
+
     // Getters
     unsigned int getRows() { return rows; }
     unsigned int getCols() { return cols; }
