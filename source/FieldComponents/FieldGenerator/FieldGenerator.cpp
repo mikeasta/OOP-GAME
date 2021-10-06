@@ -2,7 +2,7 @@
 #include "FieldGenerator.h"
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 
-Cell*** FieldGenerator::generateStandartField(unsigned int rows = 0, unsigned int cols = 0) {
+Cell*** FieldGenerator::generateStandartField(unsigned int rows, unsigned int cols) {
 
     // Check if field area equal 0
     if (rows == 0 || cols == 0) {

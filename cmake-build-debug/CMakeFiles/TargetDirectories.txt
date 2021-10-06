@@ -1,0 +1,3 @@
+/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir

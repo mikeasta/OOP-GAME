@@ -9,8 +9,7 @@ protected:
     bool isEmpty;
     InteractiveObject* cell_content;
 public:
-    Cell(unsigned int coord_x, unsigned int coord_y) {};
+    Cell(unsigned int coord_x, unsigned int coord_y);
     virtual ~Cell() = default;
     virtual Cell* cloneCell();
-    virtual void stepOnCell();
 };

@@ -10,7 +10,7 @@ protected:
     Cell*** cells;
 public:
     Field(Cell*** cells = nullptr):cells(cells) {}
-    ~Field() {}
+    ~Field();
 
     // Getters
     unsigned int getRows() { return sizeof(cells); }
