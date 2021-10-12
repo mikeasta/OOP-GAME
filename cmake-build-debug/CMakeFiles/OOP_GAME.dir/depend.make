@@ -16,7 +16,7 @@ CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o: \
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
- ../source/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../client/CLI/CLI.h \
@@ -30,32 +30,33 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
- ../source/InteractiveObject/InteractiveObject.h \
+ ../source/GameComponents/Game/Game.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o: \
  ../source/CellComponents/Cell/Cell.cpp \
  ../source/CellComponents/Cell/Cell.h \
- ../source/InteractiveObject/InteractiveObject.h
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.cpp \
  ../source/CellComponents/CellEntrance/CellEntrance.h \
- ../source/InteractiveObject/InteractiveObject.h
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellExit/CellExit.cpp \
  ../source/CellComponents/CellExit/CellExit.h \
- ../source/InteractiveObject/InteractiveObject.h
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellFloor/CellFloor.cpp \
  ../source/CellComponents/CellFloor/CellFloor.h \
- ../source/InteractiveObject/InteractiveObject.h
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellWall/CellWall.cpp \
  ../source/CellComponents/CellWall/CellWall.h \
- ../source/InteractiveObject/InteractiveObject.h
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \
@@ -65,7 +66,7 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o: \
  ../source/FieldComponents/Field/Field.cpp \
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
- ../source/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
@@ -75,7 +76,7 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp
  ../source/CellComponents/CellWall/CellWall.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.cpp \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
- ../source/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
@@ -87,11 +88,11 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.cpp \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
- ../source/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
-CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o: \
- ../source/InteractiveObject/InteractiveObject.cpp \
- ../source/InteractiveObject/InteractiveObject.h
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o: \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o: \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.cpp \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h

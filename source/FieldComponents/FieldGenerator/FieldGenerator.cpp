@@ -2,7 +2,7 @@
 #include "FieldGenerator.h"
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 
-Cell*** FieldGenerator::generateStandartField(unsigned int rows, unsigned int cols) {
+Cell*** FieldGenerator::generateField(unsigned int rows, unsigned int cols) {
 
     // Check if field area equal 0
     if (rows == 0 || cols == 0) {
@@ -15,18 +15,9 @@ Cell*** FieldGenerator::generateStandartField(unsigned int rows, unsigned int co
     // Define full size of field
     unsigned int rows_with_walls = rows + 2;
     unsigned int cols_with_walls = cols + 2;
-    setTmpRows(rows_with_walls);
-    setTmpCols(cols_with_walls);
     RandomNumberGenerator random_generator = RandomNumberGenerator();
 
 
-    // std::cout << "FieldGenerator: Field generation has been started\n";
-    // std::cout << "FieldGenerator: Rows - " << rows << " (with walls - " << rows_with_walls <<")\n";
-    // std::cout << "FieldGenerator: Cols - " << cols << " (with walls - " << cols_with_walls <<")\n";
-    // std::cout << "FieldGenerator: Field area - " << rows * cols << "(with walls - " << rows_with_walls *
-    //     cols_with_walls << ")\n";
-
-    
     // Create two-dimensional array of cells
     Cell*** cells = new Cell**[rows_with_walls];
     for (unsigned int i = 0; i < rows_with_walls; i++)
@@ -39,12 +30,8 @@ Cell*** FieldGenerator::generateStandartField(unsigned int rows, unsigned int co
             // Check for being wall
             if (i == 0 || i == rows_with_walls - 1 || j == 0 || j == cols_with_walls - 1) {
                 cells[i][j] = new CellWall(i, j);
-                // std::cout << "FieldGenerator: CellWall created at the position [" 
-                //     << i << "; " << j << "]\n";
             } else {
                 cells[i][j] = new CellFloor(i, j);
-                // std::cout << "FieldGenerator: CellFloor created at the position [" 
-                //     << i << "; " << j << "]\n";
             }
         }
     }

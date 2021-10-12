@@ -1,7 +1,6 @@
 #include "Field.h"
 #include <iostream>
 
-
 Field::~Field() {
     std::cout << "Field: Field deletion started\n";
     for (unsigned int i = 0; i < rows; i++) {
@@ -75,4 +74,6 @@ Field& Field::operator=(Field&& other_field) {
         std::swap(cols, other_field.cols);
         std::swap(this->cells, other_field.cells);
     }
+
+    return *this;
 }

@@ -8,19 +8,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mikeasta/Программирование/OOP-GAME/client/CLI/CLI.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/main.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/main.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/source/InteractiveObject/InteractiveObject.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o"
-  "/home/mikeasta/Программирование/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp" "/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/main.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/main.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -36,7 +37,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../source/FieldComponents/Field"
   "../source/FieldComponents/FieldGenerator"
   "../source/FieldComponents/FieldIterator"
-  "../source/InteractiveObject"
+  "../source/InteractiveObjectComponents/InteractiveObject"
   "../utils/RandomNumberGenerator"
   )
 

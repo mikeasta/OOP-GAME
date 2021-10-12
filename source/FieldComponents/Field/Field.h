@@ -11,10 +11,10 @@ protected:
     unsigned int rows;
     unsigned int cols;
 public:
-    Field(FieldGenerator generator, unsigned int new_rows = 0, unsigned int new_cols = 0):
-        cells(generator.generateStandartField(new_rows, new_cols)),
-        rows(generator.getTmpRows()),
-        cols(generator.getTmpCols()) {}
+    Field(Cell*** cells, unsigned int rows, unsigned int cols):
+        cells(cells),
+        rows(rows+2),
+        cols(cols+2) {};
     ~Field();
 
     // Copy & Move

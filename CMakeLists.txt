@@ -13,7 +13,7 @@ include_directories(source/CellComponents/CellWall)
 include_directories(source/FieldComponents/Field)
 include_directories(source/FieldComponents/FieldGenerator)
 include_directories(source/FieldComponents/FieldIterator)
-include_directories(source/InteractiveObject)
+include_directories(source/InteractiveObjectComponents/InteractiveObject)
 include_directories(utils/RandomNumberGenerator)
 
 add_executable(OOP_GAME
@@ -37,8 +37,8 @@ add_executable(OOP_GAME
         source/FieldComponents/FieldGenerator/FieldGenerator.h
         source/FieldComponents/FieldIterator/FieldIterator.cpp
         source/FieldComponents/FieldIterator/FieldIterator.h
-        source/InteractiveObject/InteractiveObject.cpp
-        source/InteractiveObject/InteractiveObject.h
+        source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp
+        source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
         utils/RandomNumberGenerator/RandomNumberGenerator.cpp
         utils/RandomNumberGenerator/RandomNumberGenerator.h
-        main.cpp)
+        main.cpp source/InteractiveObjectComponents/Character/Character.cpp source/InteractiveObjectComponents/Character/Character.h)

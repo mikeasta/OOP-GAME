@@ -53,10 +53,10 @@ RM = /app/extra/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mikeasta/Программирование/OOP-GAME
+CMAKE_SOURCE_DIR = /home/mikeasta/Programming/OOP-GAME
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mikeasta/Programming/OOP-GAME/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/OOP_GAME.dir/depend.make
@@ -68,172 +68,185 @@ include CMakeFiles/OOP_GAME.dir/flags.make
 
 CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o: ../client/CLI/CLI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/client/CLI/CLI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o -c /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.cpp
 
 CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/client/CLI/CLI.cpp > CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.cpp > CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.i
 
 CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/client/CLI/CLI.cpp -o CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.cpp -o CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.s
 
 CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o: ../client/FieldCLI/FieldCLI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o -c /home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp
 
 CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.cpp > CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp > CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.i
 
 CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/client/FieldCLI/FieldCLI.cpp -o CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp -o CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.s
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o: ../source/CellComponents/Cell/Cell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.cpp
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.i
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/Cell/Cell.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.s
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o: ../source/CellComponents/CellEntrance/CellEntrance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.i
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.s
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o: ../source/CellComponents/CellExit/CellExit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.i
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellExit/CellExit.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.s
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o: ../source/CellComponents/CellFloor/CellFloor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.i
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellFloor/CellFloor.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.s
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o: ../source/CellComponents/CellWall/CellWall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp > CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.i
 
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellWall/CellWall.cpp -o CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.s
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o: ../source/FieldComponents/Field/Field.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.cpp
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.cpp > CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.cpp > CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.i
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/Field/Field.cpp -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.cpp -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.s
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o: ../source/FieldComponents/FieldGenerator/FieldGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp > CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp > CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.i
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.s
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o: ../source/FieldComponents/FieldIterator/FieldIterator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp > CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp > CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.i
 
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.s
 
-CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
-CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o: ../source/InteractiveObject/InteractiveObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/source/InteractiveObject/InteractiveObject.cpp
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o: ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp
 
-CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/source/InteractiveObject/InteractiveObject.cpp > CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.i
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp > CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i
 
-CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/source/InteractiveObject/InteractiveObject.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.s
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
 
 CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o: ../utils/RandomNumberGenerator/RandomNumberGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o -c /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp
 
 CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp > CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp > CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.i
 
 CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp -o CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp -o CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.s
 
 CMakeFiles/OOP_GAME.dir/main.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
 CMakeFiles/OOP_GAME.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/OOP_GAME.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/main.cpp.o -c /home/mikeasta/Программирование/OOP-GAME/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/OOP_GAME.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/main.cpp.o -c /home/mikeasta/Programming/OOP-GAME/main.cpp
 
 CMakeFiles/OOP_GAME.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Программирование/OOP-GAME/main.cpp > CMakeFiles/OOP_GAME.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/main.cpp > CMakeFiles/OOP_GAME.dir/main.cpp.i
 
 CMakeFiles/OOP_GAME.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Программирование/OOP-GAME/main.cpp -o CMakeFiles/OOP_GAME.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/main.cpp -o CMakeFiles/OOP_GAME.dir/main.cpp.s
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o: ../source/InteractiveObjectComponents/Character/Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp > CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.s
 
 # Object files for target OOP_GAME
 OOP_GAME_OBJECTS = \
@@ -247,9 +260,10 @@ OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o" \
-"CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o" \
-"CMakeFiles/OOP_GAME.dir/main.cpp.o"
+"CMakeFiles/OOP_GAME.dir/main.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o"
 
 # External object files for target OOP_GAME
 OOP_GAME_EXTERNAL_OBJECTS =
@@ -264,12 +278,13 @@ OOP_GAME: CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o
-OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/main.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/build.make
 OOP_GAME: CMakeFiles/OOP_GAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable OOP_GAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable OOP_GAME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OOP_GAME.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -281,6 +296,6 @@ CMakeFiles/OOP_GAME.dir/clean:
 .PHONY : CMakeFiles/OOP_GAME.dir/clean
 
 CMakeFiles/OOP_GAME.dir/depend:
-	cd /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mikeasta/Программирование/OOP-GAME /home/mikeasta/Программирование/OOP-GAME /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mikeasta/Programming/OOP-GAME/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mikeasta/Programming/OOP-GAME /home/mikeasta/Programming/OOP-GAME /home/mikeasta/Programming/OOP-GAME/cmake-build-debug /home/mikeasta/Programming/OOP-GAME/cmake-build-debug /home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/OOP_GAME.dir/depend
 

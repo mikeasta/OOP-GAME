@@ -57,10 +57,10 @@ RM = /app/extra/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mikeasta/Программирование/OOP-GAME
+CMAKE_SOURCE_DIR = /home/mikeasta/Programming/OOP-GAME
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mikeasta/Programming/OOP-GAME/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles /home/mikeasta/Programming/OOP-GAME/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mikeasta/Программирование/OOP-GAME/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -393,29 +393,53 @@ source/FieldComponents/FieldIterator/FieldIterator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.s
 .PHONY : source/FieldComponents/FieldIterator/FieldIterator.cpp.s
 
-source/InteractiveObject/InteractiveObject.o: source/InteractiveObject/InteractiveObject.cpp.o
-.PHONY : source/InteractiveObject/InteractiveObject.o
+source/InteractiveObjectComponents/Character/Character.o: source/InteractiveObjectComponents/Character/Character.cpp.o
+.PHONY : source/InteractiveObjectComponents/Character/Character.o
 
 # target to build an object file
-source/InteractiveObject/InteractiveObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.o
-.PHONY : source/InteractiveObject/InteractiveObject.cpp.o
+source/InteractiveObjectComponents/Character/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o
+.PHONY : source/InteractiveObjectComponents/Character/Character.cpp.o
 
-source/InteractiveObject/InteractiveObject.i: source/InteractiveObject/InteractiveObject.cpp.i
-.PHONY : source/InteractiveObject/InteractiveObject.i
+source/InteractiveObjectComponents/Character/Character.i: source/InteractiveObjectComponents/Character/Character.cpp.i
+.PHONY : source/InteractiveObjectComponents/Character/Character.i
 
 # target to preprocess a source file
-source/InteractiveObject/InteractiveObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.i
-.PHONY : source/InteractiveObject/InteractiveObject.cpp.i
+source/InteractiveObjectComponents/Character/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.i
+.PHONY : source/InteractiveObjectComponents/Character/Character.cpp.i
 
-source/InteractiveObject/InteractiveObject.s: source/InteractiveObject/InteractiveObject.cpp.s
-.PHONY : source/InteractiveObject/InteractiveObject.s
+source/InteractiveObjectComponents/Character/Character.s: source/InteractiveObjectComponents/Character/Character.cpp.s
+.PHONY : source/InteractiveObjectComponents/Character/Character.s
 
 # target to generate assembly for a file
-source/InteractiveObject/InteractiveObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObject/InteractiveObject.cpp.s
-.PHONY : source/InteractiveObject/InteractiveObject.cpp.s
+source/InteractiveObjectComponents/Character/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.s
+.PHONY : source/InteractiveObjectComponents/Character/Character.cpp.s
+
+source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o: source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
+.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o
+
+# target to build an object file
+source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
+.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
+
+source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.i: source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i
+.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.i
+
+# target to preprocess a source file
+source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i
+.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i
+
+source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.s: source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
+.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.s
+
+# target to generate assembly for a file
+source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
+.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
 
 utils/RandomNumberGenerator/RandomNumberGenerator.o: utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o
 .PHONY : utils/RandomNumberGenerator/RandomNumberGenerator.o
@@ -483,9 +507,12 @@ help:
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.o"
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.i"
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.s"
-	@echo "... source/InteractiveObject/InteractiveObject.o"
-	@echo "... source/InteractiveObject/InteractiveObject.i"
-	@echo "... source/InteractiveObject/InteractiveObject.s"
+	@echo "... source/InteractiveObjectComponents/Character/Character.o"
+	@echo "... source/InteractiveObjectComponents/Character/Character.i"
+	@echo "... source/InteractiveObjectComponents/Character/Character.s"
+	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o"
+	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.i"
+	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.s"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.o"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.i"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.s"
