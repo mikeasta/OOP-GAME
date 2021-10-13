@@ -18,6 +18,10 @@ void Cell::setCellContent(InteractiveObject *object) {
     cell_content = object;
 }
 
+InteractiveObject* Cell::getCellContent(){
+    return cell_content;
+}
+
 void Cell::clearCellContent() {
     this->setCellContent(nullptr);
 }

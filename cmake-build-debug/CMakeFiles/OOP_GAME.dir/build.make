@@ -248,6 +248,45 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.s
 
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o: ../source/InteractiveObjectComponents/Item/Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.cpp
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.cpp > CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.s
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o: ../source/InteractiveObjectComponents/Equipment/Equipment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.cpp
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.cpp > CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.s
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o: ../source/InteractiveObjectComponents/Player/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.cpp
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.cpp > CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.s
+
 # Object files for target OOP_GAME
 OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o" \
@@ -263,7 +302,10 @@ OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/main.cpp.o" \
-"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o"
+"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o"
 
 # External object files for target OOP_GAME
 OOP_GAME_EXTERNAL_OBJECTS =
@@ -282,9 +324,12 @@ OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Interactive
 OOP_GAME: CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/main.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/build.make
 OOP_GAME: CMakeFiles/OOP_GAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable OOP_GAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable OOP_GAME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OOP_GAME.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

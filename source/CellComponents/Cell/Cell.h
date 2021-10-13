@@ -13,6 +13,7 @@ public:
     Cell(unsigned int coord_x, unsigned int coord_y);
     bool isCellContentExist();
     void setCellContent(InteractiveObject* object);
+    InteractiveObject* getCellContent();
     void clearCellContent();
     std::pair <unsigned int, unsigned int> getCoords();
     virtual ~Cell() = default;

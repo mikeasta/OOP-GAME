@@ -417,6 +417,30 @@ source/InteractiveObjectComponents/Character/Character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.s
 .PHONY : source/InteractiveObjectComponents/Character/Character.cpp.s
 
+source/InteractiveObjectComponents/Equipment/Equipment.o: source/InteractiveObjectComponents/Equipment/Equipment.cpp.o
+.PHONY : source/InteractiveObjectComponents/Equipment/Equipment.o
+
+# target to build an object file
+source/InteractiveObjectComponents/Equipment/Equipment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o
+.PHONY : source/InteractiveObjectComponents/Equipment/Equipment.cpp.o
+
+source/InteractiveObjectComponents/Equipment/Equipment.i: source/InteractiveObjectComponents/Equipment/Equipment.cpp.i
+.PHONY : source/InteractiveObjectComponents/Equipment/Equipment.i
+
+# target to preprocess a source file
+source/InteractiveObjectComponents/Equipment/Equipment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.i
+.PHONY : source/InteractiveObjectComponents/Equipment/Equipment.cpp.i
+
+source/InteractiveObjectComponents/Equipment/Equipment.s: source/InteractiveObjectComponents/Equipment/Equipment.cpp.s
+.PHONY : source/InteractiveObjectComponents/Equipment/Equipment.s
+
+# target to generate assembly for a file
+source/InteractiveObjectComponents/Equipment/Equipment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.s
+.PHONY : source/InteractiveObjectComponents/Equipment/Equipment.cpp.s
+
 source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o: source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
 .PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o
 
@@ -440,6 +464,54 @@ source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.s: source
 source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
 .PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
+
+source/InteractiveObjectComponents/Item/Item.o: source/InteractiveObjectComponents/Item/Item.cpp.o
+.PHONY : source/InteractiveObjectComponents/Item/Item.o
+
+# target to build an object file
+source/InteractiveObjectComponents/Item/Item.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o
+.PHONY : source/InteractiveObjectComponents/Item/Item.cpp.o
+
+source/InteractiveObjectComponents/Item/Item.i: source/InteractiveObjectComponents/Item/Item.cpp.i
+.PHONY : source/InteractiveObjectComponents/Item/Item.i
+
+# target to preprocess a source file
+source/InteractiveObjectComponents/Item/Item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.i
+.PHONY : source/InteractiveObjectComponents/Item/Item.cpp.i
+
+source/InteractiveObjectComponents/Item/Item.s: source/InteractiveObjectComponents/Item/Item.cpp.s
+.PHONY : source/InteractiveObjectComponents/Item/Item.s
+
+# target to generate assembly for a file
+source/InteractiveObjectComponents/Item/Item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.s
+.PHONY : source/InteractiveObjectComponents/Item/Item.cpp.s
+
+source/InteractiveObjectComponents/Player/Player.o: source/InteractiveObjectComponents/Player/Player.cpp.o
+.PHONY : source/InteractiveObjectComponents/Player/Player.o
+
+# target to build an object file
+source/InteractiveObjectComponents/Player/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o
+.PHONY : source/InteractiveObjectComponents/Player/Player.cpp.o
+
+source/InteractiveObjectComponents/Player/Player.i: source/InteractiveObjectComponents/Player/Player.cpp.i
+.PHONY : source/InteractiveObjectComponents/Player/Player.i
+
+# target to preprocess a source file
+source/InteractiveObjectComponents/Player/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.i
+.PHONY : source/InteractiveObjectComponents/Player/Player.cpp.i
+
+source/InteractiveObjectComponents/Player/Player.s: source/InteractiveObjectComponents/Player/Player.cpp.s
+.PHONY : source/InteractiveObjectComponents/Player/Player.s
+
+# target to generate assembly for a file
+source/InteractiveObjectComponents/Player/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.s
+.PHONY : source/InteractiveObjectComponents/Player/Player.cpp.s
 
 utils/RandomNumberGenerator/RandomNumberGenerator.o: utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o
 .PHONY : utils/RandomNumberGenerator/RandomNumberGenerator.o
@@ -510,9 +582,18 @@ help:
 	@echo "... source/InteractiveObjectComponents/Character/Character.o"
 	@echo "... source/InteractiveObjectComponents/Character/Character.i"
 	@echo "... source/InteractiveObjectComponents/Character/Character.s"
+	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.o"
+	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.i"
+	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.s"
 	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o"
 	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.i"
 	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.s"
+	@echo "... source/InteractiveObjectComponents/Item/Item.o"
+	@echo "... source/InteractiveObjectComponents/Item/Item.i"
+	@echo "... source/InteractiveObjectComponents/Item/Item.s"
+	@echo "... source/InteractiveObjectComponents/Player/Player.o"
+	@echo "... source/InteractiveObjectComponents/Player/Player.i"
+	@echo "... source/InteractiveObjectComponents/Player/Player.s"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.o"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.i"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.s"

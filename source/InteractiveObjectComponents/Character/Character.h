@@ -11,7 +11,7 @@
 #include <string>
 
 class Character: public InteractiveObject {
-private:
+protected:
     int damage;
     int stamina;
     int defence;
@@ -22,20 +22,18 @@ public:
     virtual ~Character();
 
     // Getters
-    int getDamage();
-    int getStamina();
-    int getDefence();
+    int getDamage() const;
+    int getStamina() const;
+    int getDefence() const;
     Cell* getCurrentCell() const;
 
     // Setters
-    void setDamage(int val);
     void buffDamage(int val);
-    void setStamina(int val);
     void buffStamina(int val);
-    void setDefence(int val);
     void buffDefence(int val);
     void setCurrentCell(Cell* new_curr_cell);
-    virtual void placeOntoCell(Cell* cell);
+
+    virtual void stepOnCell(Cell* cell);
 };
 
 #endif //OOP_GAME_CHARACTER_H

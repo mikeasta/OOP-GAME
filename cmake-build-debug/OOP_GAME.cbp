@@ -175,10 +175,28 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp">

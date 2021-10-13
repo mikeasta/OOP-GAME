@@ -124,11 +124,45 @@ FieldIterator.h
 
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
 
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp
-InteractiveObject.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp
+Character.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
+
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
+../../CellComponents/Cell/Cell.h
+/home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
+../InteractiveObject/InteractiveObject.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
+tuple
+-
+string
+-
+
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
+../Item/Item.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
+vector
+-
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
+
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
+../InteractiveObject/InteractiveObject.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
+string
+-
+
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.cpp
+Player.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
+
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
+../Character/Character.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
+../Equipment/Equipment.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
+../Item/Item.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
 
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 random

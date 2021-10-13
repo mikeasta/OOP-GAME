@@ -90,9 +90,31 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o: \
+ ../source/CellComponents/Cell/Cell.h \
+ ../source/InteractiveObjectComponents/Character/Character.cpp \
+ ../source/InteractiveObjectComponents/Character/Character.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o: \
+ ../source/InteractiveObjectComponents/Equipment/Equipment.cpp \
+ ../source/InteractiveObjectComponents/Equipment/Equipment.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.h
 CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o: \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o: \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.cpp \
+ ../source/InteractiveObjectComponents/Item/Item.h
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o: \
+ ../source/CellComponents/Cell/Cell.h \
+ ../source/InteractiveObjectComponents/Character/Character.h \
+ ../source/InteractiveObjectComponents/Equipment/Equipment.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../source/InteractiveObjectComponents/Player/Player.cpp \
+ ../source/InteractiveObjectComponents/Player/Player.h
 CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o: \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.cpp \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h

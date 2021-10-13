@@ -14,15 +14,15 @@ Character::~Character() {
     delete this;
 }
 
-int Character::getDamage() {
+int Character::getDamage() const {
     return this->damage;
 }
 
-int Character::getStamina() {
+int Character::getStamina() const {
     return this->stamina;
 }
 
-int Character::getDefence() {
+int Character::getDefence() const {
     return this->defence;
 }
 
@@ -30,24 +30,12 @@ Cell* Character::getCurrentCell() const {
     return this->curr_cell;
 }
 
-void Character::setDamage(int val) {
-    this->damage = val;
-}
-
 void Character::buffDamage(int val) {
     this->damage += val;
 }
 
-void Character::setStamina(int val) {
-    this->stamina = val;
-}
-
 void Character::buffStamina(int val) {
     this->stamina += val;
-}
-
-void Character::setDefence(int val) {
-    this->defence = val > 100 ? 100 : val;
 }
 
 void Character::buffDefence(int val) {
@@ -59,7 +47,7 @@ void Character::setCurrentCell(Cell *new_curr_cell) {
     this->curr_cell = new_curr_cell;
 }
 
-void Character::placeOntoCell(Cell *stepped_cell) {
+void Character::stepOnCell(Cell *stepped_cell) {
     std::pair<bool, std::string> response = stepped_cell->stepEffect(this);
 
     if (response.first) {
