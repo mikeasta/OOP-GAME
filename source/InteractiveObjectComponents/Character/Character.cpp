@@ -9,37 +9,18 @@ Character::Character(int damage, int stamina, int defence):
     stamina(stamina),
     defence(defence) {};
 
-int Character::getDamage() const {
-    return this->damage;
-}
+int Character::getDamage() const { return damage; }
 
-int Character::getStamina() const {
-    return this->stamina;
-}
+int Character::getStamina() const { return stamina; }
 
-int Character::getDefence() const {
-    return this->defence;
-}
+int Character::getDefence() const { return this->defence; }
 
-Cell* Character::getCurrentCell() const {
-    return this->curr_cell;
-}
+void Character::buffDamage(int val) { damage += val; }
 
-void Character::buffDamage(int val) {
-    this->damage += val;
-}
-
-void Character::buffStamina(int val) {
-    this->stamina += val;
-}
+void Character::buffStamina(int val) { stamina += val; }
 
 void Character::buffDefence(int val) {
-    this->defence += val;
-    this->defence = this->defence > 100 ? 100 : this->defence;
-}
-
-void Character::setCurrentCell(Cell *new_curr_cell) {
-    this->curr_cell = new_curr_cell;
+    defence = defence + val > 100 ? 100 : defence + val;
 }
 
 void Character::stepOnCell(Cell *stepped_cell) {
@@ -47,16 +28,6 @@ void Character::stepOnCell(Cell *stepped_cell) {
 
     if (response.first) {
         // Step done
-        if (response.second == "FLOOR") {
-            curr_cell->clearCellContent();
-            this->setCurrentCell(stepped_cell);
-        } else if (response.second == "WALL") {
-            // Do nothing
-        } else if (response.second == "EXIT") {
-            // Exit Logic
-        } else if (response.second == "COMBAT") {
-
-        }
     } else {
         // Something went wrong
         // Step rejected
@@ -80,8 +51,6 @@ void Character::spawn(Field* field, unsigned int x, unsigned int y) {
         Cell* cell = field->getSpecificCell(x, y);
         if (!cell->isCellContentExist()) {
             stepOnCell(cell);
-        } else {
-            std::cout << "\nCharacter: Spawn denied. Something is already on the cell.\n";
         }
     }
 }

@@ -10,13 +10,20 @@ protected:
     unsigned int coord_y;
     InteractiveObject* cell_content = nullptr;
 public:
+    // Constructor
     Cell(unsigned int coord_x, unsigned int coord_y);
-    bool isCellContentExist();
-    void setCellContent(InteractiveObject* object);
-    InteractiveObject* getCellContent();
-    void clearCellContent();
-    std::pair <unsigned int, unsigned int> getCoords();
     virtual ~Cell() = default;
+
+    // Getters
+    bool isCellContentExist();
+    std::pair <unsigned int, unsigned int> getCoords();
+    InteractiveObject* getCellContent();
+
+    // Setters
+    void setCellContent(InteractiveObject* object);
+    void clearCellContent();
+
+    // Pattern "Prototype"
     virtual Cell* clone();
     virtual std::pair<bool, std::string> stepEffect(InteractiveObject* object);
 };

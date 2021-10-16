@@ -39,6 +39,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/InteractiveObjectComponents/Equipment/Equipment.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../source/InteractiveObjectComponents/Item/Item.h \
+ ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h \
  ../source/InteractiveObjectComponents/Player/Player.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o: \
@@ -114,14 +115,30 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.c
  ../source/InteractiveObjectComponents/Equipment/Equipment.cpp \
  ../source/InteractiveObjectComponents/Equipment/Equipment.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
- ../source/InteractiveObjectComponents/Item/Item.h
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o: \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o: \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../source/InteractiveObjectComponents/Item/Item.cpp \
- ../source/InteractiveObjectComponents/Item/Item.h
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o: \
+ ../source/CellComponents/Cell/Cell.h \
+ ../source/CellComponents/CellEntrance/CellEntrance.h \
+ ../source/CellComponents/CellExit/CellExit.h \
+ ../source/CellComponents/CellFloor/CellFloor.h \
+ ../source/CellComponents/CellWall/CellWall.h \
+ ../source/FieldComponents/Field/Field.h \
+ ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp \
+ ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \

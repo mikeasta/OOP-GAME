@@ -16,7 +16,7 @@ std::map<std::string, std::string> cell_voc {
 };
 
 void FieldCLI::print() {
-    std::cout << "Print Started\n";
+    std::cout << "FieldCLI [STARTED]: Print Started\n";
     FieldIterator iterator = FieldIterator(field);
     Cell* curr_item = iterator.getCurrent();
     InteractiveObject* content;
@@ -33,5 +33,5 @@ void FieldCLI::print() {
         }
         curr_item = iterator.getNext();
     }
-    std::cout << "Print finished\n";
+    std::cout << "FieldCLI [SUCCESS]: Print finished\n";
 }

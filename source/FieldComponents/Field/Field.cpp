@@ -2,7 +2,7 @@
 #include <iostream>
 
 Field::~Field() {
-    std::cout << "Field: Field deletion started\n";
+    std::cout << "Field [STARTED]: Field deletion started\n";
     for (unsigned int i = 0; i < rows; i++) {
         for (unsigned int j = 0; j < cols; j++) {
             delete cells[i][j];
@@ -12,7 +12,7 @@ Field::~Field() {
     }
 
     delete[] cells;
-    std::cout << "Field: Field deletion finished\n";
+    std::cout << "Field [SUCCESS]: Field deletion finished\n";
 }
 
 

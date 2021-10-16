@@ -7,6 +7,10 @@
 
 #include "../InteractiveObject/InteractiveObject.h"
 #include <string>
+#include <map>
+#include <tuple>
+#include <vector>
+#include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 
 class Item: public InteractiveObject {
 protected:
@@ -16,7 +20,8 @@ protected:
     int bonus_defence;
 public:
     // Constructor
-    Item(std::string item_name = "Unnamed artifact", int bonus_attack = 0, int bonus_stamina = 0, int bonus_defence = 0);
+    Item() {};
+    Item(std::string item_name, int bonus_attack, int bonus_stamina, int bonus_defence);
     ~Item() = default;
 
     // Getter
@@ -26,10 +31,14 @@ public:
     int getBonusDefence();
 
     // Pattern: Prototype
+    // Clones current Item
     virtual InteractiveObject* clone();
 
-    // No setters for safety
-
+    // Pattern: Factory Method
+    // Creates Item object with item type
+    Item* create(std::string item_type);
+    // Creates random Item object with item type
+    Item* create();
 };
 
 #endif //OOP_GAME_ITEM_H

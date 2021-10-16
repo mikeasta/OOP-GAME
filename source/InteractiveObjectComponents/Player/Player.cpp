@@ -69,7 +69,7 @@ void Player::spawn(Field* field, unsigned int x, unsigned int y) {
             // Upper border
             got = field->getSpecificCell(entrance_x, entrance_y - 1);
         }
-        std::cout << "Player: Got found: [" << got->getCoords().first << "; " << got->getCoords().second << "]\n";
+        std::cout << "Player: Got found: [" << got->getCoords().second << "; " << got->getCoords().first << "]\n";
         got->stepEffect(this);
     } else {
         Cell* cell = field->getSpecificCell(x, y);

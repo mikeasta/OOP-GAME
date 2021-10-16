@@ -18,27 +18,21 @@ protected:
     int damage;
     int stamina;
     int defence;
-
-    // Refactor cell
-    Cell* curr_cell = nullptr;
 public:
     // Constructors
     Character(int damage = 0, int stamina = 0, int defence = 0);
-    virtual ~Character() = default;
+    ~Character() = default;
 
     // Getters
     int getDamage() const;
     int getStamina() const;
     int getDefence() const;
-    Cell* getCurrentCell() const;
 
     // Setters
     void buffDamage(int val);
     void buffStamina(int val);
     void buffDefence(int val);
 
-    // Refactor too. It seems, that I should to delete this
-    void setCurrentCell(Cell* new_curr_cell);
 
     virtual void stepOnCell(Cell* cell);
     virtual void spawn(Field* field, unsigned int x = 0, unsigned int y = 0);

@@ -417,6 +417,30 @@ source/InteractiveObjectComponents/Character/Character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.s
 .PHONY : source/InteractiveObjectComponents/Character/Character.cpp.s
 
+source/InteractiveObjectComponents/Enemy/Enemy.o: source/InteractiveObjectComponents/Enemy/Enemy.cpp.o
+.PHONY : source/InteractiveObjectComponents/Enemy/Enemy.o
+
+# target to build an object file
+source/InteractiveObjectComponents/Enemy/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.o
+.PHONY : source/InteractiveObjectComponents/Enemy/Enemy.cpp.o
+
+source/InteractiveObjectComponents/Enemy/Enemy.i: source/InteractiveObjectComponents/Enemy/Enemy.cpp.i
+.PHONY : source/InteractiveObjectComponents/Enemy/Enemy.i
+
+# target to preprocess a source file
+source/InteractiveObjectComponents/Enemy/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.i
+.PHONY : source/InteractiveObjectComponents/Enemy/Enemy.cpp.i
+
+source/InteractiveObjectComponents/Enemy/Enemy.s: source/InteractiveObjectComponents/Enemy/Enemy.cpp.s
+.PHONY : source/InteractiveObjectComponents/Enemy/Enemy.s
+
+# target to generate assembly for a file
+source/InteractiveObjectComponents/Enemy/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.s
+.PHONY : source/InteractiveObjectComponents/Enemy/Enemy.cpp.s
+
 source/InteractiveObjectComponents/Equipment/Equipment.o: source/InteractiveObjectComponents/Equipment/Equipment.cpp.o
 .PHONY : source/InteractiveObjectComponents/Equipment/Equipment.o
 
@@ -488,6 +512,30 @@ source/InteractiveObjectComponents/Item/Item.s: source/InteractiveObjectComponen
 source/InteractiveObjectComponents/Item/Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.s
 .PHONY : source/InteractiveObjectComponents/Item/Item.cpp.s
+
+source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.o: source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o
+.PHONY : source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.o
+
+# target to build an object file
+source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o
+.PHONY : source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o
+
+source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.i: source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.i
+.PHONY : source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.i
+
+# target to preprocess a source file
+source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.i
+.PHONY : source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.i
+
+source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.s: source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.s
+.PHONY : source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.s
+
+# target to generate assembly for a file
+source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.s
+.PHONY : source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.s
 
 source/InteractiveObjectComponents/Player/Player.o: source/InteractiveObjectComponents/Player/Player.cpp.o
 .PHONY : source/InteractiveObjectComponents/Player/Player.o
@@ -582,6 +630,9 @@ help:
 	@echo "... source/InteractiveObjectComponents/Character/Character.o"
 	@echo "... source/InteractiveObjectComponents/Character/Character.i"
 	@echo "... source/InteractiveObjectComponents/Character/Character.s"
+	@echo "... source/InteractiveObjectComponents/Enemy/Enemy.o"
+	@echo "... source/InteractiveObjectComponents/Enemy/Enemy.i"
+	@echo "... source/InteractiveObjectComponents/Enemy/Enemy.s"
 	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.o"
 	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.i"
 	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.s"
@@ -591,6 +642,9 @@ help:
 	@echo "... source/InteractiveObjectComponents/Item/Item.o"
 	@echo "... source/InteractiveObjectComponents/Item/Item.i"
 	@echo "... source/InteractiveObjectComponents/Item/Item.s"
+	@echo "... source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.o"
+	@echo "... source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.i"
+	@echo "... source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.s"
 	@echo "... source/InteractiveObjectComponents/Player/Player.o"
 	@echo "... source/InteractiveObjectComponents/Player/Player.i"
 	@echo "... source/InteractiveObjectComponents/Player/Player.s"
