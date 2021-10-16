@@ -64,6 +64,20 @@ string
 ../FieldGenerator/FieldGenerator.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
 
+/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.cpp
+FieldAggregate.h
+/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
+
+/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
+../Field/Field.h
+/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
+../../InteractiveObjectComponents/Player/Player.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
+../../InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
+../../InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
+
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
 ../../CellComponents/Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
@@ -97,10 +111,8 @@ Game.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
 ../../InteractiveObjectComponents/Player/Player.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
-../../InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
-../../InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
+../../FieldComponents/FieldAggregate/FieldAggregate.h
+/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
 ../../CellComponents/Cell/Cell.h

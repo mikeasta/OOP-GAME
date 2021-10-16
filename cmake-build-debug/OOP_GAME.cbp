@@ -157,6 +157,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

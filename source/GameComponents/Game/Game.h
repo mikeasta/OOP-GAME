@@ -8,8 +8,7 @@
 #include "../../FieldComponents/FieldGenerator/FieldGenerator.h"
 #include "../../FieldComponents/Field/Field.h"
 #include "../../InteractiveObjectComponents/Player/Player.h"
-#include "../../InteractiveObjectComponents/ItemPlacer/ItemPlacer.h"
-#include "../../InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h"
+#include "../../FieldComponents/FieldAggregate/FieldAggregate.h"
 
 class Game {
 private:

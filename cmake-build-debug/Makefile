@@ -345,6 +345,30 @@ source/FieldComponents/Field/Field.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.s
 .PHONY : source/FieldComponents/Field/Field.cpp.s
 
+source/FieldComponents/FieldAggregate/FieldAggregate.o: source/FieldComponents/FieldAggregate/FieldAggregate.cpp.o
+.PHONY : source/FieldComponents/FieldAggregate/FieldAggregate.o
+
+# target to build an object file
+source/FieldComponents/FieldAggregate/FieldAggregate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldAggregate/FieldAggregate.cpp.o
+.PHONY : source/FieldComponents/FieldAggregate/FieldAggregate.cpp.o
+
+source/FieldComponents/FieldAggregate/FieldAggregate.i: source/FieldComponents/FieldAggregate/FieldAggregate.cpp.i
+.PHONY : source/FieldComponents/FieldAggregate/FieldAggregate.i
+
+# target to preprocess a source file
+source/FieldComponents/FieldAggregate/FieldAggregate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldAggregate/FieldAggregate.cpp.i
+.PHONY : source/FieldComponents/FieldAggregate/FieldAggregate.cpp.i
+
+source/FieldComponents/FieldAggregate/FieldAggregate.s: source/FieldComponents/FieldAggregate/FieldAggregate.cpp.s
+.PHONY : source/FieldComponents/FieldAggregate/FieldAggregate.s
+
+# target to generate assembly for a file
+source/FieldComponents/FieldAggregate/FieldAggregate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldAggregate/FieldAggregate.cpp.s
+.PHONY : source/FieldComponents/FieldAggregate/FieldAggregate.cpp.s
+
 source/FieldComponents/FieldGenerator/FieldGenerator.o: source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o
 .PHONY : source/FieldComponents/FieldGenerator/FieldGenerator.o
 
@@ -669,6 +693,9 @@ help:
 	@echo "... source/FieldComponents/Field/Field.o"
 	@echo "... source/FieldComponents/Field/Field.i"
 	@echo "... source/FieldComponents/Field/Field.s"
+	@echo "... source/FieldComponents/FieldAggregate/FieldAggregate.o"
+	@echo "... source/FieldComponents/FieldAggregate/FieldAggregate.i"
+	@echo "... source/FieldComponents/FieldAggregate/FieldAggregate.s"
 	@echo "... source/FieldComponents/FieldGenerator/FieldGenerator.o"
 	@echo "... source/FieldComponents/FieldGenerator/FieldGenerator.i"
 	@echo "... source/FieldComponents/FieldGenerator/FieldGenerator.s"

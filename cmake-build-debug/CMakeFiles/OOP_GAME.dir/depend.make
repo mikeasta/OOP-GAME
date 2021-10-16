@@ -33,6 +33,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/CellComponents/CellFloor/CellFloor.h \
  ../source/CellComponents/CellWall/CellWall.h \
  ../source/FieldComponents/Field/Field.h \
+ ../source/FieldComponents/FieldAggregate/FieldAggregate.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Game/Game.h \
@@ -80,6 +81,26 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o: \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldAggregate/FieldAggregate.cpp.o: \
+ ../source/CellComponents/Cell/Cell.h \
+ ../source/CellComponents/CellEntrance/CellEntrance.h \
+ ../source/CellComponents/CellExit/CellExit.h \
+ ../source/CellComponents/CellFloor/CellFloor.h \
+ ../source/CellComponents/CellWall/CellWall.h \
+ ../source/FieldComponents/Field/Field.h \
+ ../source/FieldComponents/FieldAggregate/FieldAggregate.cpp \
+ ../source/FieldComponents/FieldAggregate/FieldAggregate.h \
+ ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/InteractiveObjectComponents/Character/Character.h \
+ ../source/InteractiveObjectComponents/Enemy/Enemy.h \
+ ../source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h \
+ ../source/InteractiveObjectComponents/Equipment/Equipment.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h \
+ ../source/InteractiveObjectComponents/Player/Player.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \
@@ -111,6 +132,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../source/CellComponents/CellFloor/CellFloor.h \
  ../source/CellComponents/CellWall/CellWall.h \
  ../source/FieldComponents/Field/Field.h \
+ ../source/FieldComponents/FieldAggregate/FieldAggregate.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Game/Game.cpp \
