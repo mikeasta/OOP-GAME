@@ -21,12 +21,16 @@ int Player::getFullDefence() const {
     return defence + equipment->getDefenceBuff();
 }
 
-void Player::take(Cell* cell_with_item) {
-    equipment->addItem(dynamic_cast<Item *>(cell_with_item->getCellContent()));
-    cell_with_item->clearCellContent();
+void Player::take(Item* item) {
+    equipment->addItem(item);
 }
 
 void Player::spawn(Field* field, unsigned int x, unsigned int y) {
+
+    // If player is already spawned
+    if (is_spawned) { return; }
+
+    is_spawned = true;
     std::cout << "Player: Spawn process began\n";
     unsigned int rows = field->getRows();
     unsigned int cols = field->getCols();

@@ -13,6 +13,7 @@
 class Player: public Character {
 private:
     Equipment* equipment;
+    bool is_spawned = false;
 public:
     Player(int damage = 0, int stamina = 0, int defence = 0);
     virtual ~Player() = default;
@@ -22,7 +23,7 @@ public:
     int getFullStamina() const;
     int getFullDefence() const;
 
-    void take(Cell* cell_with_item);
+    void take(Item* item);
     virtual void spawn(Field* field, unsigned int x = 0, unsigned int y = 0) final;
 
     // Pattern: Prototype - No clone for player
