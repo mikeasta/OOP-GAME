@@ -19,15 +19,6 @@ void Equipment::removeItem(int order_num) {
     items.erase( items.begin() + (order_num - 1));
 }
 
-Equipment::~Equipment() {
-    int equipment_size = items.size();
-    for (int i = equipment_size - 1; i >= 0 ; i--) {
-        delete items[i];
-    }
-
-    delete this;
-}
-
 int Equipment::getAttackBuff() {
     int equipment_size = items.size();
     int attack_buff    = 0;

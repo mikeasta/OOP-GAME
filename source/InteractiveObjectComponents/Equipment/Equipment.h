@@ -13,7 +13,7 @@ private:
     std::vector<Item*> items;
 public:
     Equipment();
-    ~Equipment();
+    ~Equipment() = default;
 
     void addItem(Item* new_item);
     void removeItem(int order_num);

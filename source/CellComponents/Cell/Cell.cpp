@@ -28,7 +28,7 @@ void Cell::clearCellContent() {
 
 std::pair<unsigned int, unsigned int> Cell::getCoords() {
     std::pair<unsigned int, unsigned int> response;
-    response = std::make_pair(this->coord_x, this->coord_y);
+    response = std::make_pair(coord_x, coord_y);
     return response;
 }
 

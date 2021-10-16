@@ -9,11 +9,6 @@ Character::Character(int damage, int stamina, int defence):
     stamina(stamina),
     defence(defence) {};
 
-Character::~Character() {
-    this->curr_cell->clearCellContent();
-    delete this;
-}
-
 int Character::getDamage() const {
     return this->damage;
 }
@@ -65,5 +60,28 @@ void Character::stepOnCell(Cell *stepped_cell) {
     } else {
         // Something went wrong
         // Step rejected
+    }
+}
+
+void Character::spawn(Field* field, unsigned int x, unsigned int y) {
+    if (x == 0 || y == 0 || x >= field->getCols() || y >= field->getRows()) {
+        bool placed = false;
+        RandomNumberGenerator random_generator = RandomNumberGenerator();
+        while(!placed) {
+            unsigned int random_row = random_generator.generate(1, field->getRows() - 2);
+            unsigned int random_col = random_generator.generate(1, field->getCols() - 2);
+            Cell* cell = field->getSpecificCell(random_col, random_row);
+            if (!cell->isCellContentExist()) {
+                stepOnCell(cell);
+                placed = true;
+            }
+        }
+    } else {
+        Cell* cell = field->getSpecificCell(x, y);
+        if (!cell->isCellContentExist()) {
+            stepOnCell(cell);
+        } else {
+            std::cout << "\nCharacter: Spawn denied. Something is already on the cell.\n";
+        }
     }
 }

@@ -18,11 +18,11 @@ bool FieldIterator::isLastInARow() {
     return (current_coord_x == field_cols - 1) ? true : false;
 }
 
-const Cell* const FieldIterator::getCurrent() {
+Cell* FieldIterator::getCurrent() {
     return field->getCells()[current_coord_y][current_coord_x];
 }
 
-const Cell* const FieldIterator::getNext() {
+Cell* FieldIterator::getNext() {
     unsigned int field_cols = field->getCols();
     unsigned int field_rows = field->getRows();
 

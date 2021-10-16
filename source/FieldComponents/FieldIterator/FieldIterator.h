@@ -12,8 +12,8 @@ public:
     FieldIterator(Field* field = nullptr):field(field) {};
 
     // Getters
-    const Cell* const getCurrent();
-    const Cell* const getNext();
+    Cell* getCurrent();
+    Cell* getNext();
     bool hasMore();
     bool isLastInARow();
 };
