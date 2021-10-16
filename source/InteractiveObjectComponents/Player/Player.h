@@ -24,6 +24,9 @@ public:
 
     void take(Cell* cell_with_item);
     virtual void spawn(Field* field, unsigned int x = 0, unsigned int y = 0) final;
+
+    // Pattern: Prototype - No clone for player
+    // since it's uniqueness
 };
 
 #endif //OOP_GAME_PLAYER_H

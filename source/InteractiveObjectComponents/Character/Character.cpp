@@ -85,3 +85,7 @@ void Character::spawn(Field* field, unsigned int x, unsigned int y) {
         }
     }
 }
+
+InteractiveObject* Character::clone() {
+    return new Character(damage, stamina, defence);
+}

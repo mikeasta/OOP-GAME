@@ -1,6 +1,6 @@
 #include "CellFloor.h"
 
-Cell* CellFloor::cloneCell() {
+Cell* CellFloor::clone() {
     Cell* tmp = new CellFloor(this->coord_x, this->coord_y);
     return tmp;
 }

@@ -5,7 +5,7 @@ Cell::Cell(unsigned int coord_x, unsigned int coord_y):
     coord_y(coord_y),
     cell_content(nullptr) {}
 
-Cell* Cell::cloneCell() {
+Cell* Cell::clone() {
     Cell* tmp = new Cell(this->coord_x, this->coord_y);
     return tmp;
 }

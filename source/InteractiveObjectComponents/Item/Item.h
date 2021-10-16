@@ -25,7 +25,11 @@ public:
     int getBonusStamina();
     int getBonusDefence();
 
+    // Pattern: Prototype
+    virtual InteractiveObject* clone();
+
     // No setters for safety
+
 };
 
 #endif //OOP_GAME_ITEM_H

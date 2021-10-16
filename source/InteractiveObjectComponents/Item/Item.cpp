@@ -26,3 +26,7 @@ int Item::getBonusDefence() {
     return this->bonus_defence;
 }
 
+InteractiveObject* Item::clone() {
+    return new Item(item_name, bonus_attack, bonus_stamina, bonus_defence);
+}
+

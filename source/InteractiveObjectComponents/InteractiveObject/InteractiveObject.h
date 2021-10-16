@@ -3,4 +3,7 @@
 class InteractiveObject {
 public:
     virtual ~InteractiveObject() = default;
+
+    // Pattern: Prototype
+    virtual InteractiveObject* clone();
 };

@@ -29,7 +29,7 @@ Field::Field(Field& other_field) {
     for(int i = 0; i < rows; i++) {
         cells[i] = new Cell*[cols];
         for (int j = 0; j < cols; j++) {
-            cells[i][j] = other_cells[i][j]->cloneCell();
+            cells[i][j] = other_cells[i][j]->clone();
         }
     } 
 }
@@ -53,7 +53,7 @@ Field& Field::operator=(Field& other_field) {
         for(int i = 0; i < rows; i++) {
             cells[i] = new Cell*[cols];
             for (int j = 0; j < cols; j++) {
-                cells[i][j] = other_cells[i][j]->cloneCell();
+                cells[i][j] = other_cells[i][j]->clone();
             }
         } 
     }

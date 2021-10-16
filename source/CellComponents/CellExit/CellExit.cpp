@@ -1,6 +1,6 @@
 #include "CellExit.h"
 
-Cell* CellExit::cloneCell() {
+Cell* CellExit::clone() {
     Cell* tmp = new CellExit(this->coord_x, this->coord_y);
     return tmp;
 }

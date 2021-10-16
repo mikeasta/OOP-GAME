@@ -17,6 +17,6 @@ public:
     void clearCellContent();
     std::pair <unsigned int, unsigned int> getCoords();
     virtual ~Cell() = default;
-    virtual Cell* cloneCell();
+    virtual Cell* clone();
     virtual std::pair<bool, std::string> stepEffect(InteractiveObject* object);
 };
