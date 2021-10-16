@@ -8,6 +8,7 @@
 #include "../../source/FieldComponents/FieldIterator/FieldIterator.h"
 #include "../../source/InteractiveObjectComponents/Player/Player.h"
 #include "../../source/InteractiveObjectComponents/Item/Item.h"
+#include "../../source/InteractiveObjectComponents/Enemy/Enemy.h"
 
 class FieldCLI: public CLI {
 protected:

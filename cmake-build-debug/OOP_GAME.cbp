@@ -169,6 +169,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>
@@ -179,6 +185,12 @@
 			<Option target="OOP_GAME"/>
 		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.cpp">

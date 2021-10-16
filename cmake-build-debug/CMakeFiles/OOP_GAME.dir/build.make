@@ -313,6 +313,32 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.s
 
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.o: ../source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp > CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp -o CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.s
+
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: ../source/GameComponents/Game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp
+
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp > CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp -o CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.s
+
 # Object files for target OOP_GAME
 OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o" \
@@ -333,7 +359,9 @@ OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o" \
-"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.o"
+"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o"
 
 # External object files for target OOP_GAME
 OOP_GAME_EXTERNAL_OBJECTS =
@@ -357,9 +385,11 @@ OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/E
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/build.make
 OOP_GAME: CMakeFiles/OOP_GAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable OOP_GAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable OOP_GAME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OOP_GAME.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

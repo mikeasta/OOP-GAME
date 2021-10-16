@@ -3,7 +3,8 @@
 // Content chars vocabulary
 std::map<std::string, std::string> content_voc {
     { typeid(Player).name(), "P" },
-    { typeid(Item).name(), "I" }
+    { typeid(Item).name(), "I" },
+    { typeid(Enemy).name(), "E"},
 };
 
 // Cell chars vocabulary
