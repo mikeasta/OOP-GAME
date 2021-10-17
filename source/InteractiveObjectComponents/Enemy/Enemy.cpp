@@ -32,3 +32,7 @@ Enemy* Enemy::create() {
     std::advance(curr, randomizer.generate(0, 2));
     return new Enemy(curr->second[0], curr->second[1], curr->second[2]);
 }
+
+void Enemy::die() { alive = false; }
+
+bool Enemy::getState() { return alive; }

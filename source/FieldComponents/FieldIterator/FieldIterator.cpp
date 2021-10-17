@@ -24,7 +24,6 @@ Cell* FieldIterator::getCurrent() {
 
 Cell* FieldIterator::getNext() {
     unsigned int field_cols = field->getCols();
-    unsigned int field_rows = field->getRows();
 
     if (hasMore()) {
         if (current_coord_x == field_cols - 1) {

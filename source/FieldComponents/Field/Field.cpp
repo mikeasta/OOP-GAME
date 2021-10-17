@@ -2,22 +2,16 @@
 #include <iostream>
 
 Field::~Field() {
-    std::cout << "Field [STARTED]: Field deletion started\n";
     for (unsigned int i = 0; i < rows; i++) {
-        for (unsigned int j = 0; j < cols; j++) {
+        for (unsigned int j = 0; j < cols; j++)
             delete cells[i][j];
-        }
-
         delete[] cells[i];
     }
-
     delete[] cells;
-    std::cout << "Field [SUCCESS]: Field deletion finished\n";
 }
 
 
 Cell* Field::getSpecificCell(unsigned int coord_x, unsigned int coord_y) {
-    std::cout << coord_x << " " << coord_y;
     return cells[coord_y][coord_x];
 }
 
@@ -29,9 +23,8 @@ Field::Field(Field& other_field) {
     cells = new Cell**[rows];
     for(int i = 0; i < rows; i++) {
         cells[i] = new Cell*[cols];
-        for (int j = 0; j < cols; j++) {
+        for (int j = 0; j < cols; j++)
             cells[i][j] = other_cells[i][j]->clone();
-        }
     } 
 }
 
@@ -39,9 +32,8 @@ Field& Field::operator=(Field& other_field) {
     if (this != &other_field) {
         // Deletion
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+            for (int j = 0; j < cols; j++)
                 delete cells[i][j];
-            }
             delete[] cells[i];
         }
         delete[] cells;
@@ -53,9 +45,8 @@ Field& Field::operator=(Field& other_field) {
         cells = new Cell**[rows];
         for(int i = 0; i < rows; i++) {
             cells[i] = new Cell*[cols];
-            for (int j = 0; j < cols; j++) {
+            for (int j = 0; j < cols; j++)
                 cells[i][j] = other_cells[i][j]->clone();
-            }
         } 
     }
 

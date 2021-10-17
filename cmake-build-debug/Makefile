@@ -177,6 +177,30 @@ client/FieldCLI/FieldCLI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.s
 .PHONY : client/FieldCLI/FieldCLI.cpp.s
 
+client/PlayerCLI/PlayerCLI.o: client/PlayerCLI/PlayerCLI.cpp.o
+.PHONY : client/PlayerCLI/PlayerCLI.o
+
+# target to build an object file
+client/PlayerCLI/PlayerCLI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o
+.PHONY : client/PlayerCLI/PlayerCLI.cpp.o
+
+client/PlayerCLI/PlayerCLI.i: client/PlayerCLI/PlayerCLI.cpp.i
+.PHONY : client/PlayerCLI/PlayerCLI.i
+
+# target to preprocess a source file
+client/PlayerCLI/PlayerCLI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.i
+.PHONY : client/PlayerCLI/PlayerCLI.cpp.i
+
+client/PlayerCLI/PlayerCLI.s: client/PlayerCLI/PlayerCLI.cpp.s
+.PHONY : client/PlayerCLI/PlayerCLI.s
+
+# target to generate assembly for a file
+client/PlayerCLI/PlayerCLI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.s
+.PHONY : client/PlayerCLI/PlayerCLI.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -744,6 +768,9 @@ help:
 	@echo "... client/FieldCLI/FieldCLI.o"
 	@echo "... client/FieldCLI/FieldCLI.i"
 	@echo "... client/FieldCLI/FieldCLI.s"
+	@echo "... client/PlayerCLI/PlayerCLI.o"
+	@echo "... client/PlayerCLI/PlayerCLI.i"
+	@echo "... client/PlayerCLI/PlayerCLI.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

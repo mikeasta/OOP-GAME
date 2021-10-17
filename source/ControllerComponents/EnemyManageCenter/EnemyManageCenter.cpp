@@ -14,12 +14,8 @@ EnemyManageCenter::EnemyManageCenter(Field *field):
     while (it_cell) {
         content = it_cell->getCellContent();
         if (content)
-        {
-            if (typeid(*content) == typeid(Enemy)) {
+            if (typeid(*content) == typeid(Enemy))
                 controllers.push_back(new EnemyController(dynamic_cast<Enemy*>(content), field, it_cell));
-                std::cout << "EnemyManageCenter: Enemy found at " <<it_cell->getX() << ";" << it_cell->getY() << "\n";
-            }
-        }
 
         it_cell = iterator.getNext();
     }
@@ -33,6 +29,9 @@ void EnemyManageCenter::move_all() {
         RandomNumberGenerator randomizer;
         std::string option = directions[int(randomizer.generate(0, 3))];
         std::string response = curr_controller->move(option);
+
+        if (response == "DIED")
+            controllers.erase(controllers.begin() + i);
     }
     return;
 }

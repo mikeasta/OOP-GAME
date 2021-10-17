@@ -33,6 +33,8 @@ public:
     void buffStamina(int val);
     void buffDefence(int val);
 
+    void get_combat_damage(int val);
+
 
     virtual void stepOnCell(Cell* cell);
     virtual void spawn(Field* field, unsigned int x = 0, unsigned int y = 0);

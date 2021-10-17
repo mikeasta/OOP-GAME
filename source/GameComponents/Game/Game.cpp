@@ -22,13 +22,14 @@ void Game::start() {
     if (!game_is_started) {
         clear_input();
         game_is_started = true;
-        unsigned int field_rows = 5, field_cols = 7;
+        unsigned int field_rows = 15, field_cols = 27;
         RandomNumberGenerator randomizer;
         FieldGenerator generator = FieldGenerator();
-        Cell*** cells = generator.generateField(field_rows, field_cols);
-        Field new_field = Field(cells, field_rows, field_cols);
-        Player new_player = Player(10, 10, 10);
-        FieldCLI new_field_cli = FieldCLI(&new_field);
+        Cell*** cells            = generator.generateField(field_rows, field_cols);
+        Field new_field          = Field(cells, field_rows, field_cols);
+        Player new_player        = Player(10, 100, 20);
+        FieldCLI new_field_cli   = FieldCLI(&new_field);
+        PlayerCLI new_player_cli = PlayerCLI(&new_player);
 
         // Fill field
         FieldAggregate aggregator;
@@ -48,13 +49,15 @@ void Game::start() {
             // Print
             std::cout << "\x1B[2J\x1B[H";
             new_field_cli.print();
+            new_player_cli.print();
 
             // Player move
             std::cin >> command;
             if (sizeof(command)) {
+
                 // get char
                 std::string response = player_controller.move(command);
-                if (response == "EXIT")
+                if (response == "EXIT" || response == "LOSS")
                     game_goes = false;
             }
 

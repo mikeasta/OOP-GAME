@@ -58,3 +58,7 @@ void Character::spawn(Field* field, unsigned int x, unsigned int y) {
 InteractiveObject* Character::clone() {
     return new Character(damage, stamina, defence);
 }
+
+void Character::get_combat_damage(int val) {
+    stamina -= int(val * 1.0 * ((100 - defence * 1.0) / 100));
+}

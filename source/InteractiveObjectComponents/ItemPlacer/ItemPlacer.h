@@ -9,7 +9,6 @@
 #include "../../FieldComponents/Field/Field.h"
 #include "../../FieldComponents/FieldIterator/FieldIterator.h"
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
-#include <iostream>
 #include <type_traits>
 
 class ItemPlacer {

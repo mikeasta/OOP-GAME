@@ -6,6 +6,8 @@
 #define OOP_GAME_PLAYERCONTROLLER_H
 #include <tuple>
 #include <string>
+#include "../../InteractiveObjectComponents/Enemy/Enemy.h"
+#include "../../InteractiveObjectComponents/Character/Character.h"
 #include "../../FieldComponents/Field/Field.h"
 #include "../../InteractiveObjectComponents/Player/Player.h"
 #include "../../FieldComponents/FieldIterator/FieldIterator.h"

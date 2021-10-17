@@ -31,26 +31,20 @@ void Player::spawn(Field* field, unsigned int x, unsigned int y) {
     if (is_spawned) { return; }
 
     is_spawned = true;
-    std::cout << "Player: Spawn process began\n";
     unsigned int rows = field->getRows();
     unsigned int cols = field->getCols();
 
-    std::cout <<"Player: Condition started\n";
     if (x == 0 || y == 0 || x >= cols || y >= rows) {
-
-        std::cout << "Player: Field cols - " << cols << "; Field rows - " << rows << "\n";
 
         // Look for entrance
         FieldIterator iterator = FieldIterator(field);
         Cell* curr_item = iterator.getCurrent();
         while(curr_item != nullptr) {
-            if (typeid(*curr_item) == typeid(CellEntrance)) {
+            if (typeid(*curr_item) == typeid(CellEntrance))
                 break;
-            } else {
+            else
                 curr_item = iterator.getNext();
-            }
         }
-        std::cout << "Player: Entrance found: [" << curr_item->getX() << "; " << curr_item->getY() << "]\n";
 
         // Analyze cell position and get neighbour cell
         Cell* got;
@@ -74,7 +68,6 @@ void Player::spawn(Field* field, unsigned int x, unsigned int y) {
             got = field->getSpecificCell(entrance_x, entrance_y - 1);
         }
 
-        std::cout << "Player: Got found: [" << got->getX() << "; " << got->getY() << "]\n";
         got->stepEffect(this);
     } else {
         Cell* cell = field->getSpecificCell(x, y);
@@ -84,5 +77,31 @@ void Player::spawn(Field* field, unsigned int x, unsigned int y) {
             std::cout << "\nPlayer: Spawn denied. Something is already on the cell.\n";
         }
     }
-    std::cout << "Player: Spawn process ended\n";
+}
+
+std::string Player::attack(Character *opponent) {
+
+    // Generate player damage
+    RandomNumberGenerator randomizer;
+    float full_player_damage = getFullDamage() * 1.0;
+    if (randomizer.simulate_chance(15))
+        full_player_damage *= 2;
+    std::cout <<"\n -Player damage - " << full_player_damage;
+
+    opponent->get_combat_damage(full_player_damage);
+    std::cout << "\n -Opponent health - " << opponent->getStamina() << "\n";
+    if (opponent->getStamina() > 0) {
+        float full_opponent_damage = opponent->getDamage() * 1.0;
+        if (randomizer.simulate_chance(5))
+            full_opponent_damage *= 2;
+
+        get_combat_damage(full_opponent_damage);
+        if (getStamina() > 0) {
+            return "DRAW";
+        } else {
+            return "LOSS";
+        }
+    } else {
+        return "WIN";
+    }
 }

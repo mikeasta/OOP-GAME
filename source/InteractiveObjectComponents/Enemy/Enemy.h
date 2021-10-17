@@ -11,6 +11,8 @@
 #include <string>
 
 class Enemy: public Character {
+private:
+    bool alive = true;
 public:
     // Constructors
     Enemy(int damage = 0, int stamina = 0, int defence = 0);
@@ -20,6 +22,8 @@ public:
 
     Enemy* create();
     Enemy* create(std::string enemy_type);
+    bool getState();
+    void die();
 };
 
 #endif //OOP_GAME_ENEMY_H

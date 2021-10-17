@@ -118,6 +118,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/main.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

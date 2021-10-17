@@ -1,4 +1,5 @@
 #include "FieldCLI.h"
+#define CLEAR "\x1B[2J\x1B[H"
 
 // Content chars vocabulary
 std::map<std::string, std::string> content_voc {
@@ -17,7 +18,7 @@ std::map<std::string, std::string> cell_voc {
 };
 
 void FieldCLI::print() {
-    std::cout << "FieldCLI [STARTED]: Print Started\n";
+    std::cout << std::endl;
     FieldIterator iterator = FieldIterator(field);
     Cell* curr_item = iterator.getCurrent();
     InteractiveObject* content;
@@ -34,5 +35,4 @@ void FieldCLI::print() {
 
         curr_item = iterator.getNext();
     }
-    std::cout << "FieldCLI [SUCCESS]: Print finished\n";
 }

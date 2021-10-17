@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o"
   "CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o"
   "CMakeFiles/OOP_GAME.dir/main.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o"

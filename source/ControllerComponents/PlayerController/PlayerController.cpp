@@ -16,7 +16,6 @@ PlayerController::PlayerController(Player *player, Field *field):
         {
             if (typeid(*content) == typeid(Player)) {
                 curr_cell = it_cell;
-                std::cout << "PlayerController: Player found at " << curr_cell->getX() << ";" <<curr_cell->getY() << "\n";
                 break;
             }
         }
@@ -30,27 +29,40 @@ std::string PlayerController::move(std::string direction) {
     Cell* to_move;
     unsigned int x = curr_cell->getX();
     unsigned int y = curr_cell->getY();
-    std::cout << x << " " << y << "\n";
-    if (direction == "w") {
+    if (direction == "w")
         y -= 1;
-    } else if (direction == "a") {
+    else if (direction == "a")
         x -= 1;
-    } else if (direction == "s") {
+    else if (direction == "s")
         y += 1;
-    } else if (direction == "d") {
+    else if (direction == "d")
         x += 1;
-    }
-
 
     to_move = field->getSpecificCell(x, y);
 
     std::pair<bool, std::string> response = to_move->stepEffect(player);
     if (typeid(*to_move) == typeid(CellFloor)) {
-        if (to_move->isCellContentExist()) {
+
+        // Check if something in cell
+        bool is_content = to_move->isCellContentExist();
+        if (is_content) {
             if (typeid(*to_move->getCellContent()) == typeid(Item)) {
                 player->take(dynamic_cast<Item *>(to_move->getCellContent()));
+            } else if (typeid(*to_move->getCellContent()) == typeid(Enemy)){
+                Character* opponent =  dynamic_cast<Character*>(to_move->getCellContent());
+                std::cout << "\nCOMBAT:";
+                std::string result = player->attack(opponent);
+
+                if (result == "LOSS")
+                    return "LOSS";
+                else if (result == "DRAW")
+                    return "DRAW";
+                else if (result == "WIN") {
+                    dynamic_cast<Enemy*>(opponent)->die();
+                }
             }
         }
+
         curr_cell->clearCellContent();
         curr_cell = to_move;
         curr_cell->setCellContent(player);
