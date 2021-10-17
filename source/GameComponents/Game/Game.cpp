@@ -23,6 +23,7 @@ void Game::start() {
         clear_input();
         game_is_started = true;
         unsigned int field_rows = 5, field_cols = 7;
+        RandomNumberGenerator randomizer;
         FieldGenerator generator = FieldGenerator();
         Cell*** cells = generator.generateField(field_rows, field_cols);
         Field new_field = Field(cells, field_rows, field_cols);
@@ -34,16 +35,15 @@ void Game::start() {
         aggregator.aggregate(&new_field, &new_player);
         PlayerController player_controller = PlayerController(&new_player, &new_field);
 
-        //std::string response = player_controller.move("w");
-        // new_field_cli.print();
-        // Print field
-
         bool game_goes = true;
         std::string command = "";
         while (game_goes) {
+
+            // Print
             std::cout << "\x1B[2J\x1B[H";
             new_field_cli.print();
-            // If kbhit
+
+            // Player move
             std::cin >> command;
             if (sizeof(command)) {
                 // get char

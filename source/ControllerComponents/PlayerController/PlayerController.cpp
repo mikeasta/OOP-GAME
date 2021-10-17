@@ -10,10 +10,8 @@ PlayerController::PlayerController(Player *player, Field *field):
     FieldIterator iterator = FieldIterator(field);
     Cell* it_cell          = iterator.getCurrent();
     InteractiveObject* content;
-    while (it_cell != nullptr) {
-
+    while (it_cell) {
         content = it_cell->getCellContent();
-        std::cout << it_cell->getCellContent();
         if (content)
         {
             if (typeid(*content) == typeid(Player)) {
@@ -48,8 +46,14 @@ std::string PlayerController::move(std::string direction) {
 
     std::pair<bool, std::string> response = to_move->stepEffect(player);
     if (typeid(*to_move) == typeid(CellFloor)) {
+        if (to_move->isCellContentExist()) {
+            if (typeid(*to_move->getCellContent()) == typeid(Item)) {
+                player->take(dynamic_cast<Item *>(to_move->getCellContent()));
+            }
+        }
         curr_cell->clearCellContent();
         curr_cell = to_move;
+        curr_cell->setCellContent(player);
     }
 
     return response.second;

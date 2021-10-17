@@ -12,8 +12,8 @@
 
 class PlayerController {
 private:
-    Player* player;
     Field* field;
+    Player* player;
     Cell* curr_cell;
 public:
     PlayerController(Player* player, Field* field);
