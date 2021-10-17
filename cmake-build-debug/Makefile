@@ -321,6 +321,54 @@ source/CellComponents/CellWall/CellWall.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.s
 .PHONY : source/CellComponents/CellWall/CellWall.cpp.s
 
+source/ControllerComponents/EnemyController/EnemyController.o: source/ControllerComponents/EnemyController/EnemyController.cpp.o
+.PHONY : source/ControllerComponents/EnemyController/EnemyController.o
+
+# target to build an object file
+source/ControllerComponents/EnemyController/EnemyController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.o
+.PHONY : source/ControllerComponents/EnemyController/EnemyController.cpp.o
+
+source/ControllerComponents/EnemyController/EnemyController.i: source/ControllerComponents/EnemyController/EnemyController.cpp.i
+.PHONY : source/ControllerComponents/EnemyController/EnemyController.i
+
+# target to preprocess a source file
+source/ControllerComponents/EnemyController/EnemyController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.i
+.PHONY : source/ControllerComponents/EnemyController/EnemyController.cpp.i
+
+source/ControllerComponents/EnemyController/EnemyController.s: source/ControllerComponents/EnemyController/EnemyController.cpp.s
+.PHONY : source/ControllerComponents/EnemyController/EnemyController.s
+
+# target to generate assembly for a file
+source/ControllerComponents/EnemyController/EnemyController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.s
+.PHONY : source/ControllerComponents/EnemyController/EnemyController.cpp.s
+
+source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.o: source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.o
+.PHONY : source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.o
+
+# target to build an object file
+source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.o
+.PHONY : source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.o
+
+source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.i: source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.i
+.PHONY : source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.i
+
+# target to preprocess a source file
+source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.i
+.PHONY : source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.i
+
+source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.s: source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.s
+.PHONY : source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.s
+
+# target to generate assembly for a file
+source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.s
+.PHONY : source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.s
+
 source/ControllerComponents/PlayerController/PlayerController.o: source/ControllerComponents/PlayerController/PlayerController.cpp.o
 .PHONY : source/ControllerComponents/PlayerController/PlayerController.o
 
@@ -714,6 +762,12 @@ help:
 	@echo "... source/CellComponents/CellWall/CellWall.o"
 	@echo "... source/CellComponents/CellWall/CellWall.i"
 	@echo "... source/CellComponents/CellWall/CellWall.s"
+	@echo "... source/ControllerComponents/EnemyController/EnemyController.o"
+	@echo "... source/ControllerComponents/EnemyController/EnemyController.i"
+	@echo "... source/ControllerComponents/EnemyController/EnemyController.s"
+	@echo "... source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.o"
+	@echo "... source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.i"
+	@echo "... source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.s"
 	@echo "... source/ControllerComponents/PlayerController/PlayerController.o"
 	@echo "... source/ControllerComponents/PlayerController/PlayerController.i"
 	@echo "... source/ControllerComponents/PlayerController/PlayerController.s"

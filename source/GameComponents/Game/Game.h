@@ -10,6 +10,7 @@
 #include "../../InteractiveObjectComponents/Player/Player.h"
 #include "../../FieldComponents/FieldAggregate/FieldAggregate.h"
 #include "../../ControllerComponents/PlayerController/PlayerController.h"
+#include "../../ControllerComponents/EnemyManageCenter/EnemyManageCenter.h"
 #include <unistd.h>
 #include <ncurses.h>
 

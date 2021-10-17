@@ -35,9 +35,15 @@ void Game::start() {
         aggregator.aggregate(&new_field, &new_player);
         PlayerController player_controller = PlayerController(&new_player, &new_field);
 
+        // Detect all enemies
+        EnemyManageCenter enemy_center = EnemyManageCenter(&new_field);
+
         bool game_goes = true;
         std::string command = "";
         while (game_goes) {
+
+            // Enemy stepping
+            enemy_center.move_all();
 
             // Print
             std::cout << "\x1B[2J\x1B[H";
