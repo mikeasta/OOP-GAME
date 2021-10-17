@@ -32,6 +32,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/CellComponents/CellExit/CellExit.h \
  ../source/CellComponents/CellFloor/CellFloor.h \
  ../source/CellComponents/CellWall/CellWall.h \
+ ../source/ControllerComponents/PlayerController/PlayerController.h \
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldAggregate/FieldAggregate.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
@@ -70,6 +71,23 @@ CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o: \
  ../source/CellComponents/CellWall/CellWall.cpp \
  ../source/CellComponents/CellWall/CellWall.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
+CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/PlayerController.cpp.o: \
+ ../source/CellComponents/Cell/Cell.h \
+ ../source/CellComponents/CellEntrance/CellEntrance.h \
+ ../source/CellComponents/CellExit/CellExit.h \
+ ../source/CellComponents/CellFloor/CellFloor.h \
+ ../source/CellComponents/CellWall/CellWall.h \
+ ../source/ControllerComponents/PlayerController/PlayerController.cpp \
+ ../source/ControllerComponents/PlayerController/PlayerController.h \
+ ../source/FieldComponents/Field/Field.h \
+ ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/InteractiveObjectComponents/Character/Character.h \
+ ../source/InteractiveObjectComponents/Equipment/Equipment.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../source/InteractiveObjectComponents/Player/Player.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \
@@ -131,6 +149,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../source/CellComponents/CellExit/CellExit.h \
  ../source/CellComponents/CellFloor/CellFloor.h \
  ../source/CellComponents/CellWall/CellWall.h \
+ ../source/ControllerComponents/PlayerController/PlayerController.h \
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldAggregate/FieldAggregate.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \

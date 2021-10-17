@@ -28,12 +28,6 @@ string
 ../../source/InteractiveObjectComponents/Enemy/Enemy.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
 
-/home/mikeasta/Programming/OOP-GAME/main.cpp
-iostream
--
-source/GameComponents/Game/Game.h
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
-
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 tuple
 -
@@ -58,15 +52,23 @@ string
 ../Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 
+/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h
+tuple
+-
+string
+-
+../../FieldComponents/Field/Field.h
+/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
+../../InteractiveObjectComponents/Player/Player.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
+../../FieldComponents/FieldIterator/FieldIterator.h
+/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
 ../../CellComponents/Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 ../FieldGenerator/FieldGenerator.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
-
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.cpp
-FieldAggregate.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
 
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
 ../Field/Field.h
@@ -101,6 +103,12 @@ FieldAggregate.h
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp
 Game.h
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
+termios.h
+-
+unistd.h
+-
+iostream
+-
 
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
 ../../../client/FieldCLI/FieldCLI.h
@@ -113,6 +121,12 @@ Game.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
 ../../FieldComponents/FieldAggregate/FieldAggregate.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
+../../ControllerComponents/PlayerController/PlayerController.h
+/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h
+unistd.h
+-
+ncurses.h
+-
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
 ../../CellComponents/Cell/Cell.h

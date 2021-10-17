@@ -26,11 +26,8 @@ void Cell::clearCellContent() {
     this->setCellContent(nullptr);
 }
 
-std::pair<unsigned int, unsigned int> Cell::getCoords() {
-    std::pair<unsigned int, unsigned int> response;
-    response = std::make_pair(coord_x, coord_y);
-    return response;
-}
+unsigned int Cell::getX() { return coord_x; }
+unsigned int Cell::getY() { return coord_y; }
 
 std::pair<bool, std::string> Cell::stepEffect(InteractiveObject* object) {
     std::pair<bool, std::string> response;

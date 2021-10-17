@@ -151,6 +151,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellWall/CellWall.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

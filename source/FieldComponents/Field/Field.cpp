@@ -17,6 +17,7 @@ Field::~Field() {
 
 
 Cell* Field::getSpecificCell(unsigned int coord_x, unsigned int coord_y) {
+    std::cout << coord_x << " " << coord_y;
     return cells[coord_y][coord_x];
 }
 

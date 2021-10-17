@@ -321,6 +321,30 @@ source/CellComponents/CellWall/CellWall.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.s
 .PHONY : source/CellComponents/CellWall/CellWall.cpp.s
 
+source/ControllerComponents/PlayerController/PlayerController.o: source/ControllerComponents/PlayerController/PlayerController.cpp.o
+.PHONY : source/ControllerComponents/PlayerController/PlayerController.o
+
+# target to build an object file
+source/ControllerComponents/PlayerController/PlayerController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/PlayerController.cpp.o
+.PHONY : source/ControllerComponents/PlayerController/PlayerController.cpp.o
+
+source/ControllerComponents/PlayerController/PlayerController.i: source/ControllerComponents/PlayerController/PlayerController.cpp.i
+.PHONY : source/ControllerComponents/PlayerController/PlayerController.i
+
+# target to preprocess a source file
+source/ControllerComponents/PlayerController/PlayerController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/PlayerController.cpp.i
+.PHONY : source/ControllerComponents/PlayerController/PlayerController.cpp.i
+
+source/ControllerComponents/PlayerController/PlayerController.s: source/ControllerComponents/PlayerController/PlayerController.cpp.s
+.PHONY : source/ControllerComponents/PlayerController/PlayerController.s
+
+# target to generate assembly for a file
+source/ControllerComponents/PlayerController/PlayerController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/PlayerController.cpp.s
+.PHONY : source/ControllerComponents/PlayerController/PlayerController.cpp.s
+
 source/FieldComponents/Field/Field.o: source/FieldComponents/Field/Field.cpp.o
 .PHONY : source/FieldComponents/Field/Field.o
 
@@ -690,6 +714,9 @@ help:
 	@echo "... source/CellComponents/CellWall/CellWall.o"
 	@echo "... source/CellComponents/CellWall/CellWall.i"
 	@echo "... source/CellComponents/CellWall/CellWall.s"
+	@echo "... source/ControllerComponents/PlayerController/PlayerController.o"
+	@echo "... source/ControllerComponents/PlayerController/PlayerController.i"
+	@echo "... source/ControllerComponents/PlayerController/PlayerController.s"
 	@echo "... source/FieldComponents/Field/Field.o"
 	@echo "... source/FieldComponents/Field/Field.i"
 	@echo "... source/FieldComponents/Field/Field.s"

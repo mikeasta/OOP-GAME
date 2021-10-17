@@ -9,6 +9,9 @@
 #include "../../FieldComponents/Field/Field.h"
 #include "../../InteractiveObjectComponents/Player/Player.h"
 #include "../../FieldComponents/FieldAggregate/FieldAggregate.h"
+#include "../../ControllerComponents/PlayerController/PlayerController.h"
+#include <unistd.h>
+#include <ncurses.h>
 
 class Game {
 private:
@@ -16,4 +19,5 @@ private:
 public:
     void start();
 };
+
 #endif //OOP_GAME_GAME_H

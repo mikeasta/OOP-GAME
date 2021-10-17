@@ -16,7 +16,8 @@ public:
 
     // Getters
     bool isCellContentExist();
-    std::pair <unsigned int, unsigned int> getCoords();
+    unsigned int getX();
+    unsigned  int getY();
     InteractiveObject* getCellContent();
 
     // Setters

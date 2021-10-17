@@ -50,12 +50,12 @@ void Player::spawn(Field* field, unsigned int x, unsigned int y) {
                 curr_item = iterator.getNext();
             }
         }
-        std::cout << "Player: Entrance found: [" << curr_item->getCoords().first << "; " << curr_item->getCoords().second << "]\n";
+        std::cout << "Player: Entrance found: [" << curr_item->getX() << "; " << curr_item->getY() << "]\n";
 
         // Analyze cell position and get neighbour cell
         Cell* got;
-        unsigned int entrance_x = curr_item->getCoords().first;
-        unsigned int entrance_y = curr_item->getCoords().second;
+        unsigned int entrance_x = curr_item->getX();
+        unsigned int entrance_y = curr_item->getY();
         if (entrance_x == 0)
         {
             // Left border
@@ -73,7 +73,8 @@ void Player::spawn(Field* field, unsigned int x, unsigned int y) {
             // Upper border
             got = field->getSpecificCell(entrance_x, entrance_y - 1);
         }
-        std::cout << "Player: Got found: [" << got->getCoords().second << "; " << got->getCoords().first << "]\n";
+
+        std::cout << "Player: Got found: [" << got->getX() << "; " << got->getY() << "]\n";
         got->stepEffect(this);
     } else {
         Cell* cell = field->getSpecificCell(x, y);
