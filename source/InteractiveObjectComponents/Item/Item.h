@@ -37,6 +37,7 @@ public:
     // Pattern: Factory Method
     // Creates Item object with item type
     Item* create(std::string item_type);
+
     // Creates random Item object with item type
     Item* create();
 };

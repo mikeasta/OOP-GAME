@@ -10,10 +10,6 @@
 
 class FieldGenerator {
 public:
-    FieldGenerator() {};
-
-    ~FieldGenerator() = default;
-
     // Generates room
     Cell*** generateField(unsigned int rows = 0, unsigned int cols = 0);
 };

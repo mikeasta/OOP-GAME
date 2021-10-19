@@ -153,6 +153,30 @@ client/CLI/CLI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.s
 .PHONY : client/CLI/CLI.cpp.s
 
+client/CombatCLI/CombatCLI.o: client/CombatCLI/CombatCLI.cpp.o
+.PHONY : client/CombatCLI/CombatCLI.o
+
+# target to build an object file
+client/CombatCLI/CombatCLI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o
+.PHONY : client/CombatCLI/CombatCLI.cpp.o
+
+client/CombatCLI/CombatCLI.i: client/CombatCLI/CombatCLI.cpp.i
+.PHONY : client/CombatCLI/CombatCLI.i
+
+# target to preprocess a source file
+client/CombatCLI/CombatCLI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.i
+.PHONY : client/CombatCLI/CombatCLI.cpp.i
+
+client/CombatCLI/CombatCLI.s: client/CombatCLI/CombatCLI.cpp.s
+.PHONY : client/CombatCLI/CombatCLI.s
+
+# target to generate assembly for a file
+client/CombatCLI/CombatCLI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.s
+.PHONY : client/CombatCLI/CombatCLI.cpp.s
+
 client/FieldCLI/FieldCLI.o: client/FieldCLI/FieldCLI.cpp.o
 .PHONY : client/FieldCLI/FieldCLI.o
 
@@ -513,6 +537,30 @@ source/FieldComponents/FieldIterator/FieldIterator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.s
 .PHONY : source/FieldComponents/FieldIterator/FieldIterator.cpp.s
 
+source/GameComponents/Combat/Combat.o: source/GameComponents/Combat/Combat.cpp.o
+.PHONY : source/GameComponents/Combat/Combat.o
+
+# target to build an object file
+source/GameComponents/Combat/Combat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o
+.PHONY : source/GameComponents/Combat/Combat.cpp.o
+
+source/GameComponents/Combat/Combat.i: source/GameComponents/Combat/Combat.cpp.i
+.PHONY : source/GameComponents/Combat/Combat.i
+
+# target to preprocess a source file
+source/GameComponents/Combat/Combat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.i
+.PHONY : source/GameComponents/Combat/Combat.cpp.i
+
+source/GameComponents/Combat/Combat.s: source/GameComponents/Combat/Combat.cpp.s
+.PHONY : source/GameComponents/Combat/Combat.s
+
+# target to generate assembly for a file
+source/GameComponents/Combat/Combat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.s
+.PHONY : source/GameComponents/Combat/Combat.cpp.s
+
 source/GameComponents/Game/Game.o: source/GameComponents/Game/Game.cpp.o
 .PHONY : source/GameComponents/Game/Game.o
 
@@ -765,6 +813,9 @@ help:
 	@echo "... client/CLI/CLI.o"
 	@echo "... client/CLI/CLI.i"
 	@echo "... client/CLI/CLI.s"
+	@echo "... client/CombatCLI/CombatCLI.o"
+	@echo "... client/CombatCLI/CombatCLI.i"
+	@echo "... client/CombatCLI/CombatCLI.s"
 	@echo "... client/FieldCLI/FieldCLI.o"
 	@echo "... client/FieldCLI/FieldCLI.i"
 	@echo "... client/FieldCLI/FieldCLI.s"
@@ -810,6 +861,9 @@ help:
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.o"
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.i"
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.s"
+	@echo "... source/GameComponents/Combat/Combat.o"
+	@echo "... source/GameComponents/Combat/Combat.i"
+	@echo "... source/GameComponents/Combat/Combat.s"
 	@echo "... source/GameComponents/Game/Game.o"
 	@echo "... source/GameComponents/Game/Game.i"
 	@echo "... source/GameComponents/Game/Game.s"

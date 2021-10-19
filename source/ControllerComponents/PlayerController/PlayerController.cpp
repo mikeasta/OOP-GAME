@@ -24,7 +24,7 @@ PlayerController::PlayerController(Player *player, Field *field):
     }
 }
 
-std::string PlayerController::move(std::string direction) {
+std::pair<std::string, Combat> PlayerController::move(std::string direction) {
 
     Cell* to_move;
     unsigned int x = curr_cell->getX();
@@ -50,16 +50,16 @@ std::string PlayerController::move(std::string direction) {
                 player->take(dynamic_cast<Item *>(to_move->getCellContent()));
             } else if (typeid(*to_move->getCellContent()) == typeid(Enemy)){
                 Character* opponent =  dynamic_cast<Character*>(to_move->getCellContent());
-                std::cout << "\nCOMBAT:";
-                std::string result = player->attack(opponent);
+                std::pair<std::string, Combat>  result = player->attack(opponent);
 
-                if (result == "LOSS")
-                    return "LOSS";
-                else if (result == "DRAW")
-                    return "DRAW";
-                else if (result == "WIN") {
+                if (result.first == "WIN") {
                     dynamic_cast<Enemy*>(opponent)->die();
+                    curr_cell->clearCellContent();
+                    curr_cell = to_move;
+                    curr_cell->setCellContent(player);
                 }
+
+                return result;
             }
         }
 
@@ -68,6 +68,6 @@ std::string PlayerController::move(std::string direction) {
         curr_cell->setCellContent(player);
     }
 
-    return response.second;
+    return std::make_pair(response.second, Combat());
 }
 

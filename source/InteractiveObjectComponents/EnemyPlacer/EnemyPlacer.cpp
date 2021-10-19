@@ -16,12 +16,10 @@ void EnemyPlacer::fillField(Field *field) {
 
     FieldIterator* iterator = new FieldIterator(field);
     Cell* curr_cell = iterator->getCurrent();
-    while (!onePlaced)
-    {
-        while (curr_cell != nullptr) {
+    while (!onePlaced) {
+        while (curr_cell) {
             bool isEmpty = !curr_cell->isCellContentExist();
-            float coef   = rd.generate(0, 100);
-            if ((typeid(*curr_cell) == typeid(CellFloor)) & isEmpty & coef <= chance_percent & count > 0) {
+            if ((typeid(*curr_cell) == typeid(CellFloor)) & isEmpty & rd.simulate_chance(chance_percent) & count > 0) {
                 Enemy enemy_generator = Enemy();
                 curr_cell->setCellContent(enemy_generator.create());
                 count--;

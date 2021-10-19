@@ -4,6 +4,11 @@
 CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o
  /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.cpp
  /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
+CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o
+ /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
+ /home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.cpp
+ /home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
 CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o
  /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
  /home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp
@@ -16,6 +21,7 @@ CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
@@ -35,7 +41,9 @@ CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
+ /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
@@ -43,6 +51,7 @@ CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o
  /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/main.cpp.o
  /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
+ /home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.h
  /home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.h
  /home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.h
  /home/mikeasta/Programming/OOP-GAME/main.cpp
@@ -58,6 +67,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
  /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
@@ -134,6 +144,7 @@ CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/PlayerContr
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
@@ -163,6 +174,7 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldAggregate/FieldAggregate.cpp
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
@@ -194,8 +206,12 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
  /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.cpp
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o
  /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
+ /home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.h
  /home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.h
  /home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.h
  /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
@@ -210,6 +226,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
  /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp
  /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
@@ -298,7 +315,9 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
  /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
+ /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h

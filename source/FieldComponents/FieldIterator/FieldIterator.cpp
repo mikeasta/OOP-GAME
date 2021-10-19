@@ -1,5 +1,8 @@
 #include "FieldIterator.h"
 
+FieldIterator::FieldIterator(Field *field):
+    field(field) {};
+
 bool FieldIterator::hasMore() {
     unsigned int field_cols = field->getCols();
     unsigned int field_rows = field->getRows();

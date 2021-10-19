@@ -79,29 +79,47 @@ void Player::spawn(Field* field, unsigned int x, unsigned int y) {
     }
 }
 
-std::string Player::attack(Character *opponent) {
+std::pair<std::string, Combat> Player::attack(Character *opponent) {
 
     // Generate player damage
     RandomNumberGenerator randomizer;
+    bool player_crit = false, opponent_crit = false;
     float full_player_damage = getFullDamage() * 1.0;
-    if (randomizer.simulate_chance(15))
+    if (randomizer.simulate_chance(15)) {
         full_player_damage *= 2;
+        player_crit = true;
+    }
+
+
+    // Refactor
     std::cout <<"\n -Player damage - " << full_player_damage;
 
     opponent->get_combat_damage(full_player_damage);
+
+    // Refactor
     std::cout << "\n -Opponent health - " << opponent->getStamina() << "\n";
     if (opponent->getStamina() > 0) {
         float full_opponent_damage = opponent->getDamage() * 1.0;
-        if (randomizer.simulate_chance(5))
+        if (randomizer.simulate_chance(5)) {
             full_opponent_damage *= 2;
+            opponent_crit = true;
+        }
 
         get_combat_damage(full_opponent_damage);
-        if (getStamina() > 0) {
-            return "DRAW";
-        } else {
-            return "LOSS";
-        }
+
+        Combat new_combat = Combat(full_player_damage,
+                                   player_crit,
+                                   full_opponent_damage,
+                                   opponent_crit,
+                                   false);
+        return (getFullStamina() > 0) ? std::make_pair("DRAW", new_combat) : std::make_pair("LOSS", new_combat);
     } else {
-        return "WIN";
+        Combat new_combat = Combat(full_player_damage,
+                                   player_crit,
+                                   0,
+                                   false,
+                                   true);
+
+        return std::make_pair("WIN", new_combat);
     }
 }

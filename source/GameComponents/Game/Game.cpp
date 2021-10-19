@@ -22,7 +22,7 @@ void Game::start() {
     if (!game_is_started) {
         clear_input();
         game_is_started = true;
-        unsigned int field_rows = 15, field_cols = 27;
+        unsigned int field_rows = 5, field_cols = 10;
         RandomNumberGenerator randomizer;
         FieldGenerator generator = FieldGenerator();
         Cell*** cells            = generator.generateField(field_rows, field_cols);
@@ -30,6 +30,7 @@ void Game::start() {
         Player new_player        = Player(10, 100, 20);
         FieldCLI new_field_cli   = FieldCLI(&new_field);
         PlayerCLI new_player_cli = PlayerCLI(&new_player);
+        CombatCLI combat_drawer  = CombatCLI();
 
         // Fill field
         FieldAggregate aggregator;
@@ -41,13 +42,13 @@ void Game::start() {
 
         bool game_goes = true;
         std::string command = "";
+        system("clear");
         while (game_goes) {
 
             // Enemy stepping
             enemy_center.move_all();
 
             // Print
-            std::cout << "\x1B[2J\x1B[H";
             new_field_cli.print();
             new_player_cli.print();
 
@@ -56,8 +57,17 @@ void Game::start() {
             if (sizeof(command)) {
 
                 // get char
-                std::string response = player_controller.move(command);
-                if (response == "EXIT" || response == "LOSS")
+                std::pair<std::string, Combat> response = player_controller.move(command);
+                system("clear");
+                if (response.first == "WIN" ||
+                    response.first == "DRAW" ||
+                    response.first == "LOSS") {
+
+                    // Draw combat
+                    combat_drawer.print(response.second);
+                }
+
+                if (response.first == "EXIT" || response.first == "LOSS")
                     game_goes = false;
             }
 

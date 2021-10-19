@@ -112,6 +112,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>
@@ -197,6 +203,12 @@
 			<Option target="OOP_GAME"/>
 		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp">

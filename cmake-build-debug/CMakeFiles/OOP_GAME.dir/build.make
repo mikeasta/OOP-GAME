@@ -404,6 +404,32 @@ CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.cpp -o CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.s
 
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o: ../source/GameComponents/Combat/Combat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.cpp
+
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.cpp > CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.cpp -o CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.s
+
+CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o: ../client/CombatCLI/CombatCLI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o -c /home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.cpp
+
+CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.cpp > CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.i
+
+CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.cpp -o CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.s
+
 # Object files for target OOP_GAME
 OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o" \
@@ -431,7 +457,9 @@ OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/PlayerController.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.o" \
-"CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o"
+"CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o"
 
 # External object files for target OOP_GAME
 OOP_GAME_EXTERNAL_OBJECTS =
@@ -462,9 +490,11 @@ OOP_GAME: CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/P
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/build.make
 OOP_GAME: CMakeFiles/OOP_GAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable OOP_GAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable OOP_GAME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OOP_GAME.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -9,8 +9,11 @@
 #include "../Equipment/Equipment.h"
 #include "../Item/Item.h"
 #include "../../FieldComponents/FieldIterator/FieldIterator.h"
+#include "../../GameComponents/Combat/Combat.h"
+#include "../Enemy/Enemy.h"
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 #include <string>
+#include <tuple>
 
 class Player: public Character {
 private:
@@ -28,7 +31,7 @@ public:
     void take(Item* item);
     virtual void spawn(Field* field, unsigned int x = 0, unsigned int y = 0) final;
 
-    std::string attack(Character* opponent);
+    std::pair<std::string, Combat> attack(Character* opponent);
 };
 
 #endif //OOP_GAME_PLAYER_H

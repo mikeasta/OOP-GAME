@@ -19,9 +19,8 @@ private:
     Cell* curr_cell;
 public:
     PlayerController(Player* player, Field* field);
-    ~PlayerController() = default;
 
-    std::string move(std::string direction);
+    std::pair<std::string, Combat> move(std::string direction);
 };
 
 #endif //OOP_GAME_PLAYERCONTROLLER_H
