@@ -13,7 +13,7 @@ void ItemPlacer::fillField(Field *field) {
     int chance_percent = 10;
     RandomNumberGenerator rd;
 
-    FieldIterator* iterator = new FieldIterator(field);
+    auto iterator   = new FieldIterator(field);
     Cell* curr_cell = iterator->getCurrent();
     while (curr_cell) {
         bool isEmpty = !curr_cell->isCellContentExist();

@@ -29,6 +29,7 @@ std::pair<std::string, Combat> PlayerController::move(std::string direction) {
     Cell* to_move;
     unsigned int x = curr_cell->getX();
     unsigned int y = curr_cell->getY();
+
     if (direction == "w")
         y -= 1;
     else if (direction == "a")

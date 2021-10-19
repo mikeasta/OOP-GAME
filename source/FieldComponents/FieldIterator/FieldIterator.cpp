@@ -7,18 +7,13 @@ bool FieldIterator::hasMore() {
     unsigned int field_cols = field->getCols();
     unsigned int field_rows = field->getRows();
 
-    if ((current_coord_x < field_cols - 1) ||
-        (current_coord_x == field_cols - 1 & current_coord_y < field_rows - 1)){
-        return true;
-    } else {
-        return false;
-    }
-
+    return ((current_coord_x < field_cols - 1) ||
+    (current_coord_x == field_cols - 1 & current_coord_y < field_rows - 1));
 }
 
 bool FieldIterator::isLastInARow() {
     unsigned int field_cols = field->getCols();
-    return (current_coord_x == field_cols - 1) ? true : false;
+    return (current_coord_x == field_cols - 1);
 }
 
 Cell* FieldIterator::getCurrent() {

@@ -28,12 +28,10 @@ Cell*** FieldGenerator::generateField(unsigned int rows, unsigned int cols) {
     for (unsigned int i = 0; i < rows_with_walls; i++) {
         for(unsigned int j = 0; j < cols_with_walls; j++) {
             // Check for being wall
-            if (i == 0 || i == rows_with_walls - 1 || j == 0 || j == cols_with_walls - 1) {
+            if (i == 0 || i == rows_with_walls - 1 || j == 0 || j == cols_with_walls - 1)
                 cells[i][j] = new CellWall(j, i);
-
-            } else {
+            else
                 cells[i][j] = new CellFloor(j, i);
-            }
         }
     }
 

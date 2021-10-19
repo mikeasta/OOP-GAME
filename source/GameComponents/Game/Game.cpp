@@ -41,7 +41,7 @@ void Game::start() {
         EnemyManageCenter enemy_center = EnemyManageCenter(&new_field);
 
         bool game_goes = true;
-        std::string command = "";
+        std::string command;
         system("clear");
         while (game_goes) {
 

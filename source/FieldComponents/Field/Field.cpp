@@ -17,10 +17,11 @@ Cell* Field::getSpecificCell(unsigned int coord_x, unsigned int coord_y) {
 
 
 Field::Field(Field& other_field) {
-    rows = other_field.getRows();
-    cols = other_field.getCols();
-    Cell*** other_cells = other_field.getCells();
+    rows  = other_field.getRows();
+    cols  = other_field.getCols();
     cells = new Cell**[rows];
+    Cell*** other_cells = other_field.getCells();
+
     for(int i = 0; i < rows; i++) {
         cells[i] = new Cell*[cols];
         for (int j = 0; j < cols; j++)
@@ -60,8 +61,7 @@ Field::Field(Field&& other_field) {
 }
 
 Field& Field::operator=(Field&& other_field) {
-    if (this != &other_field)
-    {
+    if (this != &other_field) {
         std::swap(rows, other_field.rows);
         std::swap(cols, other_field.cols);
         std::swap(this->cells, other_field.cells);

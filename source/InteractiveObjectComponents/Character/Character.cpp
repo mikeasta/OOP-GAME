@@ -24,14 +24,7 @@ void Character::buffDefence(int val) {
 }
 
 void Character::stepOnCell(Cell *stepped_cell) {
-    std::pair<bool, std::string> response = stepped_cell->stepEffect(this);
-
-    if (response.first) {
-        // Step done
-    } else {
-        // Something went wrong
-        // Step rejected
-    }
+    stepped_cell->stepEffect(this);
 }
 
 void Character::spawn(Field* field, unsigned int x, unsigned int y) {
@@ -49,9 +42,8 @@ void Character::spawn(Field* field, unsigned int x, unsigned int y) {
         }
     } else {
         Cell* cell = field->getSpecificCell(x, y);
-        if (!cell->isCellContentExist()) {
+        if (!cell->isCellContentExist())
             stepOnCell(cell);
-        }
     }
 }
 

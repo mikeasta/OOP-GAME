@@ -27,7 +27,7 @@ void EnemyManageCenter::move_all() {
 
         // Calc move chance
         RandomNumberGenerator randomizer;
-        std::string option = directions[int(randomizer.generate(0, 3))];
+        std::string option   = directions[int(randomizer.generate(0, 3))];
         std::string response = curr_controller->move(option);
 
         if (response == "DIED")

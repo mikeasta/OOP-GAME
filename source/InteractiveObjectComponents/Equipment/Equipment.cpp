@@ -20,24 +20,27 @@ void Equipment::removeItem(int order_num) {
 }
 
 int Equipment::getAttackBuff() {
-    int equipment_size = items.size();
-    int attack_buff    = 0;
+    unsigned int equipment_size = items.size();
+    int attack_buff = 0;
+
     for (int i = 0; i < equipment_size; i++)
         attack_buff += items[i]->getBonusAttack();
     return attack_buff;
 }
 
 int Equipment::getStaminaBuff() {
-    int equipment_size = items.size();
-    int stamina_buff    = 0;
+    unsigned int equipment_size = items.size();
+    int stamina_buff = 0;
+
     for (int i = 0; i < equipment_size; i++)
         stamina_buff += items[i]->getBonusStamina();
     return stamina_buff;
 }
 
 int Equipment::getDefenceBuff() {
-    int equipment_size = items.size();
-    int defence_buff    = 0;
+    unsigned int equipment_size = items.size();
+    int defence_buff = 0;
+
     for (int i = 0; i < equipment_size; i++)
         defence_buff += items[i]->getBonusDefence();
     return defence_buff;

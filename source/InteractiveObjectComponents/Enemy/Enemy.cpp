@@ -6,8 +6,8 @@
 
 std::map<std::string, std::vector<int>> enemy_voc = {
         { "enemy_1", {5, 30, 5} },
-        { "enemy_2", {5, 10, 40} },
-        { "enemy_3", {5, 15, 15} },
+        { "enemy_2", {5, 50, 40} },
+        { "enemy_3", {5, 100, 15} },
 };
 
 Enemy::Enemy(int damage, int stamina, int defence):
@@ -18,7 +18,7 @@ InteractiveObject* Enemy::clone() {
 }
 
 Enemy* Enemy::create(std::string enemy_type) {
-    std::map<std::string, std::vector<int>>::iterator curr = enemy_voc.begin();
+    auto curr = enemy_voc.begin();
 
     // Search for correct pair
     curr = enemy_voc.find(enemy_type);
@@ -27,7 +27,7 @@ Enemy* Enemy::create(std::string enemy_type) {
 
 Enemy* Enemy::create() {
     RandomNumberGenerator randomizer;
-    std::map<std::string, std::vector<int>>::iterator curr = enemy_voc.begin();
+    auto curr = enemy_voc.begin();
 
     std::advance(curr, randomizer.generate(0, 2));
     return new Enemy(curr->second[0], curr->second[1], curr->second[2]);
