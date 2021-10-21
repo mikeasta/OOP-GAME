@@ -7,7 +7,7 @@
 Character::Character(int damage, int stamina, int defence):
     damage(damage),
     stamina(stamina),
-    defence(defence) {};
+    defence(defence) {}
 
 int Character::getDamage() const { return damage; }
 
@@ -34,14 +34,14 @@ void Character::spawn(Field* field, unsigned int x, unsigned int y) {
         while(!placed) {
             unsigned int random_row = random_generator.generate(1, field->getRows() - 2);
             unsigned int random_col = random_generator.generate(1, field->getCols() - 2);
-            Cell* cell = field->getSpecificCell(random_col, random_row);
+            Cell* cell = field->getCell(random_col, random_row);
             if (!cell->isCellContentExist()) {
                 stepOnCell(cell);
                 placed = true;
             }
         }
     } else {
-        Cell* cell = field->getSpecificCell(x, y);
+        Cell* cell = field->getCell(x, y);
         if (!cell->isCellContentExist())
             stepOnCell(cell);
     }

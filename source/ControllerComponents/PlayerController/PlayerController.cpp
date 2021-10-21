@@ -8,8 +8,9 @@ PlayerController::PlayerController(Player *player, Field *field):
     player(player),
     field(field) {
     FieldIterator iterator = FieldIterator(field);
-    Cell* it_cell          = iterator.getCurrent();
+    Cell* it_cell = iterator.getCurrent();
     InteractiveObject* content;
+
     while (it_cell) {
         content = it_cell->getCellContent();
         if (content)
@@ -24,22 +25,20 @@ PlayerController::PlayerController(Player *player, Field *field):
     }
 }
 
-std::pair<std::string, Combat> PlayerController::move(std::string direction) {
+std::pair<std::string, Combat> PlayerController::move(char direction) {
 
-    Cell* to_move;
-    unsigned int x = curr_cell->getX();
-    unsigned int y = curr_cell->getY();
+    unsigned int x = curr_cell->getX(), y = curr_cell->getY();
 
-    if (direction == "w")
+    if (direction == directions["up"])
         y -= 1;
-    else if (direction == "a")
+    else if (direction == directions["left"])
         x -= 1;
-    else if (direction == "s")
+    else if (direction == directions["down"])
         y += 1;
-    else if (direction == "d")
+    else if (direction == directions["right"])
         x += 1;
 
-    to_move = field->getSpecificCell(x, y);
+    Cell* to_move = field->getCell(x, y);
 
     std::pair<bool, std::string> response = to_move->stepEffect(player);
     if (typeid(*to_move) == typeid(CellFloor)) {
@@ -50,8 +49,8 @@ std::pair<std::string, Combat> PlayerController::move(std::string direction) {
             if (typeid(*to_move->getCellContent()) == typeid(Item)) {
                 player->take(dynamic_cast<Item *>(to_move->getCellContent()));
             } else if (typeid(*to_move->getCellContent()) == typeid(Enemy)){
-                Character* opponent =  dynamic_cast<Character*>(to_move->getCellContent());
-                std::pair<std::string, Combat>  result = player->attack(opponent);
+                auto* opponent = dynamic_cast<Character*>(to_move->getCellContent());
+                std::pair<std::string, Combat> result = player->attack(opponent);
 
                 if (result.first == "WIN") {
                     dynamic_cast<Enemy*>(opponent)->die();

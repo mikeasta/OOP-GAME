@@ -5,5 +5,5 @@ public:
     virtual ~InteractiveObject() = default;
 
     // Pattern: Prototype
-    virtual InteractiveObject* clone();
+    virtual InteractiveObject* clone() = 0;
 };

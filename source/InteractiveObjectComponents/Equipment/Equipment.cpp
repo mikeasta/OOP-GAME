@@ -4,7 +4,7 @@
 
 #include "Equipment.h"
 
-Equipment::Equipment():items({}) {};
+Equipment::Equipment():items({}) {}
 
 void Equipment::addItem(Item *new_item) {
     items.push_back(new_item);
@@ -44,4 +44,17 @@ int Equipment::getDefenceBuff() {
     for (int i = 0; i < equipment_size; i++)
         defence_buff += items[i]->getBonusDefence();
     return defence_buff;
+}
+
+std::map<std::string, int> Equipment::getItemLabels() {
+    std::map<std::string, int> item_count_voc;
+    unsigned int equipment_length = items.size();
+    for (int i = 0; i < equipment_length; i++) {
+        if (item_count_voc[items[i]->getName()])
+            item_count_voc[items[i]->getName()]++;
+        else
+            item_count_voc[items[i]->getName()] = 1;
+    }
+
+    return item_count_voc;
 }

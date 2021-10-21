@@ -16,6 +16,6 @@ unsigned int RandomNumberGenerator::generate(unsigned int lower_num, unsigned in
 }
 
 bool RandomNumberGenerator::simulate_chance(unsigned int chance_percent) {
-    int dice = generate(0, 100);
+    unsigned int dice = generate(0, 100);
     return (dice >= 100 - chance_percent);
 }

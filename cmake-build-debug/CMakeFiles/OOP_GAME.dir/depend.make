@@ -9,6 +9,26 @@ CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o: \
  ../client/CombatCLI/CombatCLI.cpp \
  ../client/CombatCLI/CombatCLI.h \
  ../source/GameComponents/Combat/Combat.h
+CMakeFiles/OOP_GAME.dir/client/EquipmentCLI/EquipmentCLI.cpp.o: \
+ ../client/CLI/CLI.h \
+ ../client/EquipmentCLI/EquipmentCLI.cpp \
+ ../client/EquipmentCLI/EquipmentCLI.h \
+ ../source/CellComponents/Cell/Cell.h \
+ ../source/CellComponents/CellEntrance/CellEntrance.h \
+ ../source/CellComponents/CellExit/CellExit.h \
+ ../source/CellComponents/CellFloor/CellFloor.h \
+ ../source/CellComponents/CellWall/CellWall.h \
+ ../source/FieldComponents/Field/Field.h \
+ ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/GameComponents/Combat/Combat.h \
+ ../source/InteractiveObjectComponents/Character/Character.h \
+ ../source/InteractiveObjectComponents/Enemy/Enemy.h \
+ ../source/InteractiveObjectComponents/Equipment/Equipment.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../source/InteractiveObjectComponents/Player/Player.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o: \
  ../client/CLI/CLI.h \
  ../client/FieldCLI/FieldCLI.cpp \
@@ -52,6 +72,7 @@ CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o: \
 CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../client/CLI/CLI.h \
  ../client/CombatCLI/CombatCLI.h \
+ ../client/EquipmentCLI/EquipmentCLI.h \
  ../client/FieldCLI/FieldCLI.h \
  ../client/PlayerCLI/PlayerCLI.h \
  ../main.cpp \
@@ -212,6 +233,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o: \
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../client/CLI/CLI.h \
  ../client/CombatCLI/CombatCLI.h \
+ ../client/EquipmentCLI/EquipmentCLI.h \
  ../client/FieldCLI/FieldCLI.h \
  ../client/PlayerCLI/PlayerCLI.h \
  ../source/CellComponents/Cell/Cell.h \

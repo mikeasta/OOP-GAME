@@ -22,15 +22,16 @@ void Game::start() {
     if (!game_is_started) {
         clear_input();
         game_is_started = true;
-        unsigned int field_rows = 5, field_cols = 10;
-        RandomNumberGenerator randomizer;
+        unsigned int field_rows = 1, field_cols = 2;
         FieldGenerator generator = FieldGenerator();
-        Cell*** cells            = generator.generateField(field_rows, field_cols);
-        Field new_field          = Field(cells, field_rows, field_cols);
-        Player new_player        = Player(10, 100, 20);
-        FieldCLI new_field_cli   = FieldCLI(&new_field);
+        Cell*** cells = generator.generateField(field_rows, field_cols);
+        Field new_field = Field(cells, field_rows, field_cols);
+        Player new_player = Player(10, 10, 20);
+
+        FieldCLI new_field_cli = FieldCLI(&new_field);
         PlayerCLI new_player_cli = PlayerCLI(&new_player);
-        CombatCLI combat_drawer  = CombatCLI();
+        CombatCLI combat_drawer = CombatCLI();
+        EquipmentCLI equipment_cli = EquipmentCLI(&new_player);
 
         // Fill field
         FieldAggregate aggregator;
@@ -41,7 +42,7 @@ void Game::start() {
         EnemyManageCenter enemy_center = EnemyManageCenter(&new_field);
 
         bool game_goes = true;
-        std::string command;
+        char command;
         system("clear");
         while (game_goes) {
 
@@ -50,29 +51,28 @@ void Game::start() {
 
             // Print
             new_field_cli.print();
+            combat_drawer.print();
             new_player_cli.print();
+            equipment_cli.print();
 
             // Player move
             std::cin >> command;
-            if (sizeof(command)) {
 
-                // get char
-                std::pair<std::string, Combat> response = player_controller.move(command);
-                system("clear");
-                if (response.first == "WIN" ||
-                    response.first == "DRAW" ||
-                    response.first == "LOSS") {
+            // get char
+            std::pair<std::string, Combat> response = player_controller.move(command);
+            system("clear");
+            if (response.first == "WIN" ||
+                response.first == "DRAW" ||
+                response.first == "LOSS") {
 
-                    // Draw combat
-                    combat_drawer.print(response.second);
-                }
-
-                if (response.first == "EXIT" || response.first == "LOSS")
-                    game_goes = false;
+                // Draw combat
+                combat_drawer.setLastCombat(response.second);
             }
 
+            if (response.first == "EXIT" || response.first == "LOSS")
+                game_goes = false;
+
             command = *"";
-            sleep(0.1);
         }
     }
 }

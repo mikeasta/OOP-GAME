@@ -1,21 +1,4 @@
 #include "FieldCLI.h"
-#define CLEAR "\x1B[2J\x1B[H"
-
-// Content chars vocabulary
-std::map<std::string, std::string> content_voc {
-    { typeid(Player).name(), "P" },
-    { typeid(Item).name(),   "I" },
-    { typeid(Enemy).name(),  "E"},
-};
-
-// Cell chars vocabulary
-std::map<std::string, std::string> cell_voc {
-        { typeid(Cell).name(),         " " },
-        { typeid(CellWall).name(),     "W" },
-        { typeid(CellExit).name(),     "X" },
-        { typeid(CellEntrance).name(), "N" },
-        { typeid(CellFloor).name(),    "." },
-};
 
 void FieldCLI::print() {
     std::cout << std::endl;

@@ -4,13 +4,12 @@
 
 #include "EnemyManageCenter.h"
 
-std::vector<std::string> directions = {"w", "a", "s", "d"};
-
 EnemyManageCenter::EnemyManageCenter(Field *field):
-    field(field){
+    field(field) {
     FieldIterator iterator = FieldIterator(field);
-    Cell* it_cell          = iterator.getCurrent();
+    Cell* it_cell = iterator.getCurrent();
     InteractiveObject* content;
+
     while (it_cell) {
         content = it_cell->getCellContent();
         if (content)
@@ -27,11 +26,13 @@ void EnemyManageCenter::move_all() {
 
         // Calc move chance
         RandomNumberGenerator randomizer;
-        std::string option   = directions[int(randomizer.generate(0, 3))];
-        std::string response = curr_controller->move(option);
+        auto curr = directions.begin();
+        std::advance(curr, randomizer.generate(0, 8));
+
+        char option = curr->second;
+        std::string response = curr_controller->move( directions, option);
 
         if (response == "DIED")
             controllers.erase(controllers.begin() + i);
     }
-    return;
 }

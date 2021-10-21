@@ -8,13 +8,21 @@
 #include "../../FieldComponents/Field/Field.h"
 #include "../EnemyController/EnemyController.h"
 #include <string>
+#include <tuple>
 
 class EnemyManageCenter {
+private:
+    std::map<std::string, char> directions = {
+            { "up", *"w"},
+            { "down", *"s"},
+            { "left", *"a"},
+            { "right", *"d"}
+    };
 protected:
     std::vector<EnemyController*> controllers = {};
     Field* field;
 public:
-    EnemyManageCenter(Field* field);
+    explicit EnemyManageCenter(Field* field);
 
     void move_all();
 };

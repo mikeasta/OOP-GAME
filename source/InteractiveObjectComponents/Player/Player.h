@@ -13,6 +13,7 @@
 #include "../Enemy/Enemy.h"
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 #include <string>
+#include <vector>
 #include <tuple>
 
 class Player: public Character {
@@ -20,16 +21,17 @@ private:
     Equipment* equipment;
     bool is_spawned = false;
 public:
-    Player(int damage = 0, int stamina = 0, int defence = 0);
-    virtual ~Player() = default;
+    explicit Player(int damage = 0, int stamina = 0, int defence = 0);
+    ~Player() override = default;
 
     // Combat states
     int getFullDamage() const;
     int getFullStamina() const;
     int getFullDefence() const;
 
+    std::map<std::string, int> getEquipmentLabels();
     void take(Item* item);
-    virtual void spawn(Field* field, unsigned int x = 0, unsigned int y = 0) final;
+    void spawn(Field* field, unsigned int x, unsigned int y) final;
 
     std::pair<std::string, Combat> attack(Character* opponent);
 };

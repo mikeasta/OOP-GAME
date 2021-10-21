@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/client/EquipmentCLI/EquipmentCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/EquipmentCLI/EquipmentCLI.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/main.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/main.cpp.o"

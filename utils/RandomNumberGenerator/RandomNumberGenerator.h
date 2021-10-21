@@ -4,8 +4,9 @@
 
 class RandomNumberGenerator {
 public:
-    RandomNumberGenerator() {}
+    RandomNumberGenerator() = default;
     ~RandomNumberGenerator() = default;
+
     unsigned int generate(unsigned int lower_num, unsigned int upper_num);
     bool simulate_chance(unsigned int chance_percent);
 };

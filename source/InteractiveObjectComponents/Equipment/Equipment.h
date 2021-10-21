@@ -7,6 +7,8 @@
 
 #include "../Item/Item.h"
 #include <vector>
+#include <tuple>
+#include <string>
 
 class Equipment {
 private:
@@ -20,6 +22,7 @@ public:
     int getAttackBuff();
     int getStaminaBuff();
     int getDefenceBuff();
+    std::map<std::string, int> getItemLabels();
 };
 
 #endif //OOP_GAME_EQUIPMENT_H

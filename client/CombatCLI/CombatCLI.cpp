@@ -4,8 +4,12 @@
 
 #include "CombatCLI.h"
 
-void CombatCLI::print(Combat combat_results) {
-    std::map<std::string, unsigned int> details = combat_results.getCombatDetails();
+void CombatCLI::setLastCombat(Combat new_combat) { last_combat = new_combat; }
+
+void CombatCLI::print() {
+    std::map<std::string, unsigned int> details = last_combat.getCombatDetails();
+    if (!details["player_damage_done"])
+        return;
 
     std::cout << "\nCombat:";
     std::cout << "\nPlayer done " << details["player_damage_done"] << " damage. ";
@@ -20,4 +24,6 @@ void CombatCLI::print(Combat combat_results) {
     std::cout << "\nOpponent done " << details["enemy_damage_done"] << " damage. ";
     if (details["is_enemy_critical"])
         std::cout << "(Critical)";
+
+    std::cout << std::endl;
 }

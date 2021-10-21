@@ -10,24 +10,22 @@ EnemyController::EnemyController(Enemy *enemy, Field *field, Cell* curr_cell):
     curr_cell(curr_cell) {};
 
 
-std::string EnemyController::move(std::string direction) {
+std::string EnemyController::move(std::map<std::string, char> direction_voc, char direction) {
     if (!enemy->getState())
         return "DIED";
 
-    Cell* to_move;
-    unsigned int x = curr_cell->getX();
-    unsigned int y = curr_cell->getY();
-    if (direction == "w")
+    unsigned int x = curr_cell->getX(), y = curr_cell->getY();
+
+    if (direction == direction_voc["up"])
         y -= 1;
-    else if (direction == "a")
-        x -= 1;
-    else if (direction == "s")
+    else if (direction == direction_voc["down"])
         y += 1;
-    else if (direction == "d")
+    else if (direction == direction_voc["left"])
+        x -= 1;
+    else if (direction == direction_voc["right"])
         x += 1;
 
-
-    to_move = field->getSpecificCell(x, y);
+    Cell* to_move = field->getCell(x, y);
     if (to_move->isCellContentExist())
         return "ENEMY_STOPPED";
 

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o"
   "CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/client/EquipmentCLI/EquipmentCLI.cpp.o"
   "CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
   "CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o"
   "CMakeFiles/OOP_GAME.dir/main.cpp.o"

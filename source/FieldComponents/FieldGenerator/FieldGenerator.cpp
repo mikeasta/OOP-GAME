@@ -1,6 +1,5 @@
 #include <iostream>
 #include "FieldGenerator.h"
-#include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 
 Cell*** FieldGenerator::generateField(unsigned int rows, unsigned int cols) {
 
@@ -38,13 +37,14 @@ Cell*** FieldGenerator::generateField(unsigned int rows, unsigned int cols) {
 
     // Define entrance and exit
     unsigned int chooseDirection = random_generator.generate(0, 1);
+    unsigned int entranceCol, entranceRow, exitCol, exitRow, chooseEntranceSide;
     if (chooseDirection == 0) {
         // Entrance and exit on first and last row
-        unsigned int chooseEntranceSide = random_generator.generate(0, 1);
-        if (chooseEntranceSide = 0) {
+        chooseEntranceSide = random_generator.generate(0, 1);
+        if (chooseEntranceSide == 0) {
             // Entrance on the first row
-            unsigned int entranceCol = random_generator.generate(1, cols);
-            unsigned int exitCol     = random_generator.generate(1, cols);
+            entranceCol = random_generator.generate(1, cols);
+            exitCol     = random_generator.generate(1, cols);
 
             delete cells[0][entranceCol];
             cells[0][entranceCol] = new CellEntrance(entranceCol, 0);
@@ -53,8 +53,8 @@ Cell*** FieldGenerator::generateField(unsigned int rows, unsigned int cols) {
             cells[rows+1][exitCol] = new CellExit(exitCol, rows+1);
         } else {
             // Entrance on the last row
-            unsigned int entranceCol = random_generator.generate(1, cols);
-            unsigned int exitCol     = random_generator.generate(1, cols);
+            entranceCol = random_generator.generate(1, cols);
+            exitCol     = random_generator.generate(1, cols);
 
             delete cells[rows+1][entranceCol];
             cells[rows+1][entranceCol] = new CellEntrance(entranceCol, rows+1);
@@ -64,11 +64,11 @@ Cell*** FieldGenerator::generateField(unsigned int rows, unsigned int cols) {
         }
     } else {
         // Entrance and exit on first and last column
-        unsigned int chooseEntranceSide = random_generator.generate(0, 1);
-        if (chooseEntranceSide = 0) {
+        chooseEntranceSide = random_generator.generate(0, 1);
+        if (chooseEntranceSide == 0) {
             // Entrance on the left
-            unsigned int entranceRow = random_generator.generate(1, rows);
-            unsigned int exitRow     = random_generator.generate(1, rows);
+            entranceRow = random_generator.generate(1, rows);
+            exitRow     = random_generator.generate(1, rows);
 
             delete cells[entranceRow][0];
             cells[entranceRow][0] = new CellEntrance(0, entranceRow);
@@ -77,8 +77,8 @@ Cell*** FieldGenerator::generateField(unsigned int rows, unsigned int cols) {
             cells[exitRow][cols+1] = new CellExit(cols+1, exitRow);
         } else {
             // Entrance on the right
-            unsigned int entranceRow = random_generator.generate(1, rows);
-            unsigned int exitRow     = random_generator.generate(1, rows);
+            entranceRow = random_generator.generate(1, rows);
+            exitRow     = random_generator.generate(1, rows);
 
             delete cells[entranceRow][cols+1];
             cells[entranceRow][cols+1] = new CellEntrance(cols+1, entranceRow);

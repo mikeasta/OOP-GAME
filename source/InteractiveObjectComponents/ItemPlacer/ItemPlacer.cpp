@@ -9,8 +9,7 @@ void ItemPlacer::place(Item* curr_item, Cell* curr_cell) {
 }
 
 void ItemPlacer::fillField(Field *field) {
-    int count          = 3;
-    int chance_percent = 10;
+    int count = 3, chance_percent = 10;
     RandomNumberGenerator rd;
 
     auto iterator   = new FieldIterator(field);
@@ -18,11 +17,10 @@ void ItemPlacer::fillField(Field *field) {
     while (curr_cell) {
         bool isEmpty = !curr_cell->isCellContentExist();
         if ((typeid(*curr_cell) == typeid(CellFloor)) & isEmpty & rd.simulate_chance(chance_percent) & count > 0) {
-            Item item_generator = Item();
-            curr_cell->setCellContent(item_generator.create());
+            Item* new_item = Item().create(item_voc);
+            place(new_item, curr_cell);
             count--;
         }
         curr_cell = iterator->getNext();
     }
 }
-

@@ -20,26 +20,21 @@ protected:
     int bonus_defence;
 public:
     // Constructor
-    Item() {};
-    Item(std::string item_name, int bonus_attack, int bonus_stamina, int bonus_defence);
-    ~Item() = default;
+    explicit Item(std::string item_name = "item", int bonus_attack = 0, int bonus_stamina = 0, int bonus_defence = 0);
+    ~Item() override = default;
 
     // Getter
     std::string getName();
-    int getBonusAttack();
-    int getBonusStamina();
-    int getBonusDefence();
+    int getBonusAttack() const;
+    int getBonusStamina() const;
+    int getBonusDefence() const;
 
     // Pattern: Prototype
     // Clones current Item
-    virtual InteractiveObject* clone();
+    InteractiveObject* clone() override;
 
     // Pattern: Factory Method
-    // Creates Item object with item type
-    Item* create(std::string item_type);
-
-    // Creates random Item object with item type
-    Item* create();
+    Item* create(std::map<std::string, std::vector<int>> item_voc);
 };
 
 #endif //OOP_GAME_ITEM_H

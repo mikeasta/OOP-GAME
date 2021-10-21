@@ -11,9 +11,15 @@ Field::~Field() {
 }
 
 
-Cell* Field::getSpecificCell(unsigned int coord_x, unsigned int coord_y) {
+Cell* Field::getCell(unsigned int coord_x, unsigned int coord_y) {
     return cells[coord_y][coord_x];
 }
+
+Cell*** Field::getCells() { return cells; }
+
+unsigned int Field::getRows() const { return rows; }
+
+unsigned int Field::getCols() const { return cols; }
 
 
 Field::Field(Field& other_field) {
@@ -22,7 +28,7 @@ Field::Field(Field& other_field) {
     cells = new Cell**[rows];
     Cell*** other_cells = other_field.getCells();
 
-    for(int i = 0; i < rows; i++) {
+    for (int i = 0; i < rows; i++) {
         cells[i] = new Cell*[cols];
         for (int j = 0; j < cols; j++)
             cells[i][j] = other_cells[i][j]->clone();
@@ -44,7 +50,8 @@ Field& Field::operator=(Field& other_field) {
         cols = other_field.getCols();
         Cell*** other_cells = other_field.getCells();
         cells = new Cell**[rows];
-        for(int i = 0; i < rows; i++) {
+
+        for (int i = 0; i < rows; i++) {
             cells[i] = new Cell*[cols];
             for (int j = 0; j < cols; j++)
                 cells[i][j] = other_cells[i][j]->clone();
@@ -54,13 +61,13 @@ Field& Field::operator=(Field& other_field) {
     return *this;
 }
 
-Field::Field(Field&& other_field) {
+Field::Field(Field&& other_field) noexcept {
     std::swap(rows, other_field.rows);
     std::swap(cols, other_field.cols);
     std::swap(this->cells, other_field.cells);
 }
 
-Field& Field::operator=(Field&& other_field) {
+Field& Field::operator=(Field&& other_field) noexcept{
     if (this != &other_field) {
         std::swap(rows, other_field.rows);
         std::swap(cols, other_field.cols);

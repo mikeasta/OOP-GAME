@@ -11,9 +11,23 @@
 #include "../../source/InteractiveObjectComponents/Enemy/Enemy.h"
 
 class FieldCLI: public CLI {
+private:
+    std::map<std::string, std::string> content_voc {
+            { typeid(Player).name(), "P" },
+            { typeid(Item).name(),   "I" },
+            { typeid(Enemy).name(),  "E"},
+    };
+
+    std::map<std::string, std::string> cell_voc {
+            { typeid(Cell).name(),         " " },
+            { typeid(CellWall).name(),     "W" },
+            { typeid(CellExit).name(),     "X" },
+            { typeid(CellEntrance).name(), "N" },
+            { typeid(CellFloor).name(),    "." },
+    };
 protected:
     Field* field;
 public:
-    FieldCLI(Field* field):field(field) {}
+    explicit FieldCLI(Field* field):field(field) {}
     void print() override;
 };

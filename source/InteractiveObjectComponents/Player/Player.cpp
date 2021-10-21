@@ -21,8 +21,15 @@ int Player::getFullDefence() const {
     return defence + equipment->getDefenceBuff();
 }
 
+std::map<std::string, int> Player::getEquipmentLabels() {
+    return equipment->getItemLabels();
+}
+
 void Player::take(Item* item) {
-    equipment->addItem(item);
+    if (item->getBonusStamina())
+        buffStamina(item->getBonusStamina());
+    else
+        equipment->addItem(item);
 }
 
 void Player::spawn(Field* field, unsigned int x, unsigned int y) {
@@ -52,21 +59,21 @@ void Player::spawn(Field* field, unsigned int x, unsigned int y) {
         unsigned int entrance_y = curr_item->getY();
         if (entrance_x == 0) {
             // Left border
-            got = field->getSpecificCell(entrance_x + 1, entrance_y);
+            got = field->getCell(entrance_x + 1, entrance_y);
         } else if (entrance_x == cols - 1) {
             // Right border
-            got = field->getSpecificCell(entrance_x - 1, entrance_y);
+            got = field->getCell(entrance_x - 1, entrance_y);
         } else if (entrance_y == 0) {
             // Upper border
-            got = field->getSpecificCell(entrance_x, entrance_y + 1);
+            got = field->getCell(entrance_x, entrance_y + 1);
         } else if (entrance_y == rows - 1) {
             // Upper border
-            got = field->getSpecificCell(entrance_x, entrance_y - 1);
+            got = field->getCell(entrance_x, entrance_y - 1);
         }
 
-        got->stepEffect(this);
+        if (got) got->stepEffect(this);
     } else {
-        Cell* cell = field->getSpecificCell(x, y);
+        Cell* cell = field->getCell(x, y);
 
         if (!cell->isCellContentExist())
             stepOnCell(cell);
@@ -81,22 +88,16 @@ std::pair<std::string, Combat> Player::attack(Character *opponent) {
     // Generate player damage
     RandomNumberGenerator randomizer;
     bool player_crit = false, opponent_crit = false;
-    float full_player_damage = getFullDamage();
+    int full_player_damage = getFullDamage();
     if (randomizer.simulate_chance(15)) {
         full_player_damage *= 2;
         player_crit = true;
     }
 
-
-    // Refactor
-    std::cout <<"\n -Player damage - " << full_player_damage;
-
     opponent->get_combat_damage(full_player_damage);
 
-    // Refactor
-    std::cout << "\n -Opponent health - " << opponent->getStamina() << "\n";
     if (opponent->getStamina() > 0) {
-        float full_opponent_damage = opponent->getDamage();
+        int full_opponent_damage = opponent->getDamage();
         if (randomizer.simulate_chance(5)) {
             full_opponent_damage *= 2;
             opponent_crit = true;

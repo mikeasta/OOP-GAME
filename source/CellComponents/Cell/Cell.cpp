@@ -11,7 +11,7 @@ Cell* Cell::clone() {
 }
 
 bool Cell::isCellContentExist() {
-    return (this->cell_content) ? true: false;
+    return (this->cell_content) != nullptr;
 }
 
 void Cell::setCellContent(InteractiveObject *object) {
@@ -26,8 +26,8 @@ void Cell::clearCellContent() {
     this->setCellContent(nullptr);
 }
 
-unsigned int Cell::getX() { return coord_x; }
-unsigned int Cell::getY() { return coord_y; }
+unsigned int Cell::getX() const { return coord_x; }
+unsigned int Cell::getY() const { return coord_y; }
 
 std::pair<bool, std::string> Cell::stepEffect(InteractiveObject* object) {
     std::pair<bool, std::string> response;

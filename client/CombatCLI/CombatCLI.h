@@ -10,9 +10,12 @@
 #include <string>
 #include <iostream>
 
-class CombatCLI {
+class CombatCLI: public CLI {
+private:
+    Combat last_combat;
 public:
-    void print(Combat combat_results);
+    void setLastCombat(Combat new_combat);
+    void print() final;
 };
 
 #endif //OOP_GAME_COMBATCLI_H

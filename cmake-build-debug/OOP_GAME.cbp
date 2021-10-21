@@ -118,6 +118,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/EquipmentCLI/EquipmentCLI.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/EquipmentCLI/EquipmentCLI.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

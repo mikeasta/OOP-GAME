@@ -10,6 +10,8 @@
 #include "../../FieldComponents/FieldIterator/FieldIterator.h"
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 #include <string>
+#include <tuple>
+#include <map>
 
 class EnemyController {
 private:
@@ -18,9 +20,8 @@ private:
     Cell* curr_cell;
 public:
     EnemyController(Enemy* enemy, Field* field, Cell* curr_cell);
-    // ~EnemyController() = default;
 
-    std::string move(std::string direction);
+    std::string move(std::map<std::string, char> direction_voc, char direction);
 };
 
 #endif //OOP_GAME_ENEMYCONTROLLER_H

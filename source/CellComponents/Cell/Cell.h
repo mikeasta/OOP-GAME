@@ -16,8 +16,8 @@ public:
 
     // Getters
     bool isCellContentExist();
-    unsigned int getX();
-    unsigned int getY();
+    unsigned int getX() const;
+    unsigned int getY() const;
     InteractiveObject* getCellContent();
 
     // Setters

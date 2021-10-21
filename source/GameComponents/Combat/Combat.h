@@ -16,10 +16,11 @@ private:
     bool is_enemy_critical;
     bool is_enemy_died;
 public:
-    Combat(unsigned int player_damage_done = 0,
-        bool is_player_critical = 0,
+    explicit Combat(unsigned int player_damage_done = 0,
+        bool is_player_critical = false,
         unsigned int enemy_damage_done = 0,
-        bool is_enemy_critical = 0, bool is_enemy_died = 0);
+        bool is_enemy_critical = false,
+        bool is_enemy_died = false);
 
     std::map<std::string, unsigned int> getCombatDetails() const;
 };

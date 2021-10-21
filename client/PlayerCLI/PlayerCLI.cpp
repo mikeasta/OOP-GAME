@@ -23,11 +23,12 @@ void PlayerCLI::print() {
     if (player->getFullDefence() - player->getDefence()) {
         std::cout << "\n- defence: " << player->getDefence() << " + "
             << player->getFullDefence() - player->getDefence();
+
         if (player->getFullDefence() > 100)
             std::cout << " (100%) ";
         else
             std::cout << " (" << player->getFullDefence() << "%) ";
-    }else
+    } else
         std::cout << "\n- defence: " << player->getDefence();
 
     std::cout << std::endl;

@@ -177,6 +177,30 @@ client/CombatCLI/CombatCLI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.s
 .PHONY : client/CombatCLI/CombatCLI.cpp.s
 
+client/EquipmentCLI/EquipmentCLI.o: client/EquipmentCLI/EquipmentCLI.cpp.o
+.PHONY : client/EquipmentCLI/EquipmentCLI.o
+
+# target to build an object file
+client/EquipmentCLI/EquipmentCLI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/EquipmentCLI/EquipmentCLI.cpp.o
+.PHONY : client/EquipmentCLI/EquipmentCLI.cpp.o
+
+client/EquipmentCLI/EquipmentCLI.i: client/EquipmentCLI/EquipmentCLI.cpp.i
+.PHONY : client/EquipmentCLI/EquipmentCLI.i
+
+# target to preprocess a source file
+client/EquipmentCLI/EquipmentCLI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/EquipmentCLI/EquipmentCLI.cpp.i
+.PHONY : client/EquipmentCLI/EquipmentCLI.cpp.i
+
+client/EquipmentCLI/EquipmentCLI.s: client/EquipmentCLI/EquipmentCLI.cpp.s
+.PHONY : client/EquipmentCLI/EquipmentCLI.s
+
+# target to generate assembly for a file
+client/EquipmentCLI/EquipmentCLI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/EquipmentCLI/EquipmentCLI.cpp.s
+.PHONY : client/EquipmentCLI/EquipmentCLI.cpp.s
+
 client/FieldCLI/FieldCLI.o: client/FieldCLI/FieldCLI.cpp.o
 .PHONY : client/FieldCLI/FieldCLI.o
 
@@ -816,6 +840,9 @@ help:
 	@echo "... client/CombatCLI/CombatCLI.o"
 	@echo "... client/CombatCLI/CombatCLI.i"
 	@echo "... client/CombatCLI/CombatCLI.s"
+	@echo "... client/EquipmentCLI/EquipmentCLI.o"
+	@echo "... client/EquipmentCLI/EquipmentCLI.i"
+	@echo "... client/EquipmentCLI/EquipmentCLI.s"
 	@echo "... client/FieldCLI/FieldCLI.o"
 	@echo "... client/FieldCLI/FieldCLI.i"
 	@echo "... client/FieldCLI/FieldCLI.s"

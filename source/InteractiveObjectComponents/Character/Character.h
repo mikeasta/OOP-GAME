@@ -20,8 +20,8 @@ protected:
     int defence;
 public:
     // Constructors
-    Character(int damage = 0, int stamina = 0, int defence = 0);
-    ~Character() = default;
+    explicit Character(int damage = 0, int stamina = 0, int defence = 0);
+    ~Character() override = default;
 
     // Getters
     int getDamage() const;
@@ -37,10 +37,10 @@ public:
 
 
     virtual void stepOnCell(Cell* cell);
-    virtual void spawn(Field* field, unsigned int x = 0, unsigned int y = 0);
+    virtual void spawn(Field* field, unsigned int x, unsigned int y);
 
     // Pattern: Prototype
-    virtual InteractiveObject* clone();
+    InteractiveObject* clone() override;
 };
 
 #endif //OOP_GAME_CHARACTER_H
