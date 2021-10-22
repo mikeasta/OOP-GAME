@@ -11,10 +11,7 @@ protected:
     unsigned int rows{};
     unsigned int cols{};
 public:
-    Field(Cell*** cells, unsigned int rows, unsigned int cols):
-        cells(cells),
-        rows(rows+2),
-        cols(cols+2) {};
+    Field(Cell*** cells, unsigned int rows, unsigned int cols);
     ~Field();
 
     // Copy & Move

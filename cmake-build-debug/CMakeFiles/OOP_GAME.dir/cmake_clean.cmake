@@ -23,7 +23,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.o"
-  "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o"

@@ -8,13 +8,15 @@ void CombatCLI::setLastCombat(Combat new_combat) { last_combat = new_combat; }
 
 void CombatCLI::print() {
     std::map<std::string, unsigned int> details = last_combat.getCombatDetails();
-    if (!details["player_damage_done"])
+    if (!details["player_damage_done"]) {
         return;
+    }
 
     std::cout << "\nCombat:";
     std::cout << "\nPlayer done " << details["player_damage_done"] << " damage. ";
-    if (details["is_player_critical"])
+    if (details["is_player_critical"]) {
         std::cout << "(Critical)";
+    }
 
     if (details["is_enemy_died"]) {
         std::cout << "\nEnemy died";
@@ -22,8 +24,9 @@ void CombatCLI::print() {
     }
 
     std::cout << "\nOpponent done " << details["enemy_damage_done"] << " damage. ";
-    if (details["is_enemy_critical"])
+    if (details["is_enemy_critical"]) {
         std::cout << "(Critical)";
+    }
 
     std::cout << std::endl;
 }

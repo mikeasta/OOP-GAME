@@ -3,7 +3,6 @@
 
 CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o
  /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.cpp
- /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
 CMakeFiles/OOP_GAME.dir/client/CombatCLI/CombatCLI.cpp.o
  /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
  /home/mikeasta/Programming/OOP-GAME/client/CombatCLI/CombatCLI.cpp
@@ -306,9 +305,6 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.c
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
  /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
-CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
- /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp
- /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.cpp

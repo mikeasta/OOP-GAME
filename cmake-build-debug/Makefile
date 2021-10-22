@@ -705,30 +705,6 @@ source/InteractiveObjectComponents/Equipment/Equipment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Equipment/Equipment.cpp.s
 .PHONY : source/InteractiveObjectComponents/Equipment/Equipment.cpp.s
 
-source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o: source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
-.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o
-
-# target to build an object file
-source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
-.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.o
-
-source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.i: source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i
-.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.i
-
-# target to preprocess a source file
-source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i
-.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.i
-
-source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.s: source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
-.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.s
-
-# target to generate assembly for a file
-source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
-.PHONY : source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp.s
-
 source/InteractiveObjectComponents/Item/Item.o: source/InteractiveObjectComponents/Item/Item.cpp.o
 .PHONY : source/InteractiveObjectComponents/Item/Item.o
 
@@ -906,9 +882,6 @@ help:
 	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.o"
 	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.i"
 	@echo "... source/InteractiveObjectComponents/Equipment/Equipment.s"
-	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.o"
-	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.i"
-	@echo "... source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.s"
 	@echo "... source/InteractiveObjectComponents/Item/Item.o"
 	@echo "... source/InteractiveObjectComponents/Item/Item.i"
 	@echo "... source/InteractiveObjectComponents/Item/Item.s"

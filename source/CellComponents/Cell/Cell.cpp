@@ -11,7 +11,7 @@ Cell* Cell::clone() {
 }
 
 bool Cell::isCellContentExist() {
-    return (this->cell_content) != nullptr;
+    return this->cell_content != nullptr;
 }
 
 void Cell::setCellContent(InteractiveObject *object) {

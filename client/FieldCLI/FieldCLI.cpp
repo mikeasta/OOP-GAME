@@ -10,14 +10,16 @@ void FieldCLI::print() {
         content = curr_item->getCellContent();
 
         // Check for any InteractiveObject in Cell
-        if (content)
+        if (content) {
             std::cout << content_voc[typeid(*content).name()];
-        else
+        } else {
             std::cout << cell_voc[typeid(*curr_item).name()];
+        }
 
         // New line after row
-        if (iterator.isLastInARow())
-            std::cout << "\n";
+        if (iterator.isLastInARow()) {
+            std::cout << std::endl;
+        }
 
         curr_item = iterator.getNext();
     }

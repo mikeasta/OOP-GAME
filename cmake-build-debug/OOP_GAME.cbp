@@ -247,9 +247,6 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
-		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp">
-			<Option target="OOP_GAME"/>
-		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h">
 			<Option target="OOP_GAME"/>
 		</Unit>

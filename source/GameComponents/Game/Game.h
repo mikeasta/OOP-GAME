@@ -20,6 +20,7 @@
 class Game {
 private:
     bool game_is_started = false;
+    bool game_goes = false;
 public:
     void start();
 };

@@ -22,28 +22,30 @@ void Game::start() {
     if (!game_is_started) {
         clear_input();
         game_is_started = true;
-        unsigned int field_rows = 1, field_cols = 2;
-        FieldGenerator generator = FieldGenerator();
-        Cell*** cells = generator.generateField(field_rows, field_cols);
-        Field new_field = Field(cells, field_rows, field_cols);
-        Player new_player = Player(10, 10, 20);
+        unsigned int field_rows = 1;
+        unsigned int field_cols = 2;
+        auto generator = FieldGenerator();
+        auto cells = generator.generateField(field_rows, field_cols);
+        auto new_field = Field(cells, field_rows, field_cols);
+        auto new_player = Player(10, 10, 20);
 
-        FieldCLI new_field_cli = FieldCLI(&new_field);
-        PlayerCLI new_player_cli = PlayerCLI(&new_player);
-        CombatCLI combat_drawer = CombatCLI();
-        EquipmentCLI equipment_cli = EquipmentCLI(&new_player);
+        auto new_field_cli  = FieldCLI(&new_field);
+        auto new_player_cli = PlayerCLI(&new_player);
+        auto combat_drawer  = CombatCLI();
+        auto equipment_cli  = EquipmentCLI(&new_player);
 
         // Fill field
         FieldAggregate aggregator;
         aggregator.aggregate(&new_field, &new_player);
-        PlayerController player_controller = PlayerController(&new_player, &new_field);
+        auto player_controller = PlayerController(&new_player, &new_field);
 
         // Detect all enemies
-        EnemyManageCenter enemy_center = EnemyManageCenter(&new_field);
+        auto enemy_center = EnemyManageCenter(&new_field);
 
-        bool game_goes = true;
         char command;
         system("clear");
+
+        game_goes = true;
         while (game_goes) {
 
             // Enemy stepping
@@ -69,8 +71,9 @@ void Game::start() {
                 combat_drawer.setLastCombat(response.second);
             }
 
-            if (response.first == "EXIT" || response.first == "LOSS")
+            if (response.first == "EXIT" || response.first == "LOSS") {
                 game_goes = false;
+            }
 
             command = *"";
         }

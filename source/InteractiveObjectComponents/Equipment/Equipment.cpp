@@ -23,8 +23,10 @@ int Equipment::getAttackBuff() {
     unsigned int equipment_size = items.size();
     int attack_buff = 0;
 
-    for (int i = 0; i < equipment_size; i++)
+    for (int i = 0; i < equipment_size; i++) {
         attack_buff += items[i]->getBonusAttack();
+    }
+
     return attack_buff;
 }
 
@@ -32,8 +34,10 @@ int Equipment::getStaminaBuff() {
     unsigned int equipment_size = items.size();
     int stamina_buff = 0;
 
-    for (int i = 0; i < equipment_size; i++)
+    for (int i = 0; i < equipment_size; i++) {
         stamina_buff += items[i]->getBonusStamina();
+    }
+
     return stamina_buff;
 }
 
@@ -41,8 +45,10 @@ int Equipment::getDefenceBuff() {
     unsigned int equipment_size = items.size();
     int defence_buff = 0;
 
-    for (int i = 0; i < equipment_size; i++)
+    for (int i = 0; i < equipment_size; i++) {
         defence_buff += items[i]->getBonusDefence();
+    }
+
     return defence_buff;
 }
 
@@ -50,10 +56,11 @@ std::map<std::string, int> Equipment::getItemLabels() {
     std::map<std::string, int> item_count_voc;
     unsigned int equipment_length = items.size();
     for (int i = 0; i < equipment_length; i++) {
-        if (item_count_voc[items[i]->getName()])
+        if (item_count_voc[items[i]->getName()]) {
             item_count_voc[items[i]->getName()]++;
-        else
+        } else {
             item_count_voc[items[i]->getName()] = 1;
+        }
     }
 
     return item_count_voc;

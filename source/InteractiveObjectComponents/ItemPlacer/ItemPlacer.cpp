@@ -9,7 +9,8 @@ void ItemPlacer::place(Item* curr_item, Cell* curr_cell) {
 }
 
 void ItemPlacer::fillField(Field *field) {
-    int count = 3, chance_percent = 10;
+    int count = 3;
+    int chance_percent = 10;
     RandomNumberGenerator rd;
 
     auto iterator   = new FieldIterator(field);

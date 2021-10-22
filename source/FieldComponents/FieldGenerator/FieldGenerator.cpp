@@ -18,19 +18,28 @@ Cell*** FieldGenerator::generateField(unsigned int rows, unsigned int cols) {
 
 
     // Create two-dimensional array of cells
-    Cell*** cells = new Cell**[rows_with_walls];
-    for (unsigned int i = 0; i < rows_with_walls; i++)
+    auto cells = new Cell**[rows_with_walls];
+    for (unsigned int i = 0; i < rows_with_walls; i++) {
         cells[i] = new Cell*[cols_with_walls];
+    }
+
 
 
     // Fill field
     for (unsigned int i = 0; i < rows_with_walls; i++) {
         for(unsigned int j = 0; j < cols_with_walls; j++) {
-            // Check for being wall
-            if (i == 0 || i == rows_with_walls - 1 || j == 0 || j == cols_with_walls - 1)
+            // Check for wall
+            bool isWall =
+                    i == 0 ||
+                    i == rows_with_walls - 1 ||
+                    j == 0 ||
+                    j == cols_with_walls - 1;
+
+            if (isWall) {
                 cells[i][j] = new CellWall(j, i);
-            else
+            } else {
                 cells[i][j] = new CellFloor(j, i);
+            }
         }
     }
 

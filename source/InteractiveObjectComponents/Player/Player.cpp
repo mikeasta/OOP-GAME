@@ -5,7 +5,7 @@
 #include "Player.h"
 
 Player::Player(int damage, int stamina, int defence):
-        Character(damage, stamina, defence) {
+    Character(damage, stamina, defence) {
     equipment = new Equipment;
 }
 
@@ -26,60 +26,56 @@ std::map<std::string, int> Player::getEquipmentLabels() {
 }
 
 void Player::take(Item* item) {
-    if (item->getBonusStamina())
+    if (item->getBonusStamina()) {
         buffStamina(item->getBonusStamina());
-    else
+    } else {
         equipment->addItem(item);
+    }
 }
 
-void Player::spawn(Field* field, unsigned int x, unsigned int y) {
+void Player::spawn(Field* field) {
 
     // If player is already spawned
-    if (is_spawned) { return; }
+    if (is_spawned) {
+        return;
+    }
 
     is_spawned = true;
     unsigned int rows = field->getRows();
     unsigned int cols = field->getCols();
 
-    if (x == 0 || y == 0 || x >= cols || y >= rows) {
 
-        // Look for entrance
-        FieldIterator iterator = FieldIterator(field);
-        Cell* curr_item = iterator.getCurrent();
-        while(curr_item != nullptr) {
-            if (typeid(*curr_item) == typeid(CellEntrance))
-                break;
-            else
-                curr_item = iterator.getNext();
+    // Look for entrance
+    FieldIterator iterator = FieldIterator(field);
+    Cell* curr_item = iterator.getCurrent();
+    while(curr_item != nullptr) {
+        if (typeid(*curr_item) != typeid(CellEntrance)) {
+            curr_item = iterator.getNext();
+        } else {
+            break;
         }
+    }
 
-        // Analyze cell position and get neighbour cell
-        Cell* got               = nullptr;
-        unsigned int entrance_x = curr_item->getX();
-        unsigned int entrance_y = curr_item->getY();
-        if (entrance_x == 0) {
-            // Left border
-            got = field->getCell(entrance_x + 1, entrance_y);
-        } else if (entrance_x == cols - 1) {
-            // Right border
-            got = field->getCell(entrance_x - 1, entrance_y);
-        } else if (entrance_y == 0) {
-            // Upper border
-            got = field->getCell(entrance_x, entrance_y + 1);
-        } else if (entrance_y == rows - 1) {
-            // Upper border
-            got = field->getCell(entrance_x, entrance_y - 1);
-        }
+    // Analyze cell position and get neighbour cell
+    Cell* got               = nullptr;
+    unsigned int entrance_x = curr_item->getX();
+    unsigned int entrance_y = curr_item->getY();
+    if (entrance_x == 0) {
+        // Left border
+        got = field->getCell(entrance_x + 1, entrance_y);
+    } else if (entrance_x == cols - 1) {
+        // Right border
+        got = field->getCell(entrance_x - 1, entrance_y);
+    } else if (entrance_y == 0) {
+        // Upper border
+        got = field->getCell(entrance_x, entrance_y + 1);
+    } else if (entrance_y == rows - 1) {
+        // Upper border
+        got = field->getCell(entrance_x, entrance_y - 1);
+    }
 
-        if (got) got->stepEffect(this);
-    } else {
-        Cell* cell = field->getCell(x, y);
-
-        if (!cell->isCellContentExist())
-            stepOnCell(cell);
-        else
-            std::cout << "\nPlayer: Spawn denied. Something is already on the cell.\n";
-
+    if (got) {
+        got->stepEffect(this);
     }
 }
 

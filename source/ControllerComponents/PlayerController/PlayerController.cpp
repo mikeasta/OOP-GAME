@@ -27,16 +27,18 @@ PlayerController::PlayerController(Player *player, Field *field):
 
 std::pair<std::string, Combat> PlayerController::move(char direction) {
 
-    unsigned int x = curr_cell->getX(), y = curr_cell->getY();
+    unsigned int x = curr_cell->getX();
+    unsigned int y = curr_cell->getY();
 
-    if (direction == directions["up"])
+    if (direction == directions["up"]) {
         y -= 1;
-    else if (direction == directions["left"])
+    } else if (direction == directions["left"]) {
         x -= 1;
-    else if (direction == directions["down"])
+    } else if (direction == directions["down"]) {
         y += 1;
-    else if (direction == directions["right"])
+    } else if (direction == directions["right"]) {
         x += 1;
+    }
 
     Cell* to_move = field->getCell(x, y);
 

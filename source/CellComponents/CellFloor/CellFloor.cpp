@@ -8,6 +8,7 @@ Cell* CellFloor::clone() {
 std::pair<bool, std::string> CellFloor::stepEffect(InteractiveObject* object) {
     bool isCellContent = isCellContentExist();
     std::pair<bool, std::string> response;
+
     if (!isCellContent) {
         this->setCellContent(object);
         // Set Player's object curr_cell

@@ -9,15 +9,25 @@ Character::Character(int damage, int stamina, int defence):
     stamina(stamina),
     defence(defence) {}
 
-int Character::getDamage() const { return damage; }
+int Character::getDamage() const {
+    return damage;
+}
 
-int Character::getStamina() const { return stamina; }
+int Character::getStamina() const {
+    return stamina;
+}
 
-int Character::getDefence() const { return this->defence; }
+int Character::getDefence() const {
+    return defence;
+}
 
-void Character::buffDamage(int val) { damage += val; }
+void Character::buffDamage(int val) {
+    damage += val;
+}
 
-void Character::buffStamina(int val) { stamina += val; }
+void Character::buffStamina(int val) {
+    stamina += val;
+}
 
 void Character::buffDefence(int val) {
     defence = defence + val > 100 ? 100 : defence + val;
@@ -42,8 +52,9 @@ void Character::spawn(Field* field, unsigned int x, unsigned int y) {
         }
     } else {
         Cell* cell = field->getCell(x, y);
-        if (!cell->isCellContentExist())
+        if (!cell->isCellContentExist()) {
             stepOnCell(cell);
+        }
     }
 }
 

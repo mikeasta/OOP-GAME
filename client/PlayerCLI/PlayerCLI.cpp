@@ -8,28 +8,39 @@ PlayerCLI::PlayerCLI(Player *player):player(player) {}
 
 void PlayerCLI::print() {
     std::cout << "\nPlayer: ";
-    if (player->getFullStamina() - player->getStamina())
-        std::cout << "\n- health: " << player->getStamina() << " + " << player->getFullStamina() - player->getStamina()
+    if (player->getFullStamina() - player->getStamina()) {
+        std::cout << "\n- health: " << player->getStamina()
+            << " + " << player->getFullStamina() - player->getStamina()
             << " (" <<player->getFullStamina() << ")";
-    else
+    } else {
         std::cout << "\n- health: " << player->getStamina();
+    }
 
-    if (player->getFullDamage() - player->getDamage())
-        std::cout << "\n- damage: " << player->getDamage() << " + " << player->getFullDamage() - player->getDamage()
+
+    if (player->getFullDamage() - player->getDamage()) {
+        std::cout << "\n- damage: " << player->getDamage()
+            << " + " << player->getFullDamage() - player->getDamage()
             << " (" <<player->getFullDamage() << ")";
-    else
+    } else {
         std::cout << "\n- damage: " << player->getDamage();
+    }
+
 
     if (player->getFullDefence() - player->getDefence()) {
-        std::cout << "\n- defence: " << player->getDefence() << " + "
+        std::cout << "\n- defence: " << player->getDefence()
+            << " + "
             << player->getFullDefence() - player->getDefence();
 
-        if (player->getFullDefence() > 100)
+        if (player->getFullDefence() > 100) {
             std::cout << " (100%) ";
-        else
+        } else {
             std::cout << " (" << player->getFullDefence() << "%) ";
-    } else
+        }
+
+    } else {
         std::cout << "\n- defence: " << player->getDefence();
+    }
+
 
     std::cout << std::endl;
 }

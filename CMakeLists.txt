@@ -37,7 +37,6 @@ add_executable(OOP_GAME
         source/FieldComponents/FieldGenerator/FieldGenerator.h
         source/FieldComponents/FieldIterator/FieldIterator.cpp
         source/FieldComponents/FieldIterator/FieldIterator.h
-        source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.cpp
         source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
         utils/RandomNumberGenerator/RandomNumberGenerator.cpp
         utils/RandomNumberGenerator/RandomNumberGenerator.h

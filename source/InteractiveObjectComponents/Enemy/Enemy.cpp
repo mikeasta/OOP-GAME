@@ -19,6 +19,10 @@ Enemy* Enemy::create(std::map<std::string, std::vector<int>> enemy_voc) {
     return new Enemy(curr->second[0], curr->second[1], curr->second[2]);
 }
 
-void Enemy::die() { alive = false; }
+void Enemy::die() {
+    alive = false;
+}
 
-bool Enemy::getState() const { return alive; }
+bool Enemy::getState() const {
+    return alive;
+}

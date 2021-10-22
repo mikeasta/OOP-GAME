@@ -1,10 +1,16 @@
 #include "Field.h"
 #include <iostream>
 
+Field::Field(Cell*** cells, unsigned int rows, unsigned int cols):
+    cells(cells),
+    rows(rows+2),
+    cols(cols+2) {}
+
 Field::~Field() {
     for (unsigned int i = 0; i < rows; i++) {
-        for (unsigned int j = 0; j < cols; j++)
+        for (unsigned int j = 0; j < cols; j++) {
             delete cells[i][j];
+        }
         delete[] cells[i];
     }
     delete[] cells;
@@ -15,11 +21,17 @@ Cell* Field::getCell(unsigned int coord_x, unsigned int coord_y) {
     return cells[coord_y][coord_x];
 }
 
-Cell*** Field::getCells() { return cells; }
+Cell*** Field::getCells() {
+    return cells;
+}
 
-unsigned int Field::getRows() const { return rows; }
+unsigned int Field::getRows() const {
+    return rows;
+}
 
-unsigned int Field::getCols() const { return cols; }
+unsigned int Field::getCols() const {
+    return cols;
+}
 
 
 Field::Field(Field& other_field) {
@@ -30,8 +42,9 @@ Field::Field(Field& other_field) {
 
     for (int i = 0; i < rows; i++) {
         cells[i] = new Cell*[cols];
-        for (int j = 0; j < cols; j++)
+        for (int j = 0; j < cols; j++) {
             cells[i][j] = other_cells[i][j]->clone();
+        }
     } 
 }
 
@@ -39,8 +52,9 @@ Field& Field::operator=(Field& other_field) {
     if (this != &other_field) {
         // Deletion
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++)
+            for (int j = 0; j < cols; j++) {
                 delete cells[i][j];
+            }
             delete[] cells[i];
         }
         delete[] cells;
@@ -53,8 +67,9 @@ Field& Field::operator=(Field& other_field) {
 
         for (int i = 0; i < rows; i++) {
             cells[i] = new Cell*[cols];
-            for (int j = 0; j < cols; j++)
+            for (int j = 0; j < cols; j++) {
                 cells[i][j] = other_cells[i][j]->clone();
+            }
         } 
     }
 

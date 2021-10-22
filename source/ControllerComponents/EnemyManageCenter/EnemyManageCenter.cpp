@@ -12,9 +12,13 @@ EnemyManageCenter::EnemyManageCenter(Field *field):
 
     while (it_cell) {
         content = it_cell->getCellContent();
-        if (content)
-            if (typeid(*content) == typeid(Enemy))
-                controllers.push_back(new EnemyController(dynamic_cast<Enemy*>(content), field, it_cell));
+        if (content) {
+            if (typeid(*content) == typeid(Enemy)) {
+                auto new_enemy_controller = new EnemyController(dynamic_cast<Enemy*>(content), field, it_cell);
+                controllers.push_back(new_enemy_controller);
+            }
+        }
+
 
         it_cell = iterator.getNext();
     }
@@ -32,7 +36,9 @@ void EnemyManageCenter::move_all() {
         char option = curr->second;
         std::string response = curr_controller->move( directions, option);
 
-        if (response == "DIED")
+        if (response == "DIED") {
             controllers.erase(controllers.begin() + i);
+        }
+
     }
 }
