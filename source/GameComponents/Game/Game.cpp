@@ -3,10 +3,7 @@
 //
 
 #include "Game.h"
-
-#include <termios.h>
-#include <unistd.h>
-#include <iostream>
+#include <iostream> // For std::cin
 
 void Game::stop() {
     game_goes = false;
@@ -65,7 +62,6 @@ void Game::start() {
             }
 
             if (response.first == "EXIT" || response.first == "LOSS") {
-                std::cout << "\nGame ends with command: " << response.first;
                 stop();
             }
         }

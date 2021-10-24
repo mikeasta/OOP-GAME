@@ -64,6 +64,12 @@ iostream
 string
 -
 
+/home/mikeasta/Programming/OOP-GAME/main.cpp
+iostream
+-
+source/GameComponents/Game/Game.h
+/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
+
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 tuple
 -
@@ -179,10 +185,6 @@ string
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp
 Game.h
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
-termios.h
--
-unistd.h
--
 iostream
 -
 
@@ -207,10 +209,6 @@ iostream
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h
 ../../ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
-unistd.h
--
-ncurses.h
--
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
 ../../CellComponents/Cell/Cell.h
