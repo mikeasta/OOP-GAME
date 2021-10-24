@@ -15,11 +15,11 @@
 
 class EnemyController {
 private:
-    Field* field;
+    Field& field;
     Enemy* enemy;
     Cell* curr_cell;
 public:
-    EnemyController(Enemy* enemy, Field* field, Cell* curr_cell);
+    EnemyController(Enemy* enemy, Field& field, Cell* curr_cell);
 
     std::string move(std::map<std::string, char> direction_voc, char direction);
 };

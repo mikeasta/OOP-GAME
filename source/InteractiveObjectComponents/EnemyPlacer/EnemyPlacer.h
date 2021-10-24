@@ -17,7 +17,7 @@ private:
     };
 public:
     void place(Enemy* curr_enemy, Cell* curr_cell);
-    void fillField(Field* field);
+    void fillField(Field &field);
 };
 
 #endif //OOP_GAME_ENEMYPLACER_H

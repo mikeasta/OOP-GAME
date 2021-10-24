@@ -23,6 +23,7 @@ void Enemy::die() {
     alive = false;
 }
 
-bool Enemy::getState() const {
+bool Enemy::getState() {
+    std::cout << std::endl << bool(alive);
     return alive;
 }

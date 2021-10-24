@@ -33,7 +33,7 @@ void Player::take(Item* item) {
     }
 }
 
-void Player::spawn(Field* field) {
+void Player::spawn(Field &field) {
 
     // If player is already spawned
     if (is_spawned) {
@@ -41,8 +41,8 @@ void Player::spawn(Field* field) {
     }
 
     is_spawned = true;
-    unsigned int rows = field->getRows();
-    unsigned int cols = field->getCols();
+    unsigned int rows = field.getRows();
+    unsigned int cols = field.getCols();
 
 
     // Look for entrance
@@ -62,16 +62,16 @@ void Player::spawn(Field* field) {
     unsigned int entrance_y = curr_item->getY();
     if (entrance_x == 0) {
         // Left border
-        got = field->getCell(entrance_x + 1, entrance_y);
+        got = field.getCell(entrance_x + 1, entrance_y);
     } else if (entrance_x == cols - 1) {
         // Right border
-        got = field->getCell(entrance_x - 1, entrance_y);
+        got = field.getCell(entrance_x - 1, entrance_y);
     } else if (entrance_y == 0) {
         // Upper border
-        got = field->getCell(entrance_x, entrance_y + 1);
+        got = field.getCell(entrance_x, entrance_y + 1);
     } else if (entrance_y == rows - 1) {
         // Upper border
-        got = field->getCell(entrance_x, entrance_y - 1);
+        got = field.getCell(entrance_x, entrance_y - 1);
     }
 
     if (got) {

@@ -8,7 +8,7 @@ void EnemyPlacer::place(Enemy* curr_enemy, Cell* curr_cell) {
     curr_cell->setCellContent(curr_enemy);
 }
 
-void EnemyPlacer::fillField(Field *field) {
+void EnemyPlacer::fillField(Field &field) {
     int count  = 3, chance_percent = 10;
     RandomNumberGenerator rd;
 

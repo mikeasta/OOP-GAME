@@ -22,11 +22,11 @@ private:
             { "right", *"d"}
     };
 
-    Field* field;
-    Player* player;
+    Field &field;
+    Player &player;
     Cell* curr_cell;
 public:
-    PlayerController(Player* player, Field* field);
+    PlayerController(Player &player, Field &field);
 
     std::pair<std::string, Combat> move(char direction);
 };

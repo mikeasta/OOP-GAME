@@ -4,11 +4,11 @@
 
 #include "EquipmentCLI.h"
 
-EquipmentCLI::EquipmentCLI(Player *player):
+EquipmentCLI::EquipmentCLI(Player &player):
     player(player) {}
 
 void EquipmentCLI::print() {
-    std::map<std::string, int> item_vocab = player->getEquipmentLabels();
+    std::map<std::string, int> item_vocab = player.getEquipmentLabels();
 
     bool printed = false;
     for (const auto& item : item_vocab) {

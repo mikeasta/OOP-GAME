@@ -11,9 +11,9 @@
 
 class PlayerCLI: public CLI {
 protected:
-    Player* player;
+    Player& player;
 public:
-    PlayerCLI(Player* player);
+    PlayerCLI(Player& player);
 
     void print() override;
 };

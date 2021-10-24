@@ -26,8 +26,8 @@ private:
             { typeid(CellFloor).name(),    "." },
     };
 protected:
-    Field* field;
+    Field& field;
 public:
-    explicit FieldCLI(Field* field):field(field) {}
+    explicit FieldCLI(Field& field):field(field) {}
     void print() override;
 };

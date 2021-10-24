@@ -20,9 +20,9 @@ private:
     };
 protected:
     std::vector<EnemyController*> controllers = {};
-    Field* field;
+    Field& field;
 public:
-    explicit EnemyManageCenter(Field* field);
+    explicit EnemyManageCenter(Field &field);
 
     void move_all();
 };

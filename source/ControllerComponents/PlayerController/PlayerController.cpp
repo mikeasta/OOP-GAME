@@ -4,7 +4,7 @@
 
 #include "PlayerController.h"
 
-PlayerController::PlayerController(Player *player, Field *field):
+PlayerController::PlayerController(Player &player, Field &field):
     player(player),
     field(field) {
     FieldIterator iterator = FieldIterator(field);
@@ -40,25 +40,25 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
         x += 1;
     }
 
-    Cell* to_move = field->getCell(x, y);
+    Cell* to_move = field.getCell(x, y);
 
-    std::pair<bool, std::string> response = to_move->stepEffect(player);
+    std::pair<bool, std::string> response = to_move->stepEffect(&player);
     if (typeid(*to_move) == typeid(CellFloor)) {
 
         // Check if something in cell
         bool is_content = to_move->isCellContentExist();
         if (is_content) {
             if (typeid(*to_move->getCellContent()) == typeid(Item)) {
-                player->take(dynamic_cast<Item *>(to_move->getCellContent()));
+                player.take(dynamic_cast<Item *>(to_move->getCellContent()));
             } else if (typeid(*to_move->getCellContent()) == typeid(Enemy)){
                 auto* opponent = dynamic_cast<Character*>(to_move->getCellContent());
-                std::pair<std::string, Combat> result = player->attack(opponent);
+                std::pair<std::string, Combat> result = player.attack(opponent);
 
                 if (result.first == "WIN") {
                     dynamic_cast<Enemy*>(opponent)->die();
                     curr_cell->clearCellContent();
                     curr_cell = to_move;
-                    curr_cell->setCellContent(player);
+                    curr_cell->setCellContent(&player);
                 }
 
                 return result;
@@ -67,7 +67,7 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
 
         curr_cell->clearCellContent();
         curr_cell = to_move;
-        curr_cell->setCellContent(player);
+        curr_cell->setCellContent(&player);
     }
 
     return std::make_pair(response.second, Combat());

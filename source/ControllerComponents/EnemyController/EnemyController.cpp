@@ -4,17 +4,20 @@
 
 #include "EnemyController.h"
 
-EnemyController::EnemyController(Enemy *enemy, Field *field, Cell* curr_cell):
+EnemyController::EnemyController(Enemy *enemy, Field &field, Cell* curr_cell):
     enemy(enemy),
     field(field),
     curr_cell(curr_cell) {}
 
 
 std::string EnemyController::move(std::map<std::string, char> direction_voc, char direction) {
+
     if (!enemy->getState()) {
+        std::cout << "\nEnemyCOntroller: died";
         return "DIED";
     }
 
+    std::cout <<" Move to " << direction;
 
     unsigned int x = curr_cell->getX();
     unsigned int y = curr_cell->getY();
@@ -29,7 +32,7 @@ std::string EnemyController::move(std::map<std::string, char> direction_voc, cha
         x += 1;
     }
 
-    Cell* to_move = field->getCell(x, y);
+    Cell* to_move = field.getCell(x, y);
     if (to_move->isCellContentExist()) {
         return "ENEMY_STOPPED";
     }

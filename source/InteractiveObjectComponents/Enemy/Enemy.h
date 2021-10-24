@@ -21,7 +21,7 @@ public:
     InteractiveObject* clone() final;
 
     Enemy* create(std::map<std::string, std::vector<int>>);
-    bool getState() const;
+    bool getState();
     void die();
 };
 

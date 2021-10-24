@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.20)
 project(OOP_GAME)
 
 set(CMAKE_CXX_STANDARD 14)
-
 include_directories(client/CLI)
 include_directories(client/FieldCLI)
 include_directories(source/CellComponents/Cell)

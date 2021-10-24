@@ -5,11 +5,11 @@
 
 class FieldIterator {
 private:
-    Field* field;
+    Field& field;
     unsigned int current_coord_x = 0;
     unsigned int current_coord_y = 0;
 public:
-    explicit FieldIterator(Field* field);
+    explicit FieldIterator(Field& field);
 
     // Getters
     Cell* getCurrent();

@@ -13,9 +13,9 @@
 
 class EquipmentCLI: public CLI {
 private:
-    Player* player;
+    Player &player;
 public:
-    explicit EquipmentCLI(Player* player);
+    explicit EquipmentCLI(Player& player);
     void print() final;
 };
 

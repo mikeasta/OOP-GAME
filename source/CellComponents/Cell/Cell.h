@@ -8,7 +8,7 @@ class Cell {
 protected:
     unsigned int coord_x;
     unsigned int coord_y;
-    InteractiveObject* cell_content = nullptr;
+    InteractiveObject *cell_content = nullptr;
 public:
     // Constructor
     Cell(unsigned int coord_x, unsigned int coord_y);
@@ -21,7 +21,7 @@ public:
     InteractiveObject* getCellContent();
 
     // Setters
-    void setCellContent(InteractiveObject* object);
+    void setCellContent(InteractiveObject *object);
     void clearCellContent();
 
     // Pattern "Prototype"

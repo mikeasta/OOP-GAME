@@ -23,6 +23,7 @@ private:
     bool game_goes = false;
 public:
     void start();
+    void stop();
 };
 
 #endif //OOP_GAME_GAME_H

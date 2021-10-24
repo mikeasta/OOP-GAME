@@ -13,7 +13,7 @@ class FieldAggregate {
 private:
     bool field_is_aggregated = false;
 public:
-    void aggregate(Field* field, Player* player);
+    void aggregate(Field &field, Player &player);
 };
 
 #endif //OOP_GAME_FIELDAGGREGATE_H

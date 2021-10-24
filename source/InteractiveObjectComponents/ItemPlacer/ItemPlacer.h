@@ -26,7 +26,7 @@ private:
     };
 public:
     void place(Item* curr_item, Cell* curr_cell);
-    void fillField(Field* field);
+    void fillField(Field &field);
 };
 
 #endif //OOP_GAME_ITEMPLACER_H

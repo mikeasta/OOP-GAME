@@ -8,44 +8,38 @@
 #include <unistd.h>
 #include <iostream>
 
-//для установления ввода символов в терминале в режим, не требующий перевода строки
-void clear_input()
-{
-    static struct termios told, tnew;
-    tcgetattr(STDIN_FILENO, &told);
-    tnew = told;
-    tnew.c_lflag &= ~ICANON;
-    tcsetattr(STDIN_FILENO, TCSANOW, &tnew);
+void Game::stop() {
+    game_goes = false;
 }
 
 void Game::start() {
     if (!game_is_started) {
-        clear_input();
+        game_goes = true;
         game_is_started = true;
-        unsigned int field_rows = 1;
-        unsigned int field_cols = 2;
+
+        unsigned int field_rows = 5;
+        unsigned int field_cols = 10;
         auto generator = FieldGenerator();
         auto cells = generator.generateField(field_rows, field_cols);
         auto new_field = Field(cells, field_rows, field_cols);
         auto new_player = Player(10, 10, 20);
 
-        auto new_field_cli  = FieldCLI(&new_field);
-        auto new_player_cli = PlayerCLI(&new_player);
+        auto new_field_cli  = FieldCLI(new_field);
+        auto new_player_cli = PlayerCLI(new_player);
         auto combat_drawer  = CombatCLI();
-        auto equipment_cli  = EquipmentCLI(&new_player);
+        auto equipment_cli  = EquipmentCLI(new_player);
 
         // Fill field
         FieldAggregate aggregator;
-        aggregator.aggregate(&new_field, &new_player);
-        auto player_controller = PlayerController(&new_player, &new_field);
+        aggregator.aggregate(new_field, new_player);
+        auto player_controller = PlayerController(new_player, new_field);
 
         // Detect all enemies
-        auto enemy_center = EnemyManageCenter(&new_field);
+        auto enemy_center = EnemyManageCenter(new_field);
 
         char command;
         system("clear");
 
-        game_goes = true;
         while (game_goes) {
 
             // Enemy stepping
@@ -59,9 +53,8 @@ void Game::start() {
 
             // Player move
             std::cin >> command;
-
-            // get char
             std::pair<std::string, Combat> response = player_controller.move(command);
+
             system("clear");
             if (response.first == "WIN" ||
                 response.first == "DRAW" ||
@@ -72,10 +65,9 @@ void Game::start() {
             }
 
             if (response.first == "EXIT" || response.first == "LOSS") {
-                game_goes = false;
+                std::cout << "\nGame ends with command: " << response.first;
+                stop();
             }
-
-            command = *"";
         }
     }
 }

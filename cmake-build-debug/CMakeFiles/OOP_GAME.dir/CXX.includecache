@@ -20,10 +20,6 @@ string
 iostream
 -
 
-/home/mikeasta/Programming/OOP-GAME/client/EquipmentCLI/EquipmentCLI.cpp
-EquipmentCLI.h
-/home/mikeasta/Programming/OOP-GAME/client/EquipmentCLI/EquipmentCLI.h
-
 /home/mikeasta/Programming/OOP-GAME/client/EquipmentCLI/EquipmentCLI.h
 ../CLI/CLI.h
 /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
@@ -37,10 +33,6 @@ string
 -
 iostream
 -
-
-/home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp
-FieldCLI.h
-/home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.h
 
 /home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.h
 iostream
@@ -62,10 +54,6 @@ string
 ../../source/InteractiveObjectComponents/Enemy/Enemy.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
 
-/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.cpp
-PlayerCLI.h
-/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.h
-
 /home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.h
 ../CLI/CLI.h
 /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
@@ -75,12 +63,6 @@ iostream
 -
 string
 -
-
-/home/mikeasta/Programming/OOP-GAME/main.cpp
-iostream
--
-source/GameComponents/Game/Game.h
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
 
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 tuple
@@ -106,10 +88,6 @@ string
 ../Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.cpp
-EnemyController.h
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.h
-
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.h
 ../../FieldComponents/Field/Field.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
@@ -126,10 +104,6 @@ tuple
 map
 -
 
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp
-EnemyManageCenter.h
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
-
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
 ../../FieldComponents/FieldIterator/FieldIterator.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
@@ -141,10 +115,6 @@ string
 -
 tuple
 -
-
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.cpp
-PlayerController.h
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h
 
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h
 map
@@ -164,21 +134,11 @@ string
 ../../FieldComponents/FieldIterator/FieldIterator.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
 
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.cpp
-Field.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
-iostream
--
-
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
 ../../CellComponents/Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 ../FieldGenerator/FieldGenerator.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
-
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.cpp
-FieldAggregate.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
 
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldAggregate/FieldAggregate.h
 ../Field/Field.h
@@ -189,12 +149,6 @@ FieldAggregate.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
 ../../InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
-
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.cpp
-iostream
--
-FieldGenerator.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
 
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
 ../../CellComponents/Cell/Cell.h
@@ -209,10 +163,6 @@ FieldGenerator.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellWall/CellWall.h
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
-
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.cpp
-FieldIterator.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
 
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
 ../Field/Field.h
@@ -262,10 +212,6 @@ unistd.h
 ncurses.h
 -
 
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp
-Character.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
-
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
 ../../CellComponents/Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
@@ -282,10 +228,6 @@ iostream
 string
 -
 
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.cpp
-Enemy.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
-
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
@@ -298,10 +240,6 @@ map
 string
 -
 
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp
-EnemyPlacer.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
-
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
 ../Enemy/Enemy.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
@@ -309,10 +247,6 @@ EnemyPlacer.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
 ../../FieldComponents/FieldIterator/FieldIterator.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
-
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.cpp
-Equipment.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
 ../Item/Item.h
@@ -340,10 +274,6 @@ vector
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp
-ItemPlacer.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
-
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
 ../Item/Item.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
@@ -355,10 +285,6 @@ ItemPlacer.h
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 type_traits
 -
-
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.cpp
-Player.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
 ../Character/Character.h
