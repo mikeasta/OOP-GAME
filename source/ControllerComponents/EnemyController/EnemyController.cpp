@@ -13,11 +13,8 @@ EnemyController::EnemyController(Enemy *enemy, Field &field, Cell* curr_cell):
 std::string EnemyController::move(std::map<std::string, char> direction_voc, char direction) {
 
     if (!enemy->getState()) {
-        std::cout << "\nEnemyCOntroller: died";
         return "DIED";
     }
-
-    std::cout <<" Move to " << direction;
 
     unsigned int x = curr_cell->getX();
     unsigned int y = curr_cell->getY();

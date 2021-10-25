@@ -23,5 +23,4 @@ void EnemyPlacer::fillField(Field &field) {
         }
         curr_cell = iterator->getNext();
     }
-
 }

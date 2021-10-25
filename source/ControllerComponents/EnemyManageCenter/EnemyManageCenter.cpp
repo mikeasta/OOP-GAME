@@ -16,8 +16,6 @@ EnemyManageCenter::EnemyManageCenter(Field &field):
             if (typeid(*content) == typeid(Enemy)) {
                 auto new_enemy_controller = new EnemyController(dynamic_cast<Enemy*>(content), field, it_cell);
                 controllers.push_back(new_enemy_controller);
-
-                std::cout << "\nControllers count: " << controllers.size();
             }
         }
 
@@ -27,9 +25,7 @@ EnemyManageCenter::EnemyManageCenter(Field &field):
 }
 
 void EnemyManageCenter::move_all() {
-    std::cout << "\nEMG:Controllers count: " << controllers.size();
     for (int i = 0; i < controllers.size(); i++) {
-        std::cout << "\nMove Enemy#" << i;
         EnemyController* curr_controller = controllers[i];
 
         // Calc move chance

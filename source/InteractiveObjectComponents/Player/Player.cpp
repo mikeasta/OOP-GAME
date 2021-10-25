@@ -44,7 +44,6 @@ void Player::spawn(Field &field) {
     unsigned int rows = field.getRows();
     unsigned int cols = field.getCols();
 
-
     // Look for entrance
     FieldIterator iterator = FieldIterator(field);
     Cell* curr_item = iterator.getCurrent();
@@ -57,20 +56,19 @@ void Player::spawn(Field &field) {
     }
 
     // Analyze cell position and get neighbour cell
-    Cell* got               = nullptr;
+    Cell* got = nullptr;
     unsigned int entrance_x = curr_item->getX();
     unsigned int entrance_y = curr_item->getY();
+
+    // Taking cell, where player will
+    // be spawned
     if (entrance_x == 0) {
-        // Left border
         got = field.getCell(entrance_x + 1, entrance_y);
     } else if (entrance_x == cols - 1) {
-        // Right border
         got = field.getCell(entrance_x - 1, entrance_y);
     } else if (entrance_y == 0) {
-        // Upper border
         got = field.getCell(entrance_x, entrance_y + 1);
     } else if (entrance_y == rows - 1) {
-        // Upper border
         got = field.getCell(entrance_x, entrance_y - 1);
     }
 
@@ -79,40 +77,44 @@ void Player::spawn(Field &field) {
     }
 }
 
-std::pair<std::string, Combat> Player::attack(Character *opponent) {
+std::pair<std::string, Combat> Player::attack(Character *enemy) {
 
     // Generate player damage
     RandomNumberGenerator randomizer;
-    bool player_crit = false, opponent_crit = false;
+    CombatDetailsStruct details;
+
     int full_player_damage = getFullDamage();
     if (randomizer.simulate_chance(15)) {
         full_player_damage *= 2;
-        player_crit = true;
+        details.is_player_critical = true;
     }
 
-    opponent->get_combat_damage(full_player_damage);
+    details.player_damage_done = full_player_damage;
+    enemy->get_combat_damage(full_player_damage);
 
-    if (opponent->getStamina() > 0) {
-        int full_opponent_damage = opponent->getDamage();
+    // Check if enemy died
+    if (enemy->getStamina() > 0) {
+        int full_opponent_damage = enemy->getDamage();
         if (randomizer.simulate_chance(5)) {
             full_opponent_damage *= 2;
-            opponent_crit = true;
+            details.is_enemy_critical = true;
         }
 
+        details.enemy_damage_done = full_opponent_damage;
         get_combat_damage(full_opponent_damage);
 
-        Combat new_combat = Combat(full_player_damage,
-                                   player_crit,
-                                   full_opponent_damage,
-                                   opponent_crit,
-                                   false);
-        return (getFullStamina() > 0) ? std::make_pair("DRAW", new_combat) : std::make_pair("LOSS", new_combat);
+        Combat new_combat = Combat(details);
+
+        // Check, if player died;
+        if (getFullStamina() > 0) {
+            return std::make_pair("DRAW", new_combat);
+        } else {
+            return std::make_pair("LOSS", new_combat);
+        }
+
     } else {
-        Combat new_combat = Combat(full_player_damage,
-                                   player_crit,
-                                   0,
-                                   false,
-                                   true);
+        details.is_enemy_died = true;
+        Combat new_combat = Combat(details);
 
         return std::make_pair("WIN", new_combat);
     }

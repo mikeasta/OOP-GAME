@@ -41,7 +41,6 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
     }
 
     Cell* to_move = field.getCell(x, y);
-
     std::pair<bool, std::string> response = to_move->stepEffect(&player);
     if (typeid(*to_move) == typeid(CellFloor)) {
 
@@ -51,6 +50,7 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
             if (typeid(*to_move->getCellContent()) == typeid(Item)) {
                 player.take(dynamic_cast<Item *>(to_move->getCellContent()));
             } else if (typeid(*to_move->getCellContent()) == typeid(Enemy)){
+
                 auto* opponent = dynamic_cast<Character*>(to_move->getCellContent());
                 std::pair<std::string, Combat> result = player.attack(opponent);
 

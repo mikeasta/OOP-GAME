@@ -14,6 +14,13 @@ Combat::Combat(unsigned int player_damage_done,
        is_enemy_critical(is_enemy_critical),
        is_enemy_died(is_enemy_died) {}
 
+Combat::Combat(CombatDetailsStruct details):
+        player_damage_done(details.player_damage_done),
+        is_player_critical(details.is_player_critical),
+        enemy_damage_done(details.enemy_damage_done),
+        is_enemy_critical(details.is_enemy_critical),
+        is_enemy_died(details.is_enemy_died) {}
+
 std::map<std::string, unsigned int> Combat::getCombatDetails() const {
     return {
         { "player_damage_done", player_damage_done },

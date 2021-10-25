@@ -8,6 +8,14 @@
 #include <map>
 #include <string>
 
+struct CombatDetailsStruct {
+    unsigned int player_damage_done = 0;
+    bool is_player_critical = false;
+    unsigned int enemy_damage_done = 0;
+    bool is_enemy_critical = false;
+    bool is_enemy_died = false;
+};
+
 class Combat {
 private:
     unsigned int player_damage_done;
@@ -21,6 +29,8 @@ public:
         unsigned int enemy_damage_done = 0,
         bool is_enemy_critical = false,
         bool is_enemy_died = false);
+
+    explicit Combat(CombatDetailsStruct details);
 
     std::map<std::string, unsigned int> getCombatDetails() const;
 };

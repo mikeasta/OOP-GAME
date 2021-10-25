@@ -24,6 +24,5 @@ void Enemy::die() {
 }
 
 bool Enemy::getState() {
-    std::cout << std::endl << bool(alive);
     return alive;
 }
