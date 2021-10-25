@@ -27,6 +27,7 @@ PlayerController::PlayerController(Player &player, Field &field):
 
 std::pair<std::string, Combat> PlayerController::move(char direction) {
 
+    auto response_lib = Response().getResponseLib();
     unsigned int x = curr_cell->getX();
     unsigned int y = curr_cell->getY();
 
@@ -41,8 +42,8 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
     }
 
     Cell* to_move = field.getCell(x, y);
-    std::pair<bool, std::string> response = to_move->stepEffect(&player);
-    if (typeid(*to_move) == typeid(CellFloor)) {
+    std::string response = to_move->stepEffect(&player);
+    if (response == response_lib["floor"]) {
 
         // Check if something in cell
         bool is_content = to_move->isCellContentExist();
@@ -54,7 +55,7 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
                 auto* opponent = dynamic_cast<Character*>(to_move->getCellContent());
                 std::pair<std::string, Combat> result = player.attack(opponent);
 
-                if (result.first == "WIN") {
+                if (result.first == response_lib["win"]) {
                     dynamic_cast<Enemy*>(opponent)->die();
                     curr_cell->clearCellContent();
                     curr_cell = to_move;
@@ -70,6 +71,6 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
         curr_cell->setCellContent(&player);
     }
 
-    return std::make_pair(response.second, Combat());
+    return std::make_pair(response, Combat());
 }
 

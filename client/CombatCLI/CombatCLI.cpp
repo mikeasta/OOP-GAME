@@ -29,4 +29,6 @@ void CombatCLI::print() {
     }
 
     std::cout << std::endl;
+
+    last_combat = Combat();
 }

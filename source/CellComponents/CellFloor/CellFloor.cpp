@@ -5,14 +5,12 @@ Cell* CellFloor::clone() {
     return tmp;
 }
 
-std::pair<bool, std::string> CellFloor::stepEffect(InteractiveObject* object) {
+std::string CellFloor::stepEffect(InteractiveObject* object) {
     bool isCellContent = isCellContentExist();
-    std::pair<bool, std::string> response;
 
     if (!isCellContent) {
         this->setCellContent(object);
-        // Set Player's object curr_cell
-        response = std::make_pair(true, "FLOOR");
     }
-    return response;
+    auto response_lib = Response().getResponseLib();
+    return response_lib["floor"];
 }

@@ -5,6 +5,7 @@
 #ifndef OOP_GAME_ENEMYCONTROLLER_H
 #define OOP_GAME_ENEMYCONTROLLER_H
 
+#include "../../GameComponents/Response/Response.h"
 #include "../../FieldComponents/Field/Field.h"
 #include "../../InteractiveObjectComponents/Enemy/Enemy.h"
 #include "../../FieldComponents/FieldIterator/FieldIterator.h"

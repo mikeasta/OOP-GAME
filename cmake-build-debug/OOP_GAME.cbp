@@ -223,6 +223,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

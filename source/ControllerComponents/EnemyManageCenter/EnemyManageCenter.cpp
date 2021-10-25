@@ -25,6 +25,7 @@ EnemyManageCenter::EnemyManageCenter(Field &field):
 }
 
 void EnemyManageCenter::move_all() {
+    auto response_lib = Response().getResponseLib();
     for (int i = 0; i < controllers.size(); i++) {
         EnemyController* curr_controller = controllers[i];
 
@@ -36,7 +37,7 @@ void EnemyManageCenter::move_all() {
         char option = curr->second;
         std::string response = curr_controller->move( directions, option);
 
-        if (response == "DIED") {
+        if (response == response_lib["enemy_died"]) {
             controllers.erase(controllers.begin() + i);
         }
 

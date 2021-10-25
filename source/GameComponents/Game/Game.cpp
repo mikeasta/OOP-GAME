@@ -3,7 +3,6 @@
 //
 
 #include "Game.h"
-#include <iostream> // For std::cin
 
 void Game::stop() {
     game_goes = false;
@@ -14,6 +13,7 @@ void Game::start() {
         game_goes = true;
         game_is_started = true;
 
+        auto response_lib = Response().getResponseLib();
         unsigned int field_rows = 5;
         unsigned int field_cols = 10;
         auto generator = FieldGenerator();
@@ -53,15 +53,15 @@ void Game::start() {
             std::pair<std::string, Combat> response = player_controller.move(command);
 
             system("clear");
-            if (response.first == "WIN" ||
-                response.first == "DRAW" ||
-                response.first == "LOSS") {
+            if (response.first == response_lib["win"] ||
+                response.first == response_lib["draw"] ||
+                response.first == response_lib["loss"]) {
 
                 // Draw combat
                 combat_drawer.setLastCombat(response.second);
             }
 
-            if (response.first == "EXIT" || response.first == "LOSS") {
+            if (response.first == response_lib["exit"] || response.first == response_lib["loss"]) {
                 stop();
             }
         }

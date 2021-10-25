@@ -5,6 +5,7 @@
 #ifndef OOP_GAME_PLAYER_H
 #define OOP_GAME_PLAYER_H
 
+#include "../../GameComponents/Response/Response.h"
 #include "../Character/Character.h"
 #include "../Equipment/Equipment.h"
 #include "../Item/Item.h"

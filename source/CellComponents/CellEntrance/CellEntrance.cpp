@@ -5,8 +5,8 @@ Cell* CellEntrance::clone() {
     return tmp;
 }
 
-std::pair<bool, std::string> CellEntrance::stepEffect(InteractiveObject* object) {
+std::string CellEntrance::stepEffect(InteractiveObject* object) {
     std::pair<bool, std::string> response;
-    response = std::make_pair(true, "WALL");
-    return response;
+    auto response_lib = Response().getResponseLib();
+    return response_lib["entrance"];
 }

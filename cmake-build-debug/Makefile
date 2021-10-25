@@ -609,6 +609,30 @@ source/GameComponents/Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.s
 .PHONY : source/GameComponents/Game/Game.cpp.s
 
+source/GameComponents/Response/Response.o: source/GameComponents/Response/Response.cpp.o
+.PHONY : source/GameComponents/Response/Response.o
+
+# target to build an object file
+source/GameComponents/Response/Response.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Response/Response.cpp.o
+.PHONY : source/GameComponents/Response/Response.cpp.o
+
+source/GameComponents/Response/Response.i: source/GameComponents/Response/Response.cpp.i
+.PHONY : source/GameComponents/Response/Response.i
+
+# target to preprocess a source file
+source/GameComponents/Response/Response.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Response/Response.cpp.i
+.PHONY : source/GameComponents/Response/Response.cpp.i
+
+source/GameComponents/Response/Response.s: source/GameComponents/Response/Response.cpp.s
+.PHONY : source/GameComponents/Response/Response.s
+
+# target to generate assembly for a file
+source/GameComponents/Response/Response.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Response/Response.cpp.s
+.PHONY : source/GameComponents/Response/Response.cpp.s
+
 source/InteractiveObjectComponents/Character/Character.o: source/InteractiveObjectComponents/Character/Character.cpp.o
 .PHONY : source/InteractiveObjectComponents/Character/Character.o
 
@@ -870,6 +894,9 @@ help:
 	@echo "... source/GameComponents/Game/Game.o"
 	@echo "... source/GameComponents/Game/Game.i"
 	@echo "... source/GameComponents/Game/Game.s"
+	@echo "... source/GameComponents/Response/Response.o"
+	@echo "... source/GameComponents/Response/Response.i"
+	@echo "... source/GameComponents/Response/Response.s"
 	@echo "... source/InteractiveObjectComponents/Character/Character.o"
 	@echo "... source/InteractiveObjectComponents/Character/Character.i"
 	@echo "... source/InteractiveObjectComponents/Character/Character.s"

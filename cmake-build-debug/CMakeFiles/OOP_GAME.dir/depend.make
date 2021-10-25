@@ -21,6 +21,7 @@ CMakeFiles/OOP_GAME.dir/client/EquipmentCLI/EquipmentCLI.cpp.o: \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/Equipment/Equipment.h \
@@ -41,6 +42,7 @@ CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o: \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/Equipment/Equipment.h \
@@ -61,6 +63,7 @@ CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o: \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/Equipment/Equipment.h \
@@ -89,6 +92,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
  ../source/GameComponents/Game/Game.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h \
@@ -101,26 +105,31 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o: \
  ../source/CellComponents/Cell/Cell.cpp \
  ../source/CellComponents/Cell/Cell.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.cpp \
  ../source/CellComponents/CellEntrance/CellEntrance.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellExit/CellExit.cpp \
  ../source/CellComponents/CellExit/CellExit.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellFloor/CellFloor.cpp \
  ../source/CellComponents/CellFloor/CellFloor.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellWall/CellWall.cpp \
  ../source/CellComponents/CellWall/CellWall.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
@@ -133,6 +142,7 @@ CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyControl
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
@@ -149,6 +159,7 @@ CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyManageCenter/EnemyManag
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
@@ -165,6 +176,7 @@ CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/PlayerContr
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/Equipment/Equipment.h \
@@ -181,6 +193,7 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/Field/Field.cpp.o: \
  ../source/FieldComponents/Field/Field.cpp \
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldAggregate/FieldAggregate.cpp.o: \
@@ -195,6 +208,7 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldAggregate/FieldAggregate.cpp
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h \
@@ -212,6 +226,7 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp
  ../source/CellComponents/CellWall/CellWall.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.cpp \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o: \
@@ -224,6 +239,7 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.cpp \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o: \
@@ -250,6 +266,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../source/GameComponents/Combat/Combat.h \
  ../source/GameComponents/Game/Game.cpp \
  ../source/GameComponents/Game/Game.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h \
@@ -259,6 +276,9 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h \
  ../source/InteractiveObjectComponents/Player/Player.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Response/Response.cpp.o: \
+ ../source/GameComponents/Response/Response.cpp \
+ ../source/GameComponents/Response/Response.h
 CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \
@@ -267,6 +287,7 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.c
  ../source/CellComponents/CellWall/CellWall.h \
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.cpp \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
@@ -279,6 +300,7 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.o: \
  ../source/CellComponents/CellWall/CellWall.h \
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.cpp \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
@@ -293,6 +315,7 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlac
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp \
@@ -319,6 +342,7 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer
  ../source/FieldComponents/Field/Field.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../source/InteractiveObjectComponents/Item/Item.h \
  ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp \
@@ -334,6 +358,7 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o: 
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
  ../source/InteractiveObjectComponents/Equipment/Equipment.h \

@@ -19,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/source/GameComponents/Response/Response.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp.o"

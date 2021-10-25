@@ -4,6 +4,7 @@
 
 #ifndef OOP_GAME_GAME_H
 #define OOP_GAME_GAME_H
+#include "../Response/Response.h"
 #include "../../../client/FieldCLI/FieldCLI.h"
 #include "../../../client/PlayerCLI/PlayerCLI.h"
 #include "../../../client/CombatCLI/CombatCLI.h"

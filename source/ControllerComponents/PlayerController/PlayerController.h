@@ -4,9 +4,11 @@
 
 #ifndef OOP_GAME_PLAYERCONTROLLER_H
 #define OOP_GAME_PLAYERCONTROLLER_H
+
 #include <map>
 #include <tuple>
 #include <string>
+#include "../../GameComponents/Response/Response.h"
 #include "../../InteractiveObjectComponents/Enemy/Enemy.h"
 #include "../../InteractiveObjectComponents/Character/Character.h"
 #include "../../FieldComponents/Field/Field.h"

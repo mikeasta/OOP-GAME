@@ -2,6 +2,7 @@
 
 #include <tuple>
 #include <string>
+#include "../../GameComponents/Response/Response.h"
 #include "../../InteractiveObjectComponents/InteractiveObject/InteractiveObject.h"
 
 class Cell {
@@ -26,5 +27,5 @@ public:
 
     // Pattern "Prototype"
     virtual Cell* clone();
-    virtual std::pair<bool, std::string> stepEffect(InteractiveObject* object);
+    virtual std::string stepEffect(InteractiveObject* object);
 };

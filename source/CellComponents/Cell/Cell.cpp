@@ -29,8 +29,7 @@ void Cell::clearCellContent() {
 unsigned int Cell::getX() const { return coord_x; }
 unsigned int Cell::getY() const { return coord_y; }
 
-std::pair<bool, std::string> Cell::stepEffect(InteractiveObject* object) {
-    std::pair<bool, std::string> response;
-    response = std::make_pair(true, "WALL");
-    return response;
+std::string Cell::stepEffect(InteractiveObject* object) {
+    auto response_lib = Response().getResponseLib();
+    return response_lib["wall"];
 }

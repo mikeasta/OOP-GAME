@@ -12,8 +12,9 @@ EnemyController::EnemyController(Enemy *enemy, Field &field, Cell* curr_cell):
 
 std::string EnemyController::move(std::map<std::string, char> direction_voc, char direction) {
 
+    auto response_lib = Response().getResponseLib();
     if (!enemy->getState()) {
-        return "DIED";
+        return response_lib["enemy_died"];
     }
 
     unsigned int x = curr_cell->getX();
@@ -30,16 +31,17 @@ std::string EnemyController::move(std::map<std::string, char> direction_voc, cha
     }
 
     Cell* to_move = field.getCell(x, y);
+
     if (to_move->isCellContentExist()) {
-        return "ENEMY_STOPPED";
+        return "CELL_HAS_CONTENT";
     }
 
-    std::pair<bool, std::string> response = to_move->stepEffect(enemy);
+    std::string response = to_move->stepEffect(enemy);
     if (typeid(*to_move) == typeid(CellFloor)) {
         curr_cell->clearCellContent();
         curr_cell = to_move;
         curr_cell->setCellContent(enemy);
     }
 
-    return "ENEMY_STEPPED";
+    return response;
 }

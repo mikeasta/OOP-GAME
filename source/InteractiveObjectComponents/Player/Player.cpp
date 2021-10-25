@@ -48,11 +48,10 @@ void Player::spawn(Field &field) {
     FieldIterator iterator = FieldIterator(field);
     Cell* curr_item = iterator.getCurrent();
     while(curr_item != nullptr) {
-        if (typeid(*curr_item) != typeid(CellEntrance)) {
-            curr_item = iterator.getNext();
-        } else {
+        if (typeid(*curr_item) == typeid(CellEntrance)) {
             break;
         }
+        curr_item = iterator.getNext();
     }
 
     // Analyze cell position and get neighbour cell
@@ -60,8 +59,7 @@ void Player::spawn(Field &field) {
     unsigned int entrance_x = curr_item->getX();
     unsigned int entrance_y = curr_item->getY();
 
-    // Taking cell, where player will
-    // be spawned
+    // Taking cell, where player will be spawned
     if (entrance_x == 0) {
         got = field.getCell(entrance_x + 1, entrance_y);
     } else if (entrance_x == cols - 1) {
@@ -82,6 +80,7 @@ std::pair<std::string, Combat> Player::attack(Character *enemy) {
     // Generate player damage
     RandomNumberGenerator randomizer;
     CombatDetailsStruct details;
+    auto response_lib = Response().getResponseLib();
 
     int full_player_damage = getFullDamage();
     if (randomizer.simulate_chance(15)) {
@@ -107,15 +106,15 @@ std::pair<std::string, Combat> Player::attack(Character *enemy) {
 
         // Check, if player died;
         if (getFullStamina() > 0) {
-            return std::make_pair("DRAW", new_combat);
+            return std::make_pair(response_lib["draw"], new_combat);
         } else {
-            return std::make_pair("LOSS", new_combat);
+            return std::make_pair(response_lib["loss"], new_combat);
         }
 
     } else {
         details.is_enemy_died = true;
         Combat new_combat = Combat(details);
 
-        return std::make_pair("WIN", new_combat);
+        return std::make_pair(response_lib["win"], new_combat);
     }
 }
