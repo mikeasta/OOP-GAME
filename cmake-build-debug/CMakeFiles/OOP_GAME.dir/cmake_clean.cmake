@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/source/CellComponents/CellExit/CellExit.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/CellComponents/CellFloor/CellFloor.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/source/ControllerComponents/Controller/Controller.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/ControllerComponents/PlayerController/PlayerController.cpp.o"

@@ -3,6 +3,7 @@
 //
 
 #include "Game.h"
+unsigned int Enemy::s_id = 0;
 
 void Game::stop() {
     game_goes = false;

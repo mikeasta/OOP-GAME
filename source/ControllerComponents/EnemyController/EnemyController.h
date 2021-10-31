@@ -10,11 +10,12 @@
 #include "../../InteractiveObjectComponents/Enemy/Enemy.h"
 #include "../../FieldComponents/FieldIterator/FieldIterator.h"
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
+#include "../Controller/Controller.h"
 #include <string>
 #include <tuple>
 #include <map>
 
-class EnemyController {
+class EnemyController: public Controller {
 private:
     Field& field;
     Enemy* enemy;

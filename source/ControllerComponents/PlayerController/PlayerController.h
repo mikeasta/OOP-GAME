@@ -14,8 +14,9 @@
 #include "../../FieldComponents/Field/Field.h"
 #include "../../InteractiveObjectComponents/Player/Player.h"
 #include "../../FieldComponents/FieldIterator/FieldIterator.h"
+#include "../Controller/Controller.h"
 
-class PlayerController {
+class PlayerController: public Controller{
 private:
     std::map<std::string, char> directions = {
             { "up", *"w"},

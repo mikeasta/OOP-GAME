@@ -9,7 +9,7 @@ EnemyManageCenter::EnemyManageCenter(Field &field):
     FieldIterator iterator = FieldIterator(field);
     Cell* it_cell = iterator.getCurrent();
     InteractiveObject* content;
-
+    
     while (it_cell) {
         content = it_cell->getCellContent();
         if (content) {

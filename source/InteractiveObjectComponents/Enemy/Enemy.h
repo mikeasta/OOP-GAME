@@ -12,8 +12,11 @@
 
 class Enemy: public Character {
 private:
+    unsigned int enemy_id;
     bool alive = true;
 public:
+    static unsigned int s_id;
+
     // Constructors
     explicit Enemy(int damage = 0, int stamina = 0, int defence = 0);
     ~Enemy() override = default;
@@ -21,8 +24,9 @@ public:
     InteractiveObject* clone() final;
 
     Enemy* create(std::map<std::string, std::vector<int>>);
-    bool getState();
+    bool getState() const;
     void die();
 };
+
 
 #endif //OOP_GAME_ENEMY_H

@@ -5,7 +5,9 @@
 #include "Enemy.h"
 
 Enemy::Enemy(int damage, int stamina, int defence):
-    Character(damage, stamina, defence) {}
+    Character(damage, stamina, defence) {
+    enemy_id = s_id++;
+}
 
 InteractiveObject* Enemy::clone() {
     return new Enemy(damage, stamina, defence);
@@ -23,6 +25,6 @@ void Enemy::die() {
     alive = false;
 }
 
-bool Enemy::getState() {
+bool Enemy::getState() const {
     return alive;
 }

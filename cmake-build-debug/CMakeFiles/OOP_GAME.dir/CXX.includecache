@@ -32,28 +32,6 @@ string
 ../Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.cpp
-EnemyController.h
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.h
-
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.h
-../../GameComponents/Response/Response.h
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.h
-../../FieldComponents/Field/Field.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
-../../InteractiveObjectComponents/Enemy/Enemy.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
-../../FieldComponents/FieldIterator/FieldIterator.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
-../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
-/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
-string
--
-tuple
--
-map
--
-
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
 ../../CellComponents/Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
@@ -73,12 +51,6 @@ map
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellWall/CellWall.h
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
-
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
-../Field/Field.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
-../../CellComponents/Cell/Cell.h
-/home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.h
 map
@@ -101,6 +73,10 @@ iostream
 -
 string
 -
+
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.cpp
+Enemy.h
+/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h

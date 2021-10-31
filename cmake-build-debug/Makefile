@@ -393,6 +393,30 @@ source/CellComponents/CellWall/CellWall.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.s
 .PHONY : source/CellComponents/CellWall/CellWall.cpp.s
 
+source/ControllerComponents/Controller/Controller.o: source/ControllerComponents/Controller/Controller.cpp.o
+.PHONY : source/ControllerComponents/Controller/Controller.o
+
+# target to build an object file
+source/ControllerComponents/Controller/Controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/Controller/Controller.cpp.o
+.PHONY : source/ControllerComponents/Controller/Controller.cpp.o
+
+source/ControllerComponents/Controller/Controller.i: source/ControllerComponents/Controller/Controller.cpp.i
+.PHONY : source/ControllerComponents/Controller/Controller.i
+
+# target to preprocess a source file
+source/ControllerComponents/Controller/Controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/Controller/Controller.cpp.i
+.PHONY : source/ControllerComponents/Controller/Controller.cpp.i
+
+source/ControllerComponents/Controller/Controller.s: source/ControllerComponents/Controller/Controller.cpp.s
+.PHONY : source/ControllerComponents/Controller/Controller.s
+
+# target to generate assembly for a file
+source/ControllerComponents/Controller/Controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/ControllerComponents/Controller/Controller.cpp.s
+.PHONY : source/ControllerComponents/Controller/Controller.cpp.s
+
 source/ControllerComponents/EnemyController/EnemyController.o: source/ControllerComponents/EnemyController/EnemyController.cpp.o
 .PHONY : source/ControllerComponents/EnemyController/EnemyController.o
 
@@ -867,6 +891,9 @@ help:
 	@echo "... source/CellComponents/CellWall/CellWall.o"
 	@echo "... source/CellComponents/CellWall/CellWall.i"
 	@echo "... source/CellComponents/CellWall/CellWall.s"
+	@echo "... source/ControllerComponents/Controller/Controller.o"
+	@echo "... source/ControllerComponents/Controller/Controller.i"
+	@echo "... source/ControllerComponents/Controller/Controller.s"
 	@echo "... source/ControllerComponents/EnemyController/EnemyController.o"
 	@echo "... source/ControllerComponents/EnemyController/EnemyController.i"
 	@echo "... source/ControllerComponents/EnemyController/EnemyController.s"
