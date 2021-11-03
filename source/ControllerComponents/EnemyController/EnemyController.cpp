@@ -14,6 +14,7 @@ std::string EnemyController::move(std::map<std::string, char> direction_voc, cha
 
     auto response_lib = Response().getResponseLib();
     if (!enemy->getState()) {
+        update("Enemy # " + std::to_string(enemy->getID()) + " died");
         return response_lib["enemy_died"];
     }
 
@@ -38,6 +39,9 @@ std::string EnemyController::move(std::map<std::string, char> direction_voc, cha
 
     std::string response = to_move->stepEffect(enemy);
     if (typeid(*to_move) == typeid(CellFloor)) {
+        update("Enemy # " + std::to_string(enemy->getID()) + " stepped on ("
+            + std::to_string(to_move->getX()) + ", " + std::to_string(to_move->getY()) + ")");
+
         curr_cell->clearCellContent();
         curr_cell = to_move;
         curr_cell->setCellContent(enemy);

@@ -49,6 +49,8 @@ void Game::start() {
             new_player_cli.print();
             equipment_cli.print();
 
+            std::cout << player_controller.popUpdate();
+
             // Player move
             std::cin >> command;
             std::pair<std::string, Combat> response = player_controller.move(command);

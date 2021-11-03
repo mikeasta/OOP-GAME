@@ -28,3 +28,7 @@ void Enemy::die() {
 bool Enemy::getState() const {
     return alive;
 }
+
+unsigned int Enemy::getID() const {
+    return enemy_id;
+}

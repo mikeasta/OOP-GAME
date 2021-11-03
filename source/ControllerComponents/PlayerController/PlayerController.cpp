@@ -49,14 +49,20 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
         bool is_content = to_move->isCellContentExist();
         if (is_content) {
             if (typeid(*to_move->getCellContent()) == typeid(Item)) {
-                player.take(dynamic_cast<Item *>(to_move->getCellContent()));
+                Item* found_item = dynamic_cast<Item *>(to_move->getCellContent());
+                player.take(found_item);
+                update("Player taken \"" + found_item->getName() + "\"");
             } else if (typeid(*to_move->getCellContent()) == typeid(Enemy)){
 
                 auto* opponent = dynamic_cast<Character*>(to_move->getCellContent());
                 std::pair<std::string, Combat> result = player.attack(opponent);
 
+                update(result.second.getCombatDetailsToString());
+
                 if (result.first == response_lib["win"]) {
                     dynamic_cast<Enemy*>(opponent)->die();
+
+                    update("Player stepped on cell (" + std::to_string(to_move->getX()) + ", " + std::to_string(to_move->getY()) + ")");
                     curr_cell->clearCellContent();
                     curr_cell = to_move;
                     curr_cell->setCellContent(&player);
@@ -66,6 +72,7 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
             }
         }
 
+        update("Player stepped on cell (" + std::to_string(to_move->getX()) + ", " + std::to_string(to_move->getY()) + ")");
         curr_cell->clearCellContent();
         curr_cell = to_move;
         curr_cell->setCellContent(&player);
@@ -73,4 +80,3 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
 
     return std::make_pair(response, Combat());
 }
-

@@ -134,6 +134,7 @@ CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/ControllerComponents/Controller/Controller.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/Controller/Controller.cpp
+ /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/Controller/Controller.h
 CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
  /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.h

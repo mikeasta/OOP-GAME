@@ -13,6 +13,7 @@ struct CombatDetailsStruct {
     bool is_player_critical = false;
     unsigned int enemy_damage_done = 0;
     bool is_enemy_critical = false;
+    bool is_player_died = false;
     bool is_enemy_died = false;
 };
 
@@ -22,17 +23,20 @@ private:
     bool is_player_critical;
     unsigned int enemy_damage_done;
     bool is_enemy_critical;
+    bool is_player_died;
     bool is_enemy_died;
 public:
     explicit Combat(unsigned int player_damage_done = 0,
         bool is_player_critical = false,
         unsigned int enemy_damage_done = 0,
         bool is_enemy_critical = false,
+        bool is_player_died = false,
         bool is_enemy_died = false);
 
     explicit Combat(CombatDetailsStruct details);
 
     std::map<std::string, unsigned int> getCombatDetails() const;
+    std::string getCombatDetailsToString() const;
 };
 
 #endif //OOP_GAME_COMBAT_H

@@ -133,7 +133,8 @@ CMakeFiles/OOP_GAME.dir/source/CellComponents/CellWall/CellWall.cpp.o: \
  ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
 CMakeFiles/OOP_GAME.dir/source/ControllerComponents/Controller/Controller.cpp.o: \
- ../source/ControllerComponents/Controller/Controller.cpp
+ ../source/ControllerComponents/Controller/Controller.cpp \
+ ../source/ControllerComponents/Controller/Controller.h
 CMakeFiles/OOP_GAME.dir/source/ControllerComponents/EnemyController/EnemyController.cpp.o: \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \

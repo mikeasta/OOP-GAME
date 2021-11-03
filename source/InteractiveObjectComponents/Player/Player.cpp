@@ -102,15 +102,17 @@ std::pair<std::string, Combat> Player::attack(Character *enemy) {
         details.enemy_damage_done = full_opponent_damage;
         get_combat_damage(full_opponent_damage);
 
-        Combat new_combat = Combat(details);
-
+        std::string response_str;
         // Check, if player died;
         if (getFullStamina() > 0) {
-            return std::make_pair(response_lib["draw"], new_combat);
+            response_str = response_lib["draw"];
         } else {
-            return std::make_pair(response_lib["loss"], new_combat);
+            response_str = response_lib["loss"];
+            details.is_player_died = true;
         }
 
+        Combat new_combat = Combat(details);
+        return std::make_pair(response_str, new_combat);
     } else {
         details.is_enemy_died = true;
         Combat new_combat = Combat(details);

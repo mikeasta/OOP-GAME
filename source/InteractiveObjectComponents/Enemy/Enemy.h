@@ -26,6 +26,7 @@ public:
     Enemy* create(std::map<std::string, std::vector<int>>);
     bool getState() const;
     void die();
+    unsigned int getID() const;
 };
 
 
