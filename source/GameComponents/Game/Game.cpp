@@ -31,6 +31,7 @@ void Game::start() {
         FieldAggregate aggregator;
         aggregator.aggregate(new_field, new_player);
         auto player_controller = PlayerController(new_player, new_field);
+        auto logger = Logger(player_controller);
 
         // Detect all enemies
         auto enemy_center = EnemyManageCenter(new_field);
@@ -49,7 +50,7 @@ void Game::start() {
             new_player_cli.print();
             equipment_cli.print();
 
-            std::cout << player_controller.popUpdate();
+            std::cout << logger;
 
             // Player move
             std::cin >> command;
