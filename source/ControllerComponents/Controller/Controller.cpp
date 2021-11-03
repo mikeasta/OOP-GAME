@@ -12,10 +12,10 @@ void Controller::update(std::string upd_str = "") {
         time_t now = time(0);
         struct tm tstruct;
         tstruct = *localtime((&now));
-        char time_chars[8];
-        strftime(time_chars, sizeof(time_chars), "%X", &tstruct);
+        char time_chars[80];
+        strftime(time_chars, sizeof(time_chars), "%Y-%m-%d.%X", &tstruct);
         std::string time_string = std::string(time_chars);
-        update_message += "\n[time_string]: " + upd_str;
+        update_message += "[" + time_string + "]: " + upd_str + "\n";
     } else {
         update_message = upd_str;
     }

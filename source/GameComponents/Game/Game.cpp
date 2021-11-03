@@ -50,7 +50,7 @@ void Game::start() {
             new_player_cli.print();
             equipment_cli.print();
 
-            std::cout << logger;
+            logger.log();
 
             // Player move
             std::cin >> command;
