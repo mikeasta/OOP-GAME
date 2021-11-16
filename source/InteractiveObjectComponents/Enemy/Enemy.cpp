@@ -32,3 +32,12 @@ bool Enemy::getState() const {
 unsigned int Enemy::getID() const {
     return enemy_id;
 }
+
+std::ostream& operator<< (std::ostream& out, const Enemy &enemy) {
+    out << "\nEnemy #" << enemy.getID() << ": ";
+    out << "\nHealth: " << enemy.getStamina();
+    out << "\nDamage: " << enemy.getDamage();
+    out << "\nDefence: " << enemy.getDefence();
+
+    return out;
+}

@@ -9,6 +9,7 @@
 #include <vector>
 #include <map>
 #include <string>
+#include <iostream>
 
 class Enemy: public Character {
 private:
@@ -27,6 +28,8 @@ public:
     bool getState() const;
     void die();
     unsigned int getID() const;
+
+    friend std::ostream& operator<< (std::ostream& out, const Enemy &enemy);
 };
 
 

@@ -3,38 +3,31 @@
 //
 
 #include "Logger.h"
-Logger::Logger (Controller& controller):
-    controller(controller) {};
+Logger::Logger(Controller& controller):
+    controller(controller) {}
 
 Logger::~Logger() {
-    std::cout << "file";
-    std::ofstream fout;
-    fout.open(filepath);
-    if (fout.is_open()) {
-        fout << "";
+    for (auto unit: logger_units) {
+        delete unit;
     }
-    fout.close();
 }
 
-std::ostream& operator<<(std::ostream &out, const Logger &logger) {
-    out << logger.controller.popUpdate();
-    return out;
+void Logger::addLoggerUnits(std::ostream &output, bool is_input_enable, std::string logger_unit_id) {
+    auto new_unit = new LoggerUnit(output, is_input_enable, logger_unit_id);
+    logger_units.push_back(new_unit);
 }
 
 void Logger::log() {
-    std::string update_string = controller.popUpdate();
-
-    if (log_to_console) {
-        std::cout << update_string;
+    std::string message = controller.popUpdate();
+    for (auto unit: logger_units) {
+        unit->log(message);
     }
+}
 
-    if (log_to_file) {
-        std::cout << "file";
-        std::ofstream fout;
-        fout.open(filepath, std::ios_base::app);
-        if (fout.is_open()) {
-            fout << update_string;
+void Logger::toggleLog(std::string stream_id) {
+    for (auto unit: logger_units) {
+        if (unit->getId() == stream_id) {
+            unit->toggleOutput();
         }
-        fout.close();
     }
 }

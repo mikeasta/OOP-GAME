@@ -16,6 +16,7 @@
 #include <string>
 #include <vector>
 #include <tuple>
+#include <iostream>
 
 class Player: public Character {
 private:
@@ -35,6 +36,8 @@ public:
     void spawn(Field &field);
 
     std::pair<std::string, Combat> attack(Character* opponent);
+
+    friend std::ostream& operator<< (std::ostream &out, const Player &player);
 };
 
 #endif //OOP_GAME_PLAYER_H

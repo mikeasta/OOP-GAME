@@ -61,12 +61,30 @@ Logger.h
 /home/mikeasta/Programming/OOP-GAME/client/Logger/Logger.h
 iostream
 -
+ostream
+-
 string
 -
-fstream
+vector
 -
+../LoggerUnit/LoggerUnit.h
+/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.h
 ../../source/ControllerComponents/Controller/Controller.h
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/Controller/Controller.h
+
+/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.cpp
+fstream
+-
+LoggerUnit.h
+/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.h
+
+/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.h
+fstream
+-
+string
+-
+iostream
+-
 
 /home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.h
 ../CLI/CLI.h
@@ -279,6 +297,8 @@ map
 -
 string
 -
+iostream
+-
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
 ../Enemy/Enemy.h
@@ -310,6 +330,8 @@ map
 tuple
 -
 vector
+-
+iostream
 -
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
@@ -348,6 +370,8 @@ string
 vector
 -
 tuple
+-
+iostream
 -
 
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h

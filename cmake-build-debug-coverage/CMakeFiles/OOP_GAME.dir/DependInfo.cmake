@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mikeasta/Programming/OOP-GAME/client/EquipmentCLI/EquipmentCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/client/EquipmentCLI/EquipmentCLI.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/client/FieldCLI/FieldCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/client/Logger/Logger.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/client/Logger/Logger.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/main.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/main.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o"

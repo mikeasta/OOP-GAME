@@ -5,23 +5,24 @@
 #ifndef OOP_GAME_LOGGER_H
 #define OOP_GAME_LOGGER_H
 #include <iostream>
+#include <ostream>
 #include <string>
-#include <fstream>
+#include <vector>
+#include "../LoggerUnit/LoggerUnit.h"
 #include "../../source/ControllerComponents/Controller/Controller.h"
-
 
 class Logger {
 private:
     Controller& controller;
-    bool log_to_console = true;
-    bool log_to_file = true;
-    std::string filepath = "/home/mikeasta/Programming/OOP-GAME/client/Logger/log.txt";
+    std::vector<LoggerUnit*> logger_units = {};
 public:
     Logger(Controller& controller);
     ~Logger();
 
-    friend std::ostream& operator<<(std::ostream &out, const Logger &logger);
+    void addLoggerUnits(std::ostream& output, bool is_input_enable, std::string logger_unit_id);
     void log();
+
+    void toggleLog(std::string stream_id);
 };
 
 #endif //OOP_GAME_LOGGER_H

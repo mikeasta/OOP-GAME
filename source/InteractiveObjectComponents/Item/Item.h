@@ -10,6 +10,7 @@
 #include <map>
 #include <tuple>
 #include <vector>
+#include <iostream>
 #include "../../../utils/RandomNumberGenerator/RandomNumberGenerator.h"
 
 class Item: public InteractiveObject {
@@ -35,6 +36,8 @@ public:
 
     // Pattern: Factory Method
     Item* create(std::map<std::string, std::vector<int>> item_voc);
+
+    friend std::ostream& operator<< (std::ostream& out, const Item &item);
 };
 
 #endif //OOP_GAME_ITEM_H

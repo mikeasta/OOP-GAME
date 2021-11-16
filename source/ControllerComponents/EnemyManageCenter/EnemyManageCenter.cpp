@@ -43,3 +43,7 @@ void EnemyManageCenter::move_all() {
 
     }
 }
+
+EnemyController* EnemyManageCenter::getEnemyController(int index) {
+    return controllers[index];
+}

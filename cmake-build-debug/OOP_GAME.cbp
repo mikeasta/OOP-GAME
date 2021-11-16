@@ -136,6 +136,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/Logger/Logger.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

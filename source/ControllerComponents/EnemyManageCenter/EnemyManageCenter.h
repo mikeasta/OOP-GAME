@@ -24,6 +24,7 @@ protected:
 public:
     explicit EnemyManageCenter(Field &field);
 
+    EnemyController* getEnemyController(int index);
     void move_all();
 };
 

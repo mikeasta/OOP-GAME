@@ -39,3 +39,12 @@ int Item::getBonusDefence() const {
 InteractiveObject* Item::clone() {
     return new Item(item_name, bonus_attack, bonus_stamina, bonus_defence);
 }
+
+std::ostream& operator<< (std::ostream& out, const Item &item) {
+    out << "\nItem \"" << item.item_name << "\":";
+    out << "\nBonus attack: " << item.bonus_attack;
+    out << "\nBonus defence: " << item.bonus_defence;
+    out << "\nBonus stamina (healing): " << item.bonus_stamina;
+
+    return out;
+}

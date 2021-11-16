@@ -31,10 +31,11 @@ void Game::start() {
         FieldAggregate aggregator;
         aggregator.aggregate(new_field, new_player);
         auto player_controller = PlayerController(new_player, new_field);
-        auto logger = Logger(player_controller);
+        auto logger_player = Logger(player_controller);
 
         // Detect all enemies
         auto enemy_center = EnemyManageCenter(new_field);
+        auto logger_enemy = Logger(*enemy_center.getEnemyController(0));
 
         char command;
         system("clear");
@@ -50,7 +51,8 @@ void Game::start() {
             new_player_cli.print();
             equipment_cli.print();
 
-            logger.log();
+            logger_player.log();
+            logger_enemy.log();
 
             // Player move
             std::cin >> command;
@@ -69,6 +71,8 @@ void Game::start() {
                 stop();
             }
         }
+
+        delete &logger_player;
     }
 }
 

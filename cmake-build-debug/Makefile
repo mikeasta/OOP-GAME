@@ -249,6 +249,30 @@ client/Logger/Logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/Logger/Logger.cpp.s
 .PHONY : client/Logger/Logger.cpp.s
 
+client/LoggerUnit/LoggerUnit.o: client/LoggerUnit/LoggerUnit.cpp.o
+.PHONY : client/LoggerUnit/LoggerUnit.o
+
+# target to build an object file
+client/LoggerUnit/LoggerUnit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.o
+.PHONY : client/LoggerUnit/LoggerUnit.cpp.o
+
+client/LoggerUnit/LoggerUnit.i: client/LoggerUnit/LoggerUnit.cpp.i
+.PHONY : client/LoggerUnit/LoggerUnit.i
+
+# target to preprocess a source file
+client/LoggerUnit/LoggerUnit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.i
+.PHONY : client/LoggerUnit/LoggerUnit.cpp.i
+
+client/LoggerUnit/LoggerUnit.s: client/LoggerUnit/LoggerUnit.cpp.s
+.PHONY : client/LoggerUnit/LoggerUnit.s
+
+# target to generate assembly for a file
+client/LoggerUnit/LoggerUnit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.s
+.PHONY : client/LoggerUnit/LoggerUnit.cpp.s
+
 client/PlayerCLI/PlayerCLI.o: client/PlayerCLI/PlayerCLI.cpp.o
 .PHONY : client/PlayerCLI/PlayerCLI.o
 
@@ -897,6 +921,9 @@ help:
 	@echo "... client/Logger/Logger.o"
 	@echo "... client/Logger/Logger.i"
 	@echo "... client/Logger/Logger.s"
+	@echo "... client/LoggerUnit/LoggerUnit.o"
+	@echo "... client/LoggerUnit/LoggerUnit.i"
+	@echo "... client/LoggerUnit/LoggerUnit.s"
 	@echo "... client/PlayerCLI/PlayerCLI.o"
 	@echo "... client/PlayerCLI/PlayerCLI.i"
 	@echo "... client/PlayerCLI/PlayerCLI.s"

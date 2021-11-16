@@ -120,3 +120,18 @@ std::pair<std::string, Combat> Player::attack(Character *enemy) {
         return std::make_pair(response_lib["win"], new_combat);
     }
 }
+
+std::ostream& operator<< (std::ostream &out, const Player &player){
+    out << "\nPlayer: ";
+    out << "\nHealth: " << player.getStamina();
+    out << "\nDamage: " << player.getFullDamage();
+    out << "\nDefence: " << player.getFullDefence();
+    out << "\nEquipment: ";
+    auto item_lib = player.equipment->getItemLabels();
+    auto it = item_lib.begin();
+    for (int i = 0; it != item_lib.end(); it++, i++) {
+        out << it->first << " (count: " << it->second << "), ";
+    }
+
+    return out;
+}
