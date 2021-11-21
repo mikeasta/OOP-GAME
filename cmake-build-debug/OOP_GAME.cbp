@@ -235,6 +235,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/ControllerObserver/ControllerObserver.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/ControllerObserver/ControllerObserver.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

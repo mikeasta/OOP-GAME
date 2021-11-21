@@ -10,8 +10,11 @@ LoggerUnit::LoggerUnit(std::ostream &output_stream, bool is_output_enable, std::
     logger_unit_id(logger_unit_id) {}
 
 LoggerUnit::~LoggerUnit() {
-    if (typeid(static_cast<std::fstream&>(output_stream)) == typeid(std::fstream)) {
-        static_cast<std::fstream&>(output_stream).close();
+    if (output_stream) {
+        if (typeid(output_stream).name() == typeid(std::fstream).name() &&
+                !static_cast<std::fstream&>(output_stream).is_open()) {
+            dynamic_cast<std::ofstream*>(&output_stream)->close();
+        }
     }
 }
 
@@ -23,10 +26,6 @@ void LoggerUnit::log(std::string message) {
 
 void LoggerUnit::toggleOutput() {
     is_output_enable = !is_output_enable;
-}
-
-bool LoggerUnit::isOutputEnable() const {
-    return is_output_enable;
 }
 
 std::string LoggerUnit::getId() const {

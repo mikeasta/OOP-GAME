@@ -54,10 +54,6 @@ string
 ../../source/InteractiveObjectComponents/Enemy/Enemy.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
 
-/home/mikeasta/Programming/OOP-GAME/client/Logger/Logger.cpp
-Logger.h
-/home/mikeasta/Programming/OOP-GAME/client/Logger/Logger.h
-
 /home/mikeasta/Programming/OOP-GAME/client/Logger/Logger.h
 iostream
 -
@@ -69,14 +65,10 @@ vector
 -
 ../LoggerUnit/LoggerUnit.h
 /home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.h
+../../source/GameComponents/ControllerObserver/ControllerObserver.h
+/home/mikeasta/Programming/OOP-GAME/source/GameComponents/ControllerObserver/ControllerObserver.h
 ../../source/ControllerComponents/Controller/Controller.h
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/Controller/Controller.h
-
-/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.cpp
-fstream
--
-LoggerUnit.h
-/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.h
 
 /home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.h
 fstream
@@ -95,12 +87,6 @@ iostream
 -
 string
 -
-
-/home/mikeasta/Programming/OOP-GAME/main.cpp
-iostream
--
-source/GameComponents/Game/Game.h
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
 
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 tuple
@@ -230,6 +216,14 @@ string
 
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
 map
+-
+string
+-
+
+/home/mikeasta/Programming/OOP-GAME/source/GameComponents/ControllerObserver/ControllerObserver.h
+../../ControllerComponents/Controller/Controller.h
+/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/Controller/Controller.h
+vector
 -
 string
 -

@@ -14,6 +14,13 @@ void Game::start() {
         game_goes = true;
         game_is_started = true;
 
+        // Create "observer" for checking controller updates
+        ControllerObserver cont_obs;
+
+        // Create test file stream
+        std::ofstream out;
+        out.open("/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/output.txt");
+
         auto response_lib = Response().getResponseLib();
         unsigned int field_rows = 5;
         unsigned int field_cols = 10;
@@ -31,11 +38,14 @@ void Game::start() {
         FieldAggregate aggregator;
         aggregator.aggregate(new_field, new_player);
         auto player_controller = PlayerController(new_player, new_field);
-        auto logger_player = Logger(player_controller);
 
         // Detect all enemies
         auto enemy_center = EnemyManageCenter(new_field);
-        auto logger_enemy = Logger(*enemy_center.getEnemyController(0));
+
+        cont_obs.addController(&player_controller);
+        auto logger = Logger(cont_obs);
+        logger.addLoggerUnit(std::cout, true, "cout");
+        logger.addLoggerUnit(out, true, "output");
 
         char command;
         system("clear");
@@ -51,8 +61,7 @@ void Game::start() {
             new_player_cli.print();
             equipment_cli.print();
 
-            logger_player.log();
-            logger_enemy.log();
+            logger.log();
 
             // Player move
             std::cin >> command;
@@ -71,8 +80,6 @@ void Game::start() {
                 stop();
             }
         }
-
-        delete &logger_player;
     }
 }
 

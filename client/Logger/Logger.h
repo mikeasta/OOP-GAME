@@ -9,17 +9,19 @@
 #include <string>
 #include <vector>
 #include "../LoggerUnit/LoggerUnit.h"
+#include "../../source/GameComponents/ControllerObserver/ControllerObserver.h"
 #include "../../source/ControllerComponents/Controller/Controller.h"
 
 class Logger {
 private:
-    Controller& controller;
+    ControllerObserver& cont_obs;
     std::vector<LoggerUnit*> logger_units = {};
 public:
-    Logger(Controller& controller);
+    Logger(ControllerObserver& controller);
     ~Logger();
 
-    void addLoggerUnits(std::ostream& output, bool is_input_enable, std::string logger_unit_id);
+    void addLoggerUnit(std::ostream& output, bool is_input_enable, std::string logger_unit_id);
+    void addLoggerUnit(LoggerUnit& logger_unit);
     void log();
 
     void toggleLog(std::string stream_id);

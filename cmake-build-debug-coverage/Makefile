@@ -657,6 +657,30 @@ source/GameComponents/Combat/Combat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.s
 .PHONY : source/GameComponents/Combat/Combat.cpp.s
 
+source/GameComponents/ControllerObserver/ControllerObserver.o: source/GameComponents/ControllerObserver/ControllerObserver.cpp.o
+.PHONY : source/GameComponents/ControllerObserver/ControllerObserver.o
+
+# target to build an object file
+source/GameComponents/ControllerObserver/ControllerObserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.o
+.PHONY : source/GameComponents/ControllerObserver/ControllerObserver.cpp.o
+
+source/GameComponents/ControllerObserver/ControllerObserver.i: source/GameComponents/ControllerObserver/ControllerObserver.cpp.i
+.PHONY : source/GameComponents/ControllerObserver/ControllerObserver.i
+
+# target to preprocess a source file
+source/GameComponents/ControllerObserver/ControllerObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.i
+.PHONY : source/GameComponents/ControllerObserver/ControllerObserver.cpp.i
+
+source/GameComponents/ControllerObserver/ControllerObserver.s: source/GameComponents/ControllerObserver/ControllerObserver.cpp.s
+.PHONY : source/GameComponents/ControllerObserver/ControllerObserver.s
+
+# target to generate assembly for a file
+source/GameComponents/ControllerObserver/ControllerObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.s
+.PHONY : source/GameComponents/ControllerObserver/ControllerObserver.cpp.s
+
 source/GameComponents/Game/Game.o: source/GameComponents/Game/Game.cpp.o
 .PHONY : source/GameComponents/Game/Game.o
 
@@ -972,6 +996,9 @@ help:
 	@echo "... source/GameComponents/Combat/Combat.o"
 	@echo "... source/GameComponents/Combat/Combat.i"
 	@echo "... source/GameComponents/Combat/Combat.s"
+	@echo "... source/GameComponents/ControllerObserver/ControllerObserver.o"
+	@echo "... source/GameComponents/ControllerObserver/ControllerObserver.i"
+	@echo "... source/GameComponents/ControllerObserver/ControllerObserver.s"
 	@echo "... source/GameComponents/Game/Game.o"
 	@echo "... source/GameComponents/Game/Game.i"
 	@echo "... source/GameComponents/Game/Game.s"

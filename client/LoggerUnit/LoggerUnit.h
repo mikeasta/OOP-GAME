@@ -10,12 +10,12 @@
 
 class LoggerUnit {
 private:
-    std::ostream& output_stream = std::cout;
-    bool is_output_enable = true;
+    std::ostream &output_stream;
+    bool is_output_enable;
     std::string logger_unit_id;
 public:
     // Constructor
-    LoggerUnit(std::ostream& output_stream, bool is_output_enable, std::string logger_unit_id);
+    LoggerUnit(std::ostream &output_stream = std::cout, bool is_output_enable = true, std::string logger_unit_id = "id");
     ~LoggerUnit();
 
     // Log func.
@@ -25,7 +25,6 @@ public:
     void toggleOutput();
 
     // Getter
-    bool isOutputEnable() const;
     std::string getId() const;
 };
 

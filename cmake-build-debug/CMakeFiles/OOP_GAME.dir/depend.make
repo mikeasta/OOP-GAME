@@ -54,7 +54,8 @@ CMakeFiles/OOP_GAME.dir/client/Logger/Logger.cpp.o: \
  ../client/Logger/Logger.cpp \
  ../client/Logger/Logger.h \
  ../client/LoggerUnit/LoggerUnit.h \
- ../source/ControllerComponents/Controller/Controller.h
+ ../source/ControllerComponents/Controller/Controller.h \
+ ../source/GameComponents/ControllerObserver/ControllerObserver.h
 CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.o: \
  ../client/LoggerUnit/LoggerUnit.cpp \
  ../client/LoggerUnit/LoggerUnit.h
@@ -102,6 +103,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/ControllerObserver/ControllerObserver.h \
  ../source/GameComponents/Game/Game.h \
  ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
@@ -262,6 +264,10 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o: \
  ../source/GameComponents/Combat/Combat.cpp \
  ../source/GameComponents/Combat/Combat.h
+CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.o: \
+ ../source/ControllerComponents/Controller/Controller.h \
+ ../source/GameComponents/ControllerObserver/ControllerObserver.cpp \
+ ../source/GameComponents/ControllerObserver/ControllerObserver.h
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../client/CLI/CLI.h \
  ../client/CombatCLI/CombatCLI.h \
@@ -284,6 +290,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
  ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/ControllerObserver/ControllerObserver.h \
  ../source/GameComponents/Game/Game.cpp \
  ../source/GameComponents/Game/Game.h \
  ../source/GameComponents/Response/Response.h \
