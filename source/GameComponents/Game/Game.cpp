@@ -50,6 +50,11 @@ void Game::start() {
         // #########################################################
 
 
+        // ############# TASK MANAGER SETUP #############
+        auto field_observer = FieldObserver(new_field);
+        //################################################
+
+
         // ############# LOGGER SETUP #############
         ControllerObserver cont_obs;
         cont_obs.addController(&player_controller);

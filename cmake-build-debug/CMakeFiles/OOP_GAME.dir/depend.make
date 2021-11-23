@@ -111,6 +111,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/FieldComponents/FieldAggregate/FieldAggregate.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/FieldComponents/FieldObserver/FieldObserver.h \
  ../source/GameComponents/Combat/Combat.h \
  ../source/GameComponents/ControllerObserver/ControllerObserver.h \
  ../source/GameComponents/Game/Game.h \
@@ -270,6 +271,26 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o
  ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.o: \
+ ../source/CellComponents/Cell/Cell.h \
+ ../source/CellComponents/CellEntrance/CellEntrance.h \
+ ../source/CellComponents/CellExit/CellExit.h \
+ ../source/CellComponents/CellFloor/CellFloor.h \
+ ../source/CellComponents/CellWall/CellWall.h \
+ ../source/FieldComponents/Field/Field.h \
+ ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/FieldComponents/FieldObserver/FieldObserver.cpp \
+ ../source/FieldComponents/FieldObserver/FieldObserver.h \
+ ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/Response/Response.h \
+ ../source/InteractiveObjectComponents/Character/Character.h \
+ ../source/InteractiveObjectComponents/Enemy/Enemy.h \
+ ../source/InteractiveObjectComponents/Equipment/Equipment.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../source/InteractiveObjectComponents/Player/Player.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o: \
  ../source/GameComponents/Combat/Combat.cpp \
  ../source/GameComponents/Combat/Combat.h
@@ -300,6 +321,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../source/FieldComponents/FieldAggregate/FieldAggregate.h \
  ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
  ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/FieldComponents/FieldObserver/FieldObserver.h \
  ../source/GameComponents/Combat/Combat.h \
  ../source/GameComponents/ControllerObserver/ControllerObserver.h \
  ../source/GameComponents/Game/Game.cpp \

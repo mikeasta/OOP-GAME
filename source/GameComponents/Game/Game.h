@@ -13,7 +13,7 @@
 #include "../../../client/MenuComponents/MainMenu/MainMenu.h"
 #include "../../FieldComponents/FieldGenerator/FieldGenerator.h"
 #include "../../FieldComponents/Field/Field.h"
-#include "../../InteractiveObjectComponents/Player/Player.h"
+#include "../../FieldComponents/FieldObserver/FieldObserver.h"
 #include "../../FieldComponents/FieldAggregate/FieldAggregate.h"
 #include "../../ControllerComponents/PlayerController/PlayerController.h"
 #include "../../ControllerComponents/EnemyManageCenter/EnemyManageCenter.h"

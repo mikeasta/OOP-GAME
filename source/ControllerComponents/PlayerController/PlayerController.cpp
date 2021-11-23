@@ -29,6 +29,10 @@ void PlayerController::setControls(std::map<std::string, char> new_controls) {
     directions = new_controls;
 }
 
+void PlayerController::toggleAbilityToLeave() {
+    is_able_to_exit = !is_able_to_exit;
+}
+
 std::pair<std::string, Combat> PlayerController::move(char direction) {
 
     auto response_lib = Response().getResponseLib();
@@ -47,6 +51,10 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
 
     Cell* to_move = field.getCell(x, y);
     std::string response = to_move->stepEffect(&player);
+    if ((response == response_lib["exit"]) & (!is_able_to_exit)) {
+        response = response_lib["wall"];
+    }
+
     if (response == response_lib["floor"]) {
 
         // Check if something in cell

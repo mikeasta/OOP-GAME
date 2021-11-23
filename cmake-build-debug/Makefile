@@ -681,6 +681,30 @@ source/FieldComponents/FieldIterator/FieldIterator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.s
 .PHONY : source/FieldComponents/FieldIterator/FieldIterator.cpp.s
 
+source/FieldComponents/FieldObserver/FieldObserver.o: source/FieldComponents/FieldObserver/FieldObserver.cpp.o
+.PHONY : source/FieldComponents/FieldObserver/FieldObserver.o
+
+# target to build an object file
+source/FieldComponents/FieldObserver/FieldObserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.o
+.PHONY : source/FieldComponents/FieldObserver/FieldObserver.cpp.o
+
+source/FieldComponents/FieldObserver/FieldObserver.i: source/FieldComponents/FieldObserver/FieldObserver.cpp.i
+.PHONY : source/FieldComponents/FieldObserver/FieldObserver.i
+
+# target to preprocess a source file
+source/FieldComponents/FieldObserver/FieldObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.i
+.PHONY : source/FieldComponents/FieldObserver/FieldObserver.cpp.i
+
+source/FieldComponents/FieldObserver/FieldObserver.s: source/FieldComponents/FieldObserver/FieldObserver.cpp.s
+.PHONY : source/FieldComponents/FieldObserver/FieldObserver.s
+
+# target to generate assembly for a file
+source/FieldComponents/FieldObserver/FieldObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.s
+.PHONY : source/FieldComponents/FieldObserver/FieldObserver.cpp.s
+
 source/GameComponents/Combat/Combat.o: source/GameComponents/Combat/Combat.cpp.o
 .PHONY : source/GameComponents/Combat/Combat.o
 
@@ -1047,6 +1071,9 @@ help:
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.o"
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.i"
 	@echo "... source/FieldComponents/FieldIterator/FieldIterator.s"
+	@echo "... source/FieldComponents/FieldObserver/FieldObserver.o"
+	@echo "... source/FieldComponents/FieldObserver/FieldObserver.i"
+	@echo "... source/FieldComponents/FieldObserver/FieldObserver.s"
 	@echo "... source/GameComponents/Combat/Combat.o"
 	@echo "... source/GameComponents/Combat/Combat.i"
 	@echo "... source/GameComponents/Combat/Combat.s"

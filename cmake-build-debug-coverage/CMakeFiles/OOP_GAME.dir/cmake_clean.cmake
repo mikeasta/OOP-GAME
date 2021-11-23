@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldAggregate/FieldAggregate.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldGenerator/FieldGenerator.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldIterator/FieldIterator.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o"

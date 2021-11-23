@@ -241,6 +241,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldObserver/FieldObserver.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldObserver/FieldObserver.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>
