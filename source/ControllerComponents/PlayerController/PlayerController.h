@@ -30,7 +30,7 @@ private:
     Cell* curr_cell;
 public:
     PlayerController(Player &player, Field &field);
-
+    void setControls(std::map<std::string, char> new_controls);
     std::pair<std::string, Combat> move(char direction);
 };
 

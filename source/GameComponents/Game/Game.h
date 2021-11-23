@@ -10,6 +10,7 @@
 #include "../../../client/CombatCLI/CombatCLI.h"
 #include "../../../client/EquipmentCLI/EquipmentCLI.h"
 #include "../../../client/Logger/Logger.h"
+#include "../../../client/MenuComponents/MainMenu/MainMenu.h"
 #include "../../FieldComponents/FieldGenerator/FieldGenerator.h"
 #include "../../FieldComponents/Field/Field.h"
 #include "../../InteractiveObjectComponents/Player/Player.h"

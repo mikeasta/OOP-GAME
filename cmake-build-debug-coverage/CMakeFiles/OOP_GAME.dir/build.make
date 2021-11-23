@@ -495,6 +495,32 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObser
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/GameComponents/ControllerObserver/ControllerObserver.cpp -o CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.s
 
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o: ../client/MenuComponents/MainMenu/MainMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o -c /home/mikeasta/Programming/OOP-GAME/client/MenuComponents/MainMenu/MainMenu.cpp
+
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/client/MenuComponents/MainMenu/MainMenu.cpp > CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.i
+
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/client/MenuComponents/MainMenu/MainMenu.cpp -o CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.s
+
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o: ../client/MenuComponents/Controls/Controls.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o -c /home/mikeasta/Programming/OOP-GAME/client/MenuComponents/Controls/Controls.cpp
+
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/client/MenuComponents/Controls/Controls.cpp > CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.i
+
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/client/MenuComponents/Controls/Controls.cpp -o CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.s
+
 # Object files for target OOP_GAME
 OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o" \
@@ -529,7 +555,9 @@ OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/source/ControllerComponents/Controller/Controller.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/client/Logger/Logger.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.o" \
-"CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.o"
+"CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o"
 
 # External object files for target OOP_GAME
 OOP_GAME_EXTERNAL_OBJECTS =
@@ -567,9 +595,11 @@ OOP_GAME: CMakeFiles/OOP_GAME.dir/source/ControllerComponents/Controller/Control
 OOP_GAME: CMakeFiles/OOP_GAME.dir/client/Logger/Logger.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/build.make
 OOP_GAME: CMakeFiles/OOP_GAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable OOP_GAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable OOP_GAME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OOP_GAME.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

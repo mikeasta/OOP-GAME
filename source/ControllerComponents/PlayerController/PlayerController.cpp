@@ -25,6 +25,10 @@ PlayerController::PlayerController(Player &player, Field &field):
     }
 }
 
+void PlayerController::setControls(std::map<std::string, char> new_controls) {
+    directions = new_controls;
+}
+
 std::pair<std::string, Combat> PlayerController::move(char direction) {
 
     auto response_lib = Response().getResponseLib();

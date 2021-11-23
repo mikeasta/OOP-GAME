@@ -18,6 +18,12 @@ void Game::start() {
         // ######################################################
 
 
+        // ############# MAIN MENU #############
+        auto menu = MainMenu();
+        auto controls = menu.call();
+        // #####################################
+
+
         // ############# TEST FILE STREAM #############
         std::ofstream out;
         out.open("/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/output.txt");
@@ -39,6 +45,7 @@ void Game::start() {
         FieldAggregate aggregator;
         aggregator.aggregate(new_field, new_player);
         auto player_controller = PlayerController(new_player, new_field);
+        player_controller.setControls(controls);
         auto enemy_center      = EnemyManageCenter(new_field);
         // #########################################################
 

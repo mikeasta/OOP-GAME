@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/client/FieldCLI/FieldCLI.cpp.o"
   "CMakeFiles/OOP_GAME.dir/client/Logger/Logger.cpp.o"
   "CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o"
   "CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o"
   "CMakeFiles/OOP_GAME.dir/main.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o"

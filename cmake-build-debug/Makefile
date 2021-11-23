@@ -273,6 +273,54 @@ client/LoggerUnit/LoggerUnit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.s
 .PHONY : client/LoggerUnit/LoggerUnit.cpp.s
 
+client/MenuComponents/Controls/Controls.o: client/MenuComponents/Controls/Controls.cpp.o
+.PHONY : client/MenuComponents/Controls/Controls.o
+
+# target to build an object file
+client/MenuComponents/Controls/Controls.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o
+.PHONY : client/MenuComponents/Controls/Controls.cpp.o
+
+client/MenuComponents/Controls/Controls.i: client/MenuComponents/Controls/Controls.cpp.i
+.PHONY : client/MenuComponents/Controls/Controls.i
+
+# target to preprocess a source file
+client/MenuComponents/Controls/Controls.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.i
+.PHONY : client/MenuComponents/Controls/Controls.cpp.i
+
+client/MenuComponents/Controls/Controls.s: client/MenuComponents/Controls/Controls.cpp.s
+.PHONY : client/MenuComponents/Controls/Controls.s
+
+# target to generate assembly for a file
+client/MenuComponents/Controls/Controls.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.s
+.PHONY : client/MenuComponents/Controls/Controls.cpp.s
+
+client/MenuComponents/MainMenu/MainMenu.o: client/MenuComponents/MainMenu/MainMenu.cpp.o
+.PHONY : client/MenuComponents/MainMenu/MainMenu.o
+
+# target to build an object file
+client/MenuComponents/MainMenu/MainMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o
+.PHONY : client/MenuComponents/MainMenu/MainMenu.cpp.o
+
+client/MenuComponents/MainMenu/MainMenu.i: client/MenuComponents/MainMenu/MainMenu.cpp.i
+.PHONY : client/MenuComponents/MainMenu/MainMenu.i
+
+# target to preprocess a source file
+client/MenuComponents/MainMenu/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.i
+.PHONY : client/MenuComponents/MainMenu/MainMenu.cpp.i
+
+client/MenuComponents/MainMenu/MainMenu.s: client/MenuComponents/MainMenu/MainMenu.cpp.s
+.PHONY : client/MenuComponents/MainMenu/MainMenu.s
+
+# target to generate assembly for a file
+client/MenuComponents/MainMenu/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.s
+.PHONY : client/MenuComponents/MainMenu/MainMenu.cpp.s
+
 client/PlayerCLI/PlayerCLI.o: client/PlayerCLI/PlayerCLI.cpp.o
 .PHONY : client/PlayerCLI/PlayerCLI.o
 
@@ -948,6 +996,12 @@ help:
 	@echo "... client/LoggerUnit/LoggerUnit.o"
 	@echo "... client/LoggerUnit/LoggerUnit.i"
 	@echo "... client/LoggerUnit/LoggerUnit.s"
+	@echo "... client/MenuComponents/Controls/Controls.o"
+	@echo "... client/MenuComponents/Controls/Controls.i"
+	@echo "... client/MenuComponents/Controls/Controls.s"
+	@echo "... client/MenuComponents/MainMenu/MainMenu.o"
+	@echo "... client/MenuComponents/MainMenu/MainMenu.i"
+	@echo "... client/MenuComponents/MainMenu/MainMenu.s"
 	@echo "... client/PlayerCLI/PlayerCLI.o"
 	@echo "... client/PlayerCLI/PlayerCLI.i"
 	@echo "... client/PlayerCLI/PlayerCLI.s"

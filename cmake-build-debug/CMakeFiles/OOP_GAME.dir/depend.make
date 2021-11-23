@@ -59,6 +59,13 @@ CMakeFiles/OOP_GAME.dir/client/Logger/Logger.cpp.o: \
 CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.o: \
  ../client/LoggerUnit/LoggerUnit.cpp \
  ../client/LoggerUnit/LoggerUnit.h
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o: \
+ ../client/MenuComponents/Controls/Controls.cpp \
+ ../client/MenuComponents/Controls/Controls.h
+CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o: \
+ ../client/MenuComponents/Controls/Controls.h \
+ ../client/MenuComponents/MainMenu/MainMenu.cpp \
+ ../client/MenuComponents/MainMenu/MainMenu.h
 CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o: \
  ../client/CLI/CLI.h \
  ../client/PlayerCLI/PlayerCLI.cpp \
@@ -87,6 +94,8 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../client/FieldCLI/FieldCLI.h \
  ../client/Logger/Logger.h \
  ../client/LoggerUnit/LoggerUnit.h \
+ ../client/MenuComponents/Controls/Controls.h \
+ ../client/MenuComponents/MainMenu/MainMenu.h \
  ../client/PlayerCLI/PlayerCLI.h \
  ../main.cpp \
  ../source/CellComponents/Cell/Cell.h \
@@ -275,6 +284,8 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../client/FieldCLI/FieldCLI.h \
  ../client/Logger/Logger.h \
  ../client/LoggerUnit/LoggerUnit.h \
+ ../client/MenuComponents/Controls/Controls.h \
+ ../client/MenuComponents/MainMenu/MainMenu.h \
  ../client/PlayerCLI/PlayerCLI.h \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \

@@ -142,6 +142,18 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/LoggerUnit/LoggerUnit.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/MenuComponents/Controls/Controls.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/MenuComponents/Controls/Controls.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/MenuComponents/MainMenu/MainMenu.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/MenuComponents/MainMenu/MainMenu.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>
