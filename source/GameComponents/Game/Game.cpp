@@ -77,6 +77,8 @@ void Game::start() {
         // ############# GAME LOOP #############
         while (game_goes) {
 
+            field_observer.getFieldStats();
+
             // ############# ENEMY STEPPING #############
             enemy_center.move_all();
             // ##########################################

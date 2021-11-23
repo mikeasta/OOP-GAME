@@ -114,12 +114,6 @@ iostream
 string
 -
 
-/home/mikeasta/Programming/OOP-GAME/main.cpp
-iostream
--
-source/GameComponents/Game/Game.h
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
-
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 tuple
 -

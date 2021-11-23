@@ -8,6 +8,10 @@ FieldObserver::FieldObserver(Field &field):
     field(field) {}
 
 void FieldObserver::analyze() {
+    current_field_stats["floor_cells_count"] = 0;
+    current_field_stats["enemy_count"] = 0;
+    current_field_stats["item_count"] = 0;
+
     auto iterator = new FieldIterator(field);
     Cell* curr_cell = iterator->getCurrent();
     while (curr_cell) {
