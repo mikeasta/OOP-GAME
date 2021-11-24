@@ -534,6 +534,45 @@ CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.s
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldObserver/FieldObserver.cpp -o CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.s
 
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o: ../source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp
+
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp > CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp -o CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.s
+
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o: ../source/TaskComponents/TaskManager/TaskManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o -c /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp
+
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp > CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.i
+
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp -o CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.s
+
+CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o: CMakeFiles/OOP_GAME.dir/flags.make
+CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o: ../client/TaskCLI/TaskCLI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o -c /home/mikeasta/Programming/OOP-GAME/client/TaskCLI/TaskCLI.cpp
+
+CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikeasta/Programming/OOP-GAME/client/TaskCLI/TaskCLI.cpp > CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.i
+
+CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikeasta/Programming/OOP-GAME/client/TaskCLI/TaskCLI.cpp -o CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.s
+
 # Object files for target OOP_GAME
 OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/client/CLI/CLI.cpp.o" \
@@ -571,7 +610,10 @@ OOP_GAME_OBJECTS = \
 "CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o" \
 "CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o" \
-"CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.o"
+"CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o" \
+"CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o"
 
 # External object files for target OOP_GAME
 OOP_GAME_EXTERNAL_OBJECTS =
@@ -612,9 +654,12 @@ OOP_GAME: CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/Contr
 OOP_GAME: CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/source/FieldComponents/FieldObserver/FieldObserver.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o
+OOP_GAME: CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o
 OOP_GAME: CMakeFiles/OOP_GAME.dir/build.make
 OOP_GAME: CMakeFiles/OOP_GAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable OOP_GAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX executable OOP_GAME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OOP_GAME.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

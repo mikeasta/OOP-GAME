@@ -114,6 +114,16 @@ iostream
 string
 -
 
+/home/mikeasta/Programming/OOP-GAME/client/TaskCLI/TaskCLI.h
+../../source/TaskComponents/TaskManager/TaskManager.h
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.h
+../../source/TaskComponents/TaskManager/TaskManager.cpp
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp
+../CLI/CLI.h
+/home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
+iostream
+-
+
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 tuple
 -
@@ -240,10 +250,6 @@ string
 ../../CellComponents/Cell/Cell.h
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldObserver/FieldObserver.cpp
-FieldObserver.h
-/home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldObserver/FieldObserver.h
-
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldObserver/FieldObserver.h
 ../Field/Field.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
@@ -293,6 +299,8 @@ Game.h
 /home/mikeasta/Programming/OOP-GAME/client/Logger/Logger.h
 ../../../client/MenuComponents/MainMenu/MainMenu.h
 /home/mikeasta/Programming/OOP-GAME/client/MenuComponents/MainMenu/MainMenu.h
+../../../client/TaskCLI/TaskCLI.h
+/home/mikeasta/Programming/OOP-GAME/client/TaskCLI/TaskCLI.h
 ../../FieldComponents/FieldGenerator/FieldGenerator.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
 ../../FieldComponents/Field/Field.h
@@ -305,6 +313,8 @@ Game.h
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h
 ../../ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
+../../TaskComponents/KillingSpreeTask/KillingSpreeTask.h
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h
 
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.h
 map
@@ -414,6 +424,24 @@ vector
 tuple
 -
 iostream
+-
+
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h
+../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
+/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
+string
+-
+map
+-
+
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp
+TaskManager.h
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.h
+
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.h
+string
+-
+map
 -
 
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h

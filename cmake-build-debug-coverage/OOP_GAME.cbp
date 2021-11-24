@@ -160,6 +160,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/TaskCLI/TaskCLI.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/client/TaskCLI/TaskCLI.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/main.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>
@@ -314,6 +320,18 @@
 			<Option target="OOP_GAME"/>
 		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp">

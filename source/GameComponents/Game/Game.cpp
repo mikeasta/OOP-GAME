@@ -41,7 +41,7 @@ void Game::start() {
         auto generator  = FieldGenerator();
         auto cells      = generator.generateField(field_rows, field_cols);
         auto new_field  = Field(cells, field_rows, field_cols);
-        auto new_player = Player(10, 10, 20);
+        auto new_player = Player(100, 100, 100);
         FieldAggregate aggregator;
         aggregator.aggregate(new_field, new_player);
         auto player_controller = PlayerController(new_player, new_field);
@@ -52,6 +52,9 @@ void Game::start() {
 
         // ############# TASK MANAGER SETUP #############
         auto field_observer = FieldObserver(new_field);
+        auto field_stats    = field_observer.getFieldStats();
+        auto kst = KillingSpreeTask(field_stats);
+        auto tm  = TaskManager<KillingSpreeTask>(kst);
         //################################################
 
 
@@ -71,13 +74,13 @@ void Game::start() {
         auto new_player_cli = PlayerCLI(new_player);
         auto combat_drawer  = CombatCLI();
         auto equipment_cli  = EquipmentCLI(new_player);
+        auto task_cli       = TaskCLI<KillingSpreeTask>(tm);
         // ####################################
 
 
         // ############# GAME LOOP #############
+        bool isTaskDone = false;
         while (game_goes) {
-
-            field_observer.getFieldStats();
 
             // ############# ENEMY STEPPING #############
             enemy_center.move_all();
@@ -86,6 +89,7 @@ void Game::start() {
 
             // ############# UI PRINTING #############
             new_field_cli.print();
+            task_cli.print();
             combat_drawer.print();
             new_player_cli.print();
             equipment_cli.print();
@@ -111,6 +115,11 @@ void Game::start() {
 
             if (response.first == response_lib["exit"] || response.first == response_lib["loss"]) {
                 stop();
+            }
+
+            isTaskDone = tm.update(field_observer.getFieldStats(), response.first);
+            if (isTaskDone) {
+                player_controller.toggleAbilityToLeave();
             }
             // ####################################################
 

@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mikeasta/Programming/OOP-GAME/client/MenuComponents/Controls/Controls.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/client/MenuComponents/MainMenu/MainMenu.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/client/PlayerCLI/PlayerCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/client/TaskCLI/TaskCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/main.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/main.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/CellComponents/CellEntrance/CellEntrance.cpp.o"
@@ -43,6 +44,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug/CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

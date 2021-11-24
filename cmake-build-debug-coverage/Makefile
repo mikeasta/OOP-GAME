@@ -345,6 +345,30 @@ client/PlayerCLI/PlayerCLI.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.s
 .PHONY : client/PlayerCLI/PlayerCLI.cpp.s
 
+client/TaskCLI/TaskCLI.o: client/TaskCLI/TaskCLI.cpp.o
+.PHONY : client/TaskCLI/TaskCLI.o
+
+# target to build an object file
+client/TaskCLI/TaskCLI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o
+.PHONY : client/TaskCLI/TaskCLI.cpp.o
+
+client/TaskCLI/TaskCLI.i: client/TaskCLI/TaskCLI.cpp.i
+.PHONY : client/TaskCLI/TaskCLI.i
+
+# target to preprocess a source file
+client/TaskCLI/TaskCLI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.i
+.PHONY : client/TaskCLI/TaskCLI.cpp.i
+
+client/TaskCLI/TaskCLI.s: client/TaskCLI/TaskCLI.cpp.s
+.PHONY : client/TaskCLI/TaskCLI.s
+
+# target to generate assembly for a file
+client/TaskCLI/TaskCLI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.s
+.PHONY : client/TaskCLI/TaskCLI.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -969,6 +993,54 @@ source/InteractiveObjectComponents/Player/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.s
 .PHONY : source/InteractiveObjectComponents/Player/Player.cpp.s
 
+source/TaskComponents/KillingSpreeTask/KillingSpreeTask.o: source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o
+.PHONY : source/TaskComponents/KillingSpreeTask/KillingSpreeTask.o
+
+# target to build an object file
+source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o
+.PHONY : source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o
+
+source/TaskComponents/KillingSpreeTask/KillingSpreeTask.i: source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.i
+.PHONY : source/TaskComponents/KillingSpreeTask/KillingSpreeTask.i
+
+# target to preprocess a source file
+source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.i
+.PHONY : source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.i
+
+source/TaskComponents/KillingSpreeTask/KillingSpreeTask.s: source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.s
+.PHONY : source/TaskComponents/KillingSpreeTask/KillingSpreeTask.s
+
+# target to generate assembly for a file
+source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.s
+.PHONY : source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.s
+
+source/TaskComponents/TaskManager/TaskManager.o: source/TaskComponents/TaskManager/TaskManager.cpp.o
+.PHONY : source/TaskComponents/TaskManager/TaskManager.o
+
+# target to build an object file
+source/TaskComponents/TaskManager/TaskManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o
+.PHONY : source/TaskComponents/TaskManager/TaskManager.cpp.o
+
+source/TaskComponents/TaskManager/TaskManager.i: source/TaskComponents/TaskManager/TaskManager.cpp.i
+.PHONY : source/TaskComponents/TaskManager/TaskManager.i
+
+# target to preprocess a source file
+source/TaskComponents/TaskManager/TaskManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.i
+.PHONY : source/TaskComponents/TaskManager/TaskManager.cpp.i
+
+source/TaskComponents/TaskManager/TaskManager.s: source/TaskComponents/TaskManager/TaskManager.cpp.s
+.PHONY : source/TaskComponents/TaskManager/TaskManager.s
+
+# target to generate assembly for a file
+source/TaskComponents/TaskManager/TaskManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.s
+.PHONY : source/TaskComponents/TaskManager/TaskManager.cpp.s
+
 utils/RandomNumberGenerator/RandomNumberGenerator.o: utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o
 .PHONY : utils/RandomNumberGenerator/RandomNumberGenerator.o
 
@@ -1029,6 +1101,9 @@ help:
 	@echo "... client/PlayerCLI/PlayerCLI.o"
 	@echo "... client/PlayerCLI/PlayerCLI.i"
 	@echo "... client/PlayerCLI/PlayerCLI.s"
+	@echo "... client/TaskCLI/TaskCLI.o"
+	@echo "... client/TaskCLI/TaskCLI.i"
+	@echo "... client/TaskCLI/TaskCLI.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -1107,6 +1182,12 @@ help:
 	@echo "... source/InteractiveObjectComponents/Player/Player.o"
 	@echo "... source/InteractiveObjectComponents/Player/Player.i"
 	@echo "... source/InteractiveObjectComponents/Player/Player.s"
+	@echo "... source/TaskComponents/KillingSpreeTask/KillingSpreeTask.o"
+	@echo "... source/TaskComponents/KillingSpreeTask/KillingSpreeTask.i"
+	@echo "... source/TaskComponents/KillingSpreeTask/KillingSpreeTask.s"
+	@echo "... source/TaskComponents/TaskManager/TaskManager.o"
+	@echo "... source/TaskComponents/TaskManager/TaskManager.i"
+	@echo "... source/TaskComponents/TaskManager/TaskManager.s"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.o"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.i"
 	@echo "... utils/RandomNumberGenerator/RandomNumberGenerator.s"

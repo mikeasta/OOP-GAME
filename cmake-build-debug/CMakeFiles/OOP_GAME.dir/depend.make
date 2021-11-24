@@ -87,6 +87,12 @@ CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o: \
  ../source/InteractiveObjectComponents/Item/Item.h \
  ../source/InteractiveObjectComponents/Player/Player.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/client/TaskCLI/TaskCLI.cpp.o: \
+ ../client/CLI/CLI.h \
+ ../client/TaskCLI/TaskCLI.cpp \
+ ../client/TaskCLI/TaskCLI.h \
+ ../source/TaskComponents/TaskManager/TaskManager.cpp \
+ ../source/TaskComponents/TaskManager/TaskManager.h
 CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../client/CLI/CLI.h \
  ../client/CombatCLI/CombatCLI.h \
@@ -97,6 +103,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../client/MenuComponents/Controls/Controls.h \
  ../client/MenuComponents/MainMenu/MainMenu.h \
  ../client/PlayerCLI/PlayerCLI.h \
+ ../client/TaskCLI/TaskCLI.h \
  ../main.cpp \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \
@@ -124,6 +131,9 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/InteractiveObjectComponents/Item/Item.h \
  ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h \
  ../source/InteractiveObjectComponents/Player/Player.h \
+ ../source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h \
+ ../source/TaskComponents/TaskManager/TaskManager.cpp \
+ ../source/TaskComponents/TaskManager/TaskManager.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o: \
  ../source/CellComponents/Cell/Cell.cpp \
@@ -308,6 +318,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../client/MenuComponents/Controls/Controls.h \
  ../client/MenuComponents/MainMenu/MainMenu.h \
  ../client/PlayerCLI/PlayerCLI.h \
+ ../client/TaskCLI/TaskCLI.h \
  ../source/CellComponents/Cell/Cell.h \
  ../source/CellComponents/CellEntrance/CellEntrance.h \
  ../source/CellComponents/CellExit/CellExit.h \
@@ -335,6 +346,9 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../source/InteractiveObjectComponents/Item/Item.h \
  ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h \
  ../source/InteractiveObjectComponents/Player/Player.h \
+ ../source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h \
+ ../source/TaskComponents/TaskManager/TaskManager.cpp \
+ ../source/TaskComponents/TaskManager/TaskManager.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Response/Response.cpp.o: \
  ../source/GameComponents/Response/Response.cpp \
@@ -427,6 +441,13 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o: 
  ../source/InteractiveObjectComponents/Player/Player.cpp \
  ../source/InteractiveObjectComponents/Player/Player.h \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o: \
+ ../source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp \
+ ../source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o: \
+ ../source/TaskComponents/TaskManager/TaskManager.cpp \
+ ../source/TaskComponents/TaskManager/TaskManager.h
 CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o: \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.cpp \
  ../utils/RandomNumberGenerator/RandomNumberGenerator.h
