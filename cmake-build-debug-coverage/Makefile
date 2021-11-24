@@ -993,6 +993,30 @@ source/InteractiveObjectComponents/Player/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.s
 .PHONY : source/InteractiveObjectComponents/Player/Player.cpp.s
 
+source/TaskComponents/CollectionerTask/CollectionerTask.o: source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o
+.PHONY : source/TaskComponents/CollectionerTask/CollectionerTask.o
+
+# target to build an object file
+source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o
+.PHONY : source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o
+
+source/TaskComponents/CollectionerTask/CollectionerTask.i: source/TaskComponents/CollectionerTask/CollectionerTask.cpp.i
+.PHONY : source/TaskComponents/CollectionerTask/CollectionerTask.i
+
+# target to preprocess a source file
+source/TaskComponents/CollectionerTask/CollectionerTask.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/CollectionerTask/CollectionerTask.cpp.i
+.PHONY : source/TaskComponents/CollectionerTask/CollectionerTask.cpp.i
+
+source/TaskComponents/CollectionerTask/CollectionerTask.s: source/TaskComponents/CollectionerTask/CollectionerTask.cpp.s
+.PHONY : source/TaskComponents/CollectionerTask/CollectionerTask.s
+
+# target to generate assembly for a file
+source/TaskComponents/CollectionerTask/CollectionerTask.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/TaskComponents/CollectionerTask/CollectionerTask.cpp.s
+.PHONY : source/TaskComponents/CollectionerTask/CollectionerTask.cpp.s
+
 source/TaskComponents/KillingSpreeTask/KillingSpreeTask.o: source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o
 .PHONY : source/TaskComponents/KillingSpreeTask/KillingSpreeTask.o
 
@@ -1182,6 +1206,9 @@ help:
 	@echo "... source/InteractiveObjectComponents/Player/Player.o"
 	@echo "... source/InteractiveObjectComponents/Player/Player.i"
 	@echo "... source/InteractiveObjectComponents/Player/Player.s"
+	@echo "... source/TaskComponents/CollectionerTask/CollectionerTask.o"
+	@echo "... source/TaskComponents/CollectionerTask/CollectionerTask.i"
+	@echo "... source/TaskComponents/CollectionerTask/CollectionerTask.s"
 	@echo "... source/TaskComponents/KillingSpreeTask/KillingSpreeTask.o"
 	@echo "... source/TaskComponents/KillingSpreeTask/KillingSpreeTask.i"
 	@echo "... source/TaskComponents/KillingSpreeTask/KillingSpreeTask.s"

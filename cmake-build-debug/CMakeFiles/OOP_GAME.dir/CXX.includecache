@@ -124,6 +124,12 @@ string
 iostream
 -
 
+/home/mikeasta/Programming/OOP-GAME/main.cpp
+iostream
+-
+source/GameComponents/Game/Game.h
+/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
+
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 tuple
 -
@@ -191,6 +197,10 @@ string
 -
 tuple
 -
+
+/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.cpp
+PlayerController.h
+/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h
 
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/PlayerController/PlayerController.h
 map
@@ -315,6 +325,8 @@ Game.h
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
 ../../TaskComponents/KillingSpreeTask/KillingSpreeTask.h
 /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h
+../../TaskComponents/CollectionerTask/CollectionerTask.h
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h
 
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.h
 map
@@ -424,6 +436,18 @@ vector
 tuple
 -
 iostream
+-
+
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.cpp
+CollectionerTask.h
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h
+
+/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h
+../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
+/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
+string
+-
+map
 -
 
 /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h

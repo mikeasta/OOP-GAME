@@ -322,6 +322,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

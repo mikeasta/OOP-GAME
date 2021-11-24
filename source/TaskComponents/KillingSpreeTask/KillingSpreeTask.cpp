@@ -22,6 +22,14 @@ bool KillingSpreeTask::update(std::map<std::string, int> field_stats, std::strin
 
 std::string KillingSpreeTask::getTaskText() {
     std::string text = "\n\"Killing spree\"";
-    text += "\nKill " + std::to_string(need_to_kill - (initial_enemy_count - current_enemy_count)) + " enemies";
+    int num = need_to_kill - (initial_enemy_count - current_enemy_count);
+    if (num < 0) {
+        num = 0;
+    }
+
+    text += "\nKill " + std::to_string(num) + " enemies ";
+    if (num == 0) {
+        text += "(done)";
+    }
     return text;
 }

@@ -35,6 +35,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Item/Item.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o"
   "CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o"

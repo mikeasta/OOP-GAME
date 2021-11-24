@@ -53,8 +53,8 @@ void Game::start() {
         // ############# TASK MANAGER SETUP #############
         auto field_observer = FieldObserver(new_field);
         auto field_stats    = field_observer.getFieldStats();
-        auto kst = KillingSpreeTask(field_stats);
-        auto tm  = TaskManager<KillingSpreeTask>(kst);
+        auto ct = CollectionerTask(field_stats);
+        auto tm  = TaskManager<CollectionerTask>(ct);
         //################################################
 
 
@@ -74,7 +74,7 @@ void Game::start() {
         auto new_player_cli = PlayerCLI(new_player);
         auto combat_drawer  = CombatCLI();
         auto equipment_cli  = EquipmentCLI(new_player);
-        auto task_cli       = TaskCLI<KillingSpreeTask>(tm);
+        auto task_cli       = TaskCLI<CollectionerTask>(tm);
         // ####################################
 
 
@@ -100,11 +100,16 @@ void Game::start() {
             // ############# PLAYER MOVEMENT #############
             std::cin >> command;
             std::pair<std::string, Combat> response = player_controller.move(command);
+            isTaskDone = tm.update(field_observer.getFieldStats(), response.first);
             system("clear");
             // ###########################################
 
 
             // ############# CHECKING FOR PLAYER STATE #############
+            if (isTaskDone) {
+                player_controller.enableLeaving();
+            }
+
             if (response.first == response_lib["win"] ||
                 response.first == response_lib["draw"] ||
                 response.first == response_lib["loss"]) {
@@ -115,11 +120,6 @@ void Game::start() {
 
             if (response.first == response_lib["exit"] || response.first == response_lib["loss"]) {
                 stop();
-            }
-
-            isTaskDone = tm.update(field_observer.getFieldStats(), response.first);
-            if (isTaskDone) {
-                player_controller.toggleAbilityToLeave();
             }
             // ####################################################
 

@@ -29,8 +29,8 @@ void PlayerController::setControls(std::map<std::string, char> new_controls) {
     directions = new_controls;
 }
 
-void PlayerController::toggleAbilityToLeave() {
-    is_able_to_exit = !is_able_to_exit;
+void PlayerController::enableLeaving() {
+    is_able_to_exit = true;
 }
 
 std::pair<std::string, Combat> PlayerController::move(char direction) {
