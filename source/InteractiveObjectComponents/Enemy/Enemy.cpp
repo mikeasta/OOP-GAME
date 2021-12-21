@@ -4,13 +4,14 @@
 
 #include "Enemy.h"
 
-Enemy::Enemy(int damage, int stamina, int defence):
+Enemy::Enemy(std::string enemy_type, int damage, int stamina, int defence):
     Character(damage, stamina, defence) {
     enemy_id = s_id++;
+    this->enemy_type = enemy_type;
 }
 
 InteractiveObject* Enemy::clone() {
-    return new Enemy(damage, stamina, defence);
+    return new Enemy(enemy_type, damage, stamina, defence);
 }
 
 Enemy* Enemy::create(std::map<std::string, std::vector<int>> enemy_voc) {
@@ -18,7 +19,11 @@ Enemy* Enemy::create(std::map<std::string, std::vector<int>> enemy_voc) {
     auto curr = enemy_voc.begin();
 
     std::advance(curr, randomizer.generate(0, 2));
-    return new Enemy(curr->second[0], curr->second[1], curr->second[2]);
+    return new Enemy(
+            curr->first,
+            curr->second[0],
+            curr->second[1],
+            curr->second[2]);
 }
 
 void Enemy::die() {
