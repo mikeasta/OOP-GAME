@@ -12,6 +12,9 @@ private:
 public:
     ControlsManager(ControlsInterface& controls_interface);
     std::string listen();
+    bool checkForMovement(std::string command);
+    bool checkForSaving(std::string command);
+    bool checkForLoading(std::string command);
 };
 
 #endif //OOP_GAME_CONTROLSMANAGER_H

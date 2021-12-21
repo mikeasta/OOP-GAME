@@ -16,7 +16,9 @@ private:
             {"w", "up"},
             {"a", "left"},
             {"s", "down"},
-            {"d", "right"}
+            {"d", "right"},
+            {"v", "save"},
+            {"l", "load"}
     };
 public:
     ControlsByCLI(std::map<std::string, std::string> binds = {});

@@ -103,8 +103,16 @@ void Game::start() {
 
 
             // ############# PLAYER MOVEMENT #############
+            std::pair<std::string, Combat> response;
             command = controls_manager.listen();
-            std::pair<std::string, Combat> response = player_controller.move(command);
+            if (controls_manager.checkForMovement(command)) {
+                 response = player_controller.move(command);
+            } else if (controls_manager.checkForSaving(command)) {
+                // Save
+            } else if (controls_manager.checkForLoading(command)) {
+                // load
+            }
+
             isTaskDone = tm.update(field_observer.getFieldStats(), response.first);
             system("clear");
             // ###########################################
