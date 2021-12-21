@@ -124,6 +124,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o: \
  ../source/GameComponents/Combat/Combat.h \
  ../source/GameComponents/ControllerObserver/ControllerObserver.h \
  ../source/GameComponents/Game/Game.h \
+ ../source/GameComponents/Level/Level.h \
  ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \
@@ -343,6 +344,53 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o: \
  ../source/GameComponents/ControllerObserver/ControllerObserver.h \
  ../source/GameComponents/Game/Game.cpp \
  ../source/GameComponents/Game/Game.h \
+ ../source/GameComponents/Level/Level.h \
+ ../source/GameComponents/Response/Response.h \
+ ../source/InteractiveObjectComponents/Character/Character.h \
+ ../source/InteractiveObjectComponents/Enemy/Enemy.h \
+ ../source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h \
+ ../source/InteractiveObjectComponents/Equipment/Equipment.h \
+ ../source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h \
+ ../source/InteractiveObjectComponents/Item/Item.h \
+ ../source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h \
+ ../source/InteractiveObjectComponents/Player/Player.h \
+ ../source/TaskComponents/CollectionerTask/CollectionerTask.h \
+ ../source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h \
+ ../source/TaskComponents/TaskManager/TaskManager.cpp \
+ ../source/TaskComponents/TaskManager/TaskManager.h \
+ ../source/UserControlsComponents/ControlsByCLI/ControlsByCLI.h \
+ ../source/UserControlsComponents/ControlsInterface/ControlsInterface.h \
+ ../source/UserControlsComponents/ControlsManager/ControlsManager.h \
+ ../utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/GameComponents/Level/Level.cpp.o: \
+ ../client/CLI/CLI.h \
+ ../client/CombatCLI/CombatCLI.h \
+ ../client/EquipmentCLI/EquipmentCLI.h \
+ ../client/FieldCLI/FieldCLI.h \
+ ../client/Logger/Logger.h \
+ ../client/LoggerUnit/LoggerUnit.h \
+ ../client/MenuComponents/Controls/Controls.h \
+ ../client/MenuComponents/MainMenu/MainMenu.h \
+ ../client/PlayerCLI/PlayerCLI.h \
+ ../client/TaskCLI/TaskCLI.h \
+ ../source/CellComponents/Cell/Cell.h \
+ ../source/CellComponents/CellEntrance/CellEntrance.h \
+ ../source/CellComponents/CellExit/CellExit.h \
+ ../source/CellComponents/CellFloor/CellFloor.h \
+ ../source/CellComponents/CellWall/CellWall.h \
+ ../source/ControllerComponents/Controller/Controller.h \
+ ../source/ControllerComponents/EnemyController/EnemyController.h \
+ ../source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.h \
+ ../source/ControllerComponents/PlayerController/PlayerController.h \
+ ../source/FieldComponents/Field/Field.h \
+ ../source/FieldComponents/FieldAggregate/FieldAggregate.h \
+ ../source/FieldComponents/FieldGenerator/FieldGenerator.h \
+ ../source/FieldComponents/FieldIterator/FieldIterator.h \
+ ../source/FieldComponents/FieldObserver/FieldObserver.h \
+ ../source/GameComponents/Combat/Combat.h \
+ ../source/GameComponents/ControllerObserver/ControllerObserver.h \
+ ../source/GameComponents/Level/Level.cpp \
+ ../source/GameComponents/Level/Level.h \
  ../source/GameComponents/Response/Response.h \
  ../source/InteractiveObjectComponents/Character/Character.h \
  ../source/InteractiveObjectComponents/Enemy/Enemy.h \

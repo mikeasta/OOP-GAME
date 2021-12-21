@@ -801,6 +801,30 @@ source/GameComponents/Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.s
 .PHONY : source/GameComponents/Game/Game.cpp.s
 
+source/GameComponents/Level/Level.o: source/GameComponents/Level/Level.cpp.o
+.PHONY : source/GameComponents/Level/Level.o
+
+# target to build an object file
+source/GameComponents/Level/Level.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Level/Level.cpp.o
+.PHONY : source/GameComponents/Level/Level.cpp.o
+
+source/GameComponents/Level/Level.i: source/GameComponents/Level/Level.cpp.i
+.PHONY : source/GameComponents/Level/Level.i
+
+# target to preprocess a source file
+source/GameComponents/Level/Level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Level/Level.cpp.i
+.PHONY : source/GameComponents/Level/Level.cpp.i
+
+source/GameComponents/Level/Level.s: source/GameComponents/Level/Level.cpp.s
+.PHONY : source/GameComponents/Level/Level.s
+
+# target to generate assembly for a file
+source/GameComponents/Level/Level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/GameComponents/Level/Level.cpp.s
+.PHONY : source/GameComponents/Level/Level.cpp.s
+
 source/GameComponents/Response/Response.o: source/GameComponents/Response/Response.cpp.o
 .PHONY : source/GameComponents/Response/Response.o
 
@@ -1230,6 +1254,9 @@ help:
 	@echo "... source/GameComponents/Game/Game.o"
 	@echo "... source/GameComponents/Game/Game.i"
 	@echo "... source/GameComponents/Game/Game.s"
+	@echo "... source/GameComponents/Level/Level.o"
+	@echo "... source/GameComponents/Level/Level.i"
+	@echo "... source/GameComponents/Level/Level.s"
 	@echo "... source/GameComponents/Response/Response.o"
 	@echo "... source/GameComponents/Response/Response.i"
 	@echo "... source/GameComponents/Response/Response.s"

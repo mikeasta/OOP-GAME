@@ -1,9 +1,9 @@
 //
-// Created by mikeasta on 16.10.2021.
+// Created by mikeasta on 21.12.2021.
 //
 
-#ifndef OOP_GAME_GAME_H
-#define OOP_GAME_GAME_H
+#ifndef OOP_GAME_LEVEL_H
+#define OOP_GAME_LEVEL_H
 #include "../Response/Response.h"
 #include "../../../client/FieldCLI/FieldCLI.h"
 #include "../../../client/PlayerCLI/PlayerCLI.h"
@@ -22,15 +22,18 @@
 #include "../../TaskComponents/CollectionerTask/CollectionerTask.h"
 #include "../../UserControlsComponents/ControlsManager/ControlsManager.h"
 #include "../../UserControlsComponents/ControlsByCLI/ControlsByCLI.h"
-#include "../Level/Level.h"
 
-class Game {
+class Level {
 private:
-    bool game_is_started = false;
+    Field& field;
+    Player& player;
+    ControlsManager& controls_manager;
     bool game_goes = false;
+    std::string result;
 public:
-    void start();
-    void stop();
+    Level(Field& field, Player& player, ControlsManager& controls_manager);
+    std::string start();
+    void game_end();
 };
 
-#endif //OOP_GAME_GAME_H
+#endif //OOP_GAME_LEVEL_H

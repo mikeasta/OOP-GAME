@@ -128,12 +128,6 @@ string
 iostream
 -
 
-/home/mikeasta/Programming/OOP-GAME/main.cpp
-iostream
--
-source/GameComponents/Game/Game.h
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
-
 /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
 tuple
 -
@@ -290,11 +284,11 @@ vector
 string
 -
 
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.cpp
-Game.h
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
+/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Level/Level.cpp
+Level.h
+/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Level/Level.h
 
-/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h
+/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Level/Level.h
 ../Response/Response.h
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.h
 ../../../client/FieldCLI/FieldCLI.h
@@ -467,10 +461,6 @@ string
 -
 map
 -
-
-/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.cpp
-ControlsByCLI.h
-/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.h
 
 /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.h
 ../ControlsInterface/ControlsInterface.h

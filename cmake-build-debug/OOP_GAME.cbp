@@ -271,6 +271,12 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Game/Game.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Level/Level.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Level/Level.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

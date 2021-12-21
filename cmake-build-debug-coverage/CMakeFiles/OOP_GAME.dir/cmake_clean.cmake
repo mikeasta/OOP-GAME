@@ -27,6 +27,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/Combat/Combat.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/ControllerObserver/ControllerObserver.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/source/GameComponents/Level/Level.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/GameComponents/Response/Response.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Character/Character.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Enemy/Enemy.cpp.o"

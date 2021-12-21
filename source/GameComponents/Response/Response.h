@@ -24,7 +24,13 @@ private:
             { "entrance", "ENTRANCE" },
 
             // Error
-            {"not_found", "NOT_FOUND"}
+            {"not_found", "NOT_FOUND"},
+
+            // Level states
+            {"game_goes", "GAME_GOES"},
+            {"game_end", "END_GAME"},
+            {"game_save", "SAVE_GAME"},
+            {"game_load", "LOAD_GAME"},
     };
 public:
     const std::map<std::string, std::string> getResponseLib();
