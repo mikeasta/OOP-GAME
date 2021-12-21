@@ -10,22 +10,16 @@
 #include <string>
 #include <stdlib.h>
 #include "../Controls/Controls.h"
+#include "../../../source/UserControlsComponents/ControlsInterface/ControlsInterface.h"
 
 class MainMenu {
-private:
-    std::map<std::string, char> controls = {
-            {"up", *"w"},
-            {"down", *"s"},
-            {"left", *"a"},
-            {"right", *"d"}
-    };
     std::vector<std::string> __menu_options = {
             "Start Game",
             "Controls",
             "Exit"
     };
 public:
-    std::map<std::string, char> call();
+    void call(ControlsInterface& control_interface);
 };
 
 #endif //OOP_GAME_MAINMENU_H

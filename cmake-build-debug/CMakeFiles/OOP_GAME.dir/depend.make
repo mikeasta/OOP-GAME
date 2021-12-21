@@ -61,11 +61,13 @@ CMakeFiles/OOP_GAME.dir/client/LoggerUnit/LoggerUnit.cpp.o: \
  ../client/LoggerUnit/LoggerUnit.h
 CMakeFiles/OOP_GAME.dir/client/MenuComponents/Controls/Controls.cpp.o: \
  ../client/MenuComponents/Controls/Controls.cpp \
- ../client/MenuComponents/Controls/Controls.h
+ ../client/MenuComponents/Controls/Controls.h \
+ ../source/UserControlsComponents/ControlsInterface/ControlsInterface.h
 CMakeFiles/OOP_GAME.dir/client/MenuComponents/MainMenu/MainMenu.cpp.o: \
  ../client/MenuComponents/Controls/Controls.h \
  ../client/MenuComponents/MainMenu/MainMenu.cpp \
- ../client/MenuComponents/MainMenu/MainMenu.h
+ ../client/MenuComponents/MainMenu/MainMenu.h \
+ ../source/UserControlsComponents/ControlsInterface/ControlsInterface.h
 CMakeFiles/OOP_GAME.dir/client/PlayerCLI/PlayerCLI.cpp.o: \
  ../client/CLI/CLI.h \
  ../client/PlayerCLI/PlayerCLI.cpp \

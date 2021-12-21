@@ -4,15 +4,15 @@
 
 #include "Controls.h"
 
-void Controls::call(std::map<std::string, char> &controls) {
+void Controls::call(ControlsInterface& controls) {
     while(true) {
         system("clear");
         std::cout << "\n================================================================================";
         std::cout << "\n                            OOP - GAME - Controls                               ";
         std::cout << "\n================================================================================";
 
-        for (auto control_unit: controls) {
-            std::cout << "\n" << control_unit.first << " - " << control_unit.second;
+        for (auto control_unit: controls.getBinds()) {
+            std::cout << "\n" << control_unit.second << " - " << control_unit.first;
         }
 
         std::cout << "\n================================================================================";
@@ -25,21 +25,13 @@ void Controls::call(std::map<std::string, char> &controls) {
         // Exit Controls
         if (option == "1") {
             return;
-        } else if (option == "up" || option == "left" || option == "down" || option == "right") {
+        } else {
             std::cout << "\n================================================================================";
             std::cout << "\n Type a key to change " << option << " key:";
-            char new_key = *"";
-            char old_key = controls[option];
+            std::string new_key;
             std::cin >> new_key;
             std::cout << "\nNew-Key: " << new_key;
-
-            controls[option] = new_key;
-
-            for (auto control_unit: controls) {
-                if ((control_unit.second == new_key) & (option != control_unit.first)) {
-                    controls[control_unit.first] = old_key;
-                }
-            }
+            controls.changeBind(option, new_key);
         }
     }
 }

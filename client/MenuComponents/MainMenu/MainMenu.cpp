@@ -4,7 +4,7 @@
 
 #include "MainMenu.h"
 
-std::map<std::string, char> MainMenu::call() {
+void MainMenu::call(ControlsInterface& control_interface) {
     Controls controls_menu = Controls();
     bool is_running = true;
     size_t curr_menu_pointer = 0;
@@ -36,12 +36,10 @@ std::map<std::string, char> MainMenu::call() {
         } else if (option == *"1") {
             switch (curr_menu_pointer) {
                 case 0: is_running = false; break;
-                case 1: controls_menu.call(controls); break;
+                case 1: controls_menu.call(control_interface); break;
                 case 2: exit(EXIT_SUCCESS);
             }
         }
     }
-
-    return controls;
 }
 

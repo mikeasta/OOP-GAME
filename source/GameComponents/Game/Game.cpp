@@ -26,7 +26,7 @@ void Game::start() {
 
         // ############# MAIN MENU #############
         auto menu = MainMenu();
-        auto controls = menu.call();
+        menu.call(controls_interface);
         // #####################################
 
 

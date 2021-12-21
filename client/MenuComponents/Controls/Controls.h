@@ -9,10 +9,11 @@
 #include <map>
 #include <algorithm>
 #include <cctype>
+#include "../../../source/UserControlsComponents/ControlsInterface/ControlsInterface.h"
 
 class Controls {
 public:
-    void call( std::map<std::string, char> &controls);
+    void call(ControlsInterface& controls);
 };
 
 #endif //OOP_GAME_CONTROLS_H
