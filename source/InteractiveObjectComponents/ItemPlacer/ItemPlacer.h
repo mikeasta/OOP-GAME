@@ -27,6 +27,7 @@ private:
 public:
     void place(Item* curr_item, Cell* curr_cell);
     void fillField(Field &field);
+    Item* createItemByName(std::string item_name);
 };
 
 #endif //OOP_GAME_ITEMPLACER_H

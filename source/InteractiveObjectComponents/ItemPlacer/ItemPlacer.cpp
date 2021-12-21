@@ -25,3 +25,12 @@ void ItemPlacer::fillField(Field &field) {
         curr_cell = iterator->getNext();
     }
 }
+
+Item* ItemPlacer::createItemByName(std::string item_name) {
+    return new Item(
+            item_name,
+            item_voc[item_name][0],
+            item_voc[item_name][1],
+            item_voc[item_name][2]
+            );
+}

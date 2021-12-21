@@ -24,3 +24,13 @@ void EnemyPlacer::fillField(Field &field) {
         curr_cell = iterator->getNext();
     }
 }
+
+Enemy* EnemyPlacer::createEnemyByName(std::string enemy_name) {
+    auto enemy_stats = enemy_voc[enemy_name];
+    return new Enemy(
+            enemy_name,
+            enemy_stats[0],
+            enemy_stats[1],
+            enemy_stats[2]
+            );
+}

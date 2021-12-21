@@ -36,6 +36,7 @@ public:
 
     // Pattern: Factory Method
     Item* create(std::map<std::string, std::vector<int>> item_voc);
+    Item* create(std::pair<std::string, std::vector<int>> item_pair);
 
     friend std::ostream& operator<< (std::ostream& out, const Item &item);
 };

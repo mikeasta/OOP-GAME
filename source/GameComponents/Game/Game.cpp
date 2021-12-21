@@ -36,17 +36,19 @@ void Game::start() {
 
 
         // ############# FIELD, PLAYER & ENEMIES INIT. #############
-        unsigned int field_rows = 5;
-        unsigned int field_cols = 10;
-        auto generator  = FieldGenerator();
-        auto cells      = generator.generateField(field_rows, field_cols);
-        auto new_field  = Field(cells, field_rows, field_cols);
-        auto new_player = Player(100, 100, 100);
+        unsigned int field_rows = 5, field_cols = 10;
+        auto generator     = FieldGenerator();
+        auto cells = generator.generateField(field_rows, field_cols);
+
+        Field field   = Field(cells, field_rows, field_cols);
+        Player player = Player(100, 100, 100);
+
         FieldAggregate aggregator;
-        aggregator.aggregate(new_field, new_player);
+        aggregator.aggregate(field, player);
         // #########################################################
 
-        Level current_level = Level(new_field, new_player, controls_manager);
+
+        Level current_level = Level(field, player, controls_manager);
         while(game_goes) {
             command = current_level.start();
 

@@ -20,6 +20,11 @@ Item* Item::create(std::map<std::string, std::vector<int>> item_voc) {
     return new Item(curr->first, curr->second[0], curr->second[1], curr->second[2]);
 }
 
+Item* Item::create(std::pair<std::string, std::vector<int>> item_pair) {
+    return new Item(item_pair.first, item_pair.second[0], item_pair.second[1], item_pair.second[2]);
+}
+
+
 std::string Item::getName() {
     return this->item_name;
 }

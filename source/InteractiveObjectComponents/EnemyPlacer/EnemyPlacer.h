@@ -18,6 +18,7 @@ private:
 public:
     void place(Enemy* curr_enemy, Cell* curr_cell);
     void fillField(Field &field);
+    Enemy* createEnemyByName(std::string enemy_name);
 };
 
 #endif //OOP_GAME_ENEMYPLACER_H

@@ -15,16 +15,17 @@ class Enemy: public Character {
 private:
     unsigned int enemy_id;
     bool alive = true;
+    std::string enemy_type;
 public:
     static unsigned int s_id;
 
     // Constructors
-    explicit Enemy(int damage = 0, int stamina = 0, int defence = 0);
+    explicit Enemy(std::string enemy_type="", int damage = 0, int stamina = 0, int defence = 0);
     ~Enemy() override = default;
 
     InteractiveObject* clone() final;
 
-    Enemy* create(std::map<std::string, std::vector<int>>);
+    Enemy* create(std::map<std::string, std::vector<int>> enemy_voc);
     bool getState() const;
     void die();
     unsigned int getID() const;
