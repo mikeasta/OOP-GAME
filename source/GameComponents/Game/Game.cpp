@@ -18,6 +18,12 @@ void Game::start() {
         // ######################################################
 
 
+        // ############# CONTROLS INITIALIZING #############
+        std::string command;
+        auto controls_interface = ControlsByCLI();
+        auto controls_manager   = ControlsManager(controls_interface);
+        // #################################################
+
         // ############# MAIN MENU #############
         auto menu = MainMenu();
         auto controls = menu.call();
@@ -44,8 +50,8 @@ void Game::start() {
         auto new_player = Player(100, 100, 100);
         FieldAggregate aggregator;
         aggregator.aggregate(new_field, new_player);
+
         auto player_controller = PlayerController(new_player, new_field);
-        player_controller.setControls(controls);
         auto enemy_center      = EnemyManageCenter(new_field);
         // #########################################################
 
@@ -53,7 +59,7 @@ void Game::start() {
         // ############# TASK MANAGER SETUP #############
         auto field_observer = FieldObserver(new_field);
         auto field_stats    = field_observer.getFieldStats();
-        auto ct = CollectionerTask(field_stats);
+        auto ct  = CollectionerTask(field_stats);
         auto tm  = TaskManager<CollectionerTask>(ct);
         //################################################
 
@@ -68,7 +74,6 @@ void Game::start() {
 
 
         // ############# UI SETUP #############
-        char command;
         system("clear");
         auto new_field_cli  = FieldCLI(new_field);
         auto new_player_cli = PlayerCLI(new_player);
@@ -98,7 +103,7 @@ void Game::start() {
 
 
             // ############# PLAYER MOVEMENT #############
-            std::cin >> command;
+            command = controls_manager.listen();
             std::pair<std::string, Combat> response = player_controller.move(command);
             isTaskDone = tm.update(field_observer.getFieldStats(), response.first);
             system("clear");

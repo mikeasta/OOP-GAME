@@ -1,4 +1,4 @@
-/app/extra/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/mikeasta/Programming/OOP-GAME
+/app/extra/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mikeasta/Programming/OOP-GAME
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/mikeasta/Programming/OOP-GAME/cmake-build-debug

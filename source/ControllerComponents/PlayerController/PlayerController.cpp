@@ -25,36 +25,36 @@ PlayerController::PlayerController(Player &player, Field &field):
     }
 }
 
-void PlayerController::setControls(std::map<std::string, char> new_controls) {
-    directions = new_controls;
-}
-
 void PlayerController::enableLeaving() {
     is_able_to_exit = true;
 }
 
-std::pair<std::string, Combat> PlayerController::move(char direction) {
+std::pair<std::string, Combat> PlayerController::move(std::string direction) {
 
     auto response_lib = Response().getResponseLib();
-    unsigned int x = curr_cell->getX();
-    unsigned int y = curr_cell->getY();
 
-    if (direction == directions["up"]) {
-        y -= 1;
-    } else if (direction == directions["left"]) {
-        x -= 1;
-    } else if (direction == directions["down"]) {
-        y += 1;
-    } else if (direction == directions["right"]) {
-        x += 1;
+    // Check, if there is no command to move
+    if (directions.count(direction) == 0) {
+        auto null_combat = Combat();
+        auto null_string = response_lib["not_found"];
+
+        return {null_string, null_combat};
     }
+
+    // Get coordinates and move it
+    unsigned int x = curr_cell->getX() + directions[direction].first;
+    unsigned int y = curr_cell->getY() + directions[direction].second;
 
     Cell* to_move = field.getCell(x, y);
     std::string response = to_move->stepEffect(&player);
+
+    // Check, if player can finish level
     if ((response == response_lib["exit"]) & (!is_able_to_exit)) {
         response = response_lib["wall"];
     }
 
+
+    // Check, if player stepped on floor cell
     if (response == response_lib["floor"]) {
 
         // Check if something in cell
@@ -90,5 +90,5 @@ std::pair<std::string, Combat> PlayerController::move(char direction) {
         curr_cell->setCellContent(&player);
     }
 
-    return std::make_pair(response, Combat());
+    return {response, Combat()};
 }

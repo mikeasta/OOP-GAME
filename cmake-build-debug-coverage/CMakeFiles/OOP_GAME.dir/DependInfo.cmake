@@ -47,6 +47,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.cpp.o"
+  "/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsManager/ControlsManager.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/source/UserControlsComponents/ControlsManager/ControlsManager.cpp.o"
   "/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp" "/home/mikeasta/Programming/OOP-GAME/cmake-build-debug-coverage/CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

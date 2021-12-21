@@ -38,6 +38,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOP_GAME.dir/source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.cpp.o"
   "CMakeFiles/OOP_GAME.dir/source/TaskComponents/TaskManager/TaskManager.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.cpp.o"
+  "CMakeFiles/OOP_GAME.dir/source/UserControlsComponents/ControlsManager/ControlsManager.cpp.o"
   "CMakeFiles/OOP_GAME.dir/utils/RandomNumberGenerator/RandomNumberGenerator.cpp.o"
   "OOP_GAME"
   "OOP_GAME.pdb"

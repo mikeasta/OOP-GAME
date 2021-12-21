@@ -14,4 +14,5 @@ class Controls {
 public:
     void call( std::map<std::string, char> &controls);
 };
+
 #endif //OOP_GAME_CONTROLS_H

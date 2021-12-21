@@ -340,6 +340,21 @@
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.h">
 			<Option target="OOP_GAME"/>
 		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsInterface/ControlsInterface.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsManager/ControlsManager.cpp">
+			<Option target="OOP_GAME"/>
+		</Unit>
+		<Unit filename="/home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsManager/ControlsManager.h">
+			<Option target="OOP_GAME"/>
+		</Unit>
 		<Unit filename="/home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.cpp">
 			<Option target="OOP_GAME"/>
 		</Unit>

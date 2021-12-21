@@ -18,11 +18,11 @@
 
 class PlayerController: public Controller{
 private:
-    std::map<std::string, char> directions = {
-            { "up", *"w"},
-            { "down", *"s"},
-            { "left", *"a"},
-            { "right", *"d"}
+    std::map<std::string, std::pair<unsigned int, unsigned int>> directions = {
+            { "up",    {0, -1}},
+            { "down",  {0,  1}},
+            { "left",  {-1, 0}},
+            { "right", {1,  0}}
     };
 
     Field &field;
@@ -32,8 +32,7 @@ private:
     bool is_able_to_exit = false;
 public:
     PlayerController(Player &player, Field &field);
-    void setControls(std::map<std::string, char> new_controls);
-    std::pair<std::string, Combat> move(char direction);
+    std::pair<std::string, Combat> move(std::string direction);
     void enableLeaving();
 };
 

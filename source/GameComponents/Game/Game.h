@@ -20,6 +20,8 @@
 #include "../../ControllerComponents/EnemyManageCenter/EnemyManageCenter.h"
 #include "../../TaskComponents/KillingSpreeTask/KillingSpreeTask.h"
 #include "../../TaskComponents/CollectionerTask/CollectionerTask.h"
+#include "../../UserControlsComponents/ControlsManager/ControlsManager.h"
+#include "../../UserControlsComponents/ControlsByCLI/ControlsByCLI.h"
 
 class Game {
 private:

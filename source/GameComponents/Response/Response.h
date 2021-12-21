@@ -21,7 +21,10 @@ private:
             { "floor",    "FLOOR" },
             { "wall",     "WALL" },
             { "exit",     "EXIT" },
-            { "entrance", "ENTRANCE" }
+            { "entrance", "ENTRANCE" },
+
+            // Error
+            {"not_found", "NOT_FOUND"}
     };
 public:
     const std::map<std::string, std::string> getResponseLib();
