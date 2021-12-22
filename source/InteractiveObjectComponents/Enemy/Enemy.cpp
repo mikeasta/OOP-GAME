@@ -38,6 +38,10 @@ unsigned int Enemy::getID() const {
     return enemy_id;
 }
 
+std::string Enemy::getType() const {
+    return enemy_type;
+}
+
 std::ostream& operator<< (std::ostream& out, const Enemy &enemy) {
     out << "\nEnemy #" << enemy.getID() << ": ";
     out << "\nHealth: " << enemy.getStamina();

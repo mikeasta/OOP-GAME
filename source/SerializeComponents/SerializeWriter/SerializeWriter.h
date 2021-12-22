@@ -7,6 +7,11 @@
 #include "../../FieldComponents/Field/Field.h"
 #include "../../InteractiveObjectComponents/Player/Player.h"
 #include <string>
+#include <vector>
+#include <tuple>
+#include <fstream>
+#include "../../../utils/JSON_Extension/json.hpp"
+using json = nlohmann::json;
 
 
 class SerializeWriter {

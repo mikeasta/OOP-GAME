@@ -134,6 +134,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
+ /home/mikeasta/Programming/OOP-GAME/source/SerializeComponents/SerializeWriter/SerializeWriter.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp
@@ -141,6 +142,7 @@ CMakeFiles/OOP_GAME.dir/main.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.h
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsInterface/ControlsInterface.h
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsManager/ControlsManager.h
+ /home/mikeasta/Programming/OOP-GAME/utils/JSON_Extension/json.hpp
  /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/CellComponents/Cell/Cell.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.cpp
@@ -354,6 +356,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
+ /home/mikeasta/Programming/OOP-GAME/source/SerializeComponents/SerializeWriter/SerializeWriter.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp
@@ -361,6 +364,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Game/Game.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.h
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsInterface/ControlsInterface.h
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsManager/ControlsManager.h
+ /home/mikeasta/Programming/OOP-GAME/utils/JSON_Extension/json.hpp
  /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Level/Level.cpp.o
  /home/mikeasta/Programming/OOP-GAME/client/CLI/CLI.h
@@ -400,6 +404,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Level/Level.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
+ /home/mikeasta/Programming/OOP-GAME/source/SerializeComponents/SerializeWriter/SerializeWriter.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/KillingSpreeTask/KillingSpreeTask.h
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/TaskManager/TaskManager.cpp
@@ -407,6 +412,7 @@ CMakeFiles/OOP_GAME.dir/source/GameComponents/Level/Level.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsByCLI/ControlsByCLI.h
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsInterface/ControlsInterface.h
  /home/mikeasta/Programming/OOP-GAME/source/UserControlsComponents/ControlsManager/ControlsManager.h
+ /home/mikeasta/Programming/OOP-GAME/utils/JSON_Extension/json.hpp
  /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/GameComponents/Response/Response.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.cpp
@@ -500,7 +506,26 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
  /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.o
+ /home/mikeasta/Programming/OOP-GAME/source/CellComponents/Cell/Cell.h
+ /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellEntrance/CellEntrance.h
+ /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellExit/CellExit.h
+ /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellFloor/CellFloor.h
+ /home/mikeasta/Programming/OOP-GAME/source/CellComponents/CellWall/CellWall.h
+ /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
+ /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldGenerator/FieldGenerator.h
+ /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Combat/Combat.h
+ /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.h
+ /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Character/Character.h
+ /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
+ /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
+ /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
+ /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
+ /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
  /home/mikeasta/Programming/OOP-GAME/source/SerializeComponents/SerializeWriter/SerializeWriter.cpp
+ /home/mikeasta/Programming/OOP-GAME/source/SerializeComponents/SerializeWriter/SerializeWriter.h
+ /home/mikeasta/Programming/OOP-GAME/utils/JSON_Extension/json.hpp
+ /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
 CMakeFiles/OOP_GAME.dir/source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.cpp
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h

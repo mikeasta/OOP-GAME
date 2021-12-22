@@ -29,6 +29,7 @@ public:
     bool getState() const;
     void die();
     unsigned int getID() const;
+    std::string getType() const;
 
     friend std::ostream& operator<< (std::ostream& out, const Enemy &enemy);
 };

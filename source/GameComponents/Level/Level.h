@@ -12,6 +12,7 @@
 #include "../../../client/Logger/Logger.h"
 #include "../../../client/MenuComponents/MainMenu/MainMenu.h"
 #include "../../../client/TaskCLI/TaskCLI.h"
+#include "../../SerializeComponents/SerializeWriter/SerializeWriter.h"
 #include "../../FieldComponents/FieldGenerator/FieldGenerator.h"
 #include "../../FieldComponents/Field/Field.h"
 #include "../../FieldComponents/FieldObserver/FieldObserver.h"

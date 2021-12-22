@@ -89,7 +89,8 @@ std::string Level::start() {
         if (controls_manager.checkForMovement(command)) {
             response = player_controller.move(command);
         } else if (controls_manager.checkForSaving(command)) {
-            // Save
+            SerializeWriter writer;
+            writer.write(field, player);
         } else if (controls_manager.checkForLoading(command)) {
             result = response_lib["game_load"];
         }
