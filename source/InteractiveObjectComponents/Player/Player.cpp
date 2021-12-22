@@ -33,6 +33,15 @@ void Player::take(Item* item) {
     }
 }
 
+void Player::spawn(Field& field, unsigned int x, unsigned int y) {
+    auto cell    = field.getCell(x, y);
+    auto content = cell->getCellContent();
+
+    if (!content) {
+        cell->stepEffect(this);
+    }
+}
+
 void Player::spawn(Field &field) {
 
     // If player is already spawned

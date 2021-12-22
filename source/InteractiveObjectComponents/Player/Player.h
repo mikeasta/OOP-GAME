@@ -34,6 +34,7 @@ public:
     std::map<std::string, int> getEquipmentLabels();
     void take(Item* item);
     void spawn(Field &field);
+    void spawn(Field& field, unsigned int x, unsigned int y);
 
     std::pair<std::string, Combat> attack(Character* opponent);
 

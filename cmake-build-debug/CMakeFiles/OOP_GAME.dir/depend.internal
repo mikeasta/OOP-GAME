@@ -499,6 +499,8 @@ CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.cpp
  /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Player/Player.h
  /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
+CMakeFiles/OOP_GAME.dir/source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.o
+ /home/mikeasta/Programming/OOP-GAME/source/SerializeComponents/SerializeWriter/SerializeWriter.cpp
 CMakeFiles/OOP_GAME.dir/source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.cpp
  /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h

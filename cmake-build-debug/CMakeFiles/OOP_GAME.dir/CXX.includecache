@@ -182,10 +182,6 @@ time.h
 chrono
 -
 
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.cpp
-EnemyController.h
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.h
-
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyController/EnemyController.h
 ../../GameComponents/Response/Response.h
 /home/mikeasta/Programming/OOP-GAME/source/GameComponents/Response/Response.h
@@ -205,10 +201,6 @@ tuple
 -
 map
 -
-
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.cpp
-EnemyManageCenter.h
-/home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
 
 /home/mikeasta/Programming/OOP-GAME/source/ControllerComponents/EnemyManageCenter/EnemyManageCenter.h
 ../../FieldComponents/FieldIterator/FieldIterator.h
@@ -430,10 +422,6 @@ iostream
 string
 -
 
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.cpp
-Enemy.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
-
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
@@ -448,10 +436,6 @@ string
 iostream
 -
 
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.cpp
-EnemyPlacer.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
-
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/EnemyPlacer/EnemyPlacer.h
 ../Enemy/Enemy.h
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Enemy/Enemy.h
@@ -459,10 +443,6 @@ EnemyPlacer.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/Field/Field.h
 ../../FieldComponents/FieldIterator/FieldIterator.h
 /home/mikeasta/Programming/OOP-GAME/source/FieldComponents/FieldIterator/FieldIterator.h
-
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.cpp
-Equipment.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Equipment/Equipment.h
 ../Item/Item.h
@@ -475,12 +455,6 @@ string
 -
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/InteractiveObject/InteractiveObject.h
-
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.cpp
-Item.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
-utility
--
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/Item/Item.h
 ../InteractiveObject/InteractiveObject.h
@@ -497,10 +471,6 @@ iostream
 -
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h
 /home/mikeasta/Programming/OOP-GAME/utils/RandomNumberGenerator/RandomNumberGenerator.h
-
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.cpp
-ItemPlacer.h
-/home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
 
 /home/mikeasta/Programming/OOP-GAME/source/InteractiveObjectComponents/ItemPlacer/ItemPlacer.h
 ../Item/Item.h
@@ -543,6 +513,8 @@ tuple
 -
 iostream
 -
+
+/home/mikeasta/Programming/OOP-GAME/source/SerializeComponents/SerializeWriter/SerializeWriter.cpp
 
 /home/mikeasta/Programming/OOP-GAME/source/TaskComponents/CollectionerTask/CollectionerTask.h
 ../../../utils/RandomNumberGenerator/RandomNumberGenerator.h

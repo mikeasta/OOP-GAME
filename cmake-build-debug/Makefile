@@ -1017,6 +1017,30 @@ source/InteractiveObjectComponents/Player/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/InteractiveObjectComponents/Player/Player.cpp.s
 .PHONY : source/InteractiveObjectComponents/Player/Player.cpp.s
 
+source/SerializeComponents/SerializeWriter/SerializeWriter.o: source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.o
+.PHONY : source/SerializeComponents/SerializeWriter/SerializeWriter.o
+
+# target to build an object file
+source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.o
+.PHONY : source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.o
+
+source/SerializeComponents/SerializeWriter/SerializeWriter.i: source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.i
+.PHONY : source/SerializeComponents/SerializeWriter/SerializeWriter.i
+
+# target to preprocess a source file
+source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.i
+.PHONY : source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.i
+
+source/SerializeComponents/SerializeWriter/SerializeWriter.s: source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.s
+.PHONY : source/SerializeComponents/SerializeWriter/SerializeWriter.s
+
+# target to generate assembly for a file
+source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OOP_GAME.dir/build.make CMakeFiles/OOP_GAME.dir/source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.s
+.PHONY : source/SerializeComponents/SerializeWriter/SerializeWriter.cpp.s
+
 source/TaskComponents/CollectionerTask/CollectionerTask.o: source/TaskComponents/CollectionerTask/CollectionerTask.cpp.o
 .PHONY : source/TaskComponents/CollectionerTask/CollectionerTask.o
 
@@ -1281,6 +1305,9 @@ help:
 	@echo "... source/InteractiveObjectComponents/Player/Player.o"
 	@echo "... source/InteractiveObjectComponents/Player/Player.i"
 	@echo "... source/InteractiveObjectComponents/Player/Player.s"
+	@echo "... source/SerializeComponents/SerializeWriter/SerializeWriter.o"
+	@echo "... source/SerializeComponents/SerializeWriter/SerializeWriter.i"
+	@echo "... source/SerializeComponents/SerializeWriter/SerializeWriter.s"
 	@echo "... source/TaskComponents/CollectionerTask/CollectionerTask.o"
 	@echo "... source/TaskComponents/CollectionerTask/CollectionerTask.i"
 	@echo "... source/TaskComponents/CollectionerTask/CollectionerTask.s"
